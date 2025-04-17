@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Acumatica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Acumatica_Teardrop_RGB_MayanBlue_16X16.png">
+		<script lang="javascript">
+			var TIME_STAMP = '<%= htmlWebpackPlugin.files.js.find(f => f.indexOf(htmlWebpackPlugin.options.screenId) === 0).substring(9, 29) %>';
+			var VENDOR_TIME_STAMP = '<%= htmlWebpackPlugin.files.js.find(f => f.indexOf("vendors.") === 0).substring(8, 28) %>';
+			var SCREEN_ID = '<%= htmlWebpackPlugin.options.screenId %>';
+			var __screenID = '<%= htmlWebpackPlugin.options.screenIdWithDots %>'; // for backward compatibility
+			var SCREEN_VIEW_NAME = '<%= htmlWebpackPlugin.options.screenViewName %>';
+		</script>
+    <!-- imported CSS are concatenated and added automatically -->
+  </head>
+  <body aurelia-app="main">
+  </body>
+</html>

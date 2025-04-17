@@ -1,0 +1,28 @@
+<template>
+	<style type="text/css">
+		.vertical-stack
+		{
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+		.vertical-stack > * { display: block; }
+		.vertical-stack > *.stretch { flex: 1; }
+
+		.vertical-stack > *.stretch > .grid-details
+		{
+			height: 100%;
+			min-height: 300px;
+		}
+	</style>
+
+	<div class="vertical-stack">
+		<div id="for_form">
+			<qp-fieldset id="filter" view.bind="Filter" label-size="sm" hide-caption="true">
+			</qp-fieldset>
+		</div>
+		<div id="for_grid" class="stretch">
+			<qp-grid id="grid" style="height: 100%" view.bind="Results" class="grid-details"></qp-grid>
+		</div>
+	</div>
+</template>

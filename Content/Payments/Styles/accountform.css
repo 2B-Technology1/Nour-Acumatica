@@ -1,0 +1,203 @@
+.accountForm {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif
+  font-size: 16px;
+  width: 20em;
+  padding: 0 0.0em 0.0em 0.0em;
+  border: 0px solid #ccc;
+  background: var(--background-color, #f5f7f8);
+}
+
+.accountForm * {
+  box-sizing: border-box;
+}
+
+.accountForm.ACH {
+	width: 40em;
+}
+#accountform_col_1.ACH, #accountform_col_2.ACH {
+	width: calc(50% - 0.2em);
+	display: inline-block;
+	vertical-align: top;
+}
+#accountform_col_1.ACH {
+	padding-right: 0.4em;
+}
+#accountform_col_2.ACH {
+	padding-left: 0.4em;
+}
+
+.accountForm textarea {
+  height: 100px;
+}
+
+#accountform_title {
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+/* field classes */
+
+.accountform_field {
+  margin-bottom: 5px;
+  min-height: 49px;
+}
+
+.accountform_field_label, #accountform_errors label {
+  padding: 0;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.accountform_field_required_indicator {
+  color: #d9534f;
+}
+
+.accountform_field_input, .accountform_field_select {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  padding: 0.3em;
+  border-radius: 0px;
+}
+
+.accountform_field_input_radio, .accountform_field_input_checkbox {
+	display: inline-block;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+/* button classes */
+
+#accountform_buttons {
+  text-align: right;
+}
+
+.accountform_button {
+  padding: .6em;
+  border-radius: 0.0em;
+  font-weight: normal;
+  margin-top: .5em;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.accountform_button:disabled {
+  opacity: 0.3;
+}
+
+.accountform_button:focus {
+  outline: none;
+}
+
+.accountform_button_action {
+  color: white;
+  background: var(--primary-color, #007ACC) !important/*#027acc*/;
+  border: 1px solid /*#027acc*/;
+  border-color: var(--primary-color, #007ACC) !important;
+}
+
+.accountform_button_action:hover {
+  background-color: #3399cc;
+  border-color: #3399cc;
+}
+
+#accountform_buttons_process_methods {
+  margin-bottom: 10px;
+}
+
+.accountform_button_process_method_active {
+  color: #fff;
+  background-color: var(--primary-color, #007ACC) !important/*#027acc*/;
+  border-color: var(--primary-color, #007ACC) !important/*#027acc*/;
+}
+
+.accountform_button_process_method_active:hover {
+  background-color: #3399cc;
+  border-color: #3399cc;
+}
+
+.accountform_button_process_method_inactive {
+  color: #f0ad4e;
+  background-color: #fff;
+  border-color: #eea236;
+}
+
+.accountform_button_process_method_inactive:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+/* alert classes */
+
+#accountform_success, #accountform_errors {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0px;
+  display: none;
+}
+
+#accountform_errors {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+#accountform_errors p {
+  margin: 3px 0px;
+}
+
+#accountform_success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.has-error {
+  border: 1px solid #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.has-error:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+  outline: 0;
+}
+
+.has-success {
+  border: 1px solid #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.has-success:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #67b168;
+  outline: 0;
+}
+
+.accountform_field_account_number_input_container {
+  position: relative;
+}
+.account-number-image {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+.account-number-input {
+  padding-left:30px !important;
+}
+.account-number-input-known {
+  padding-left:40px !important;
+}
+#account_number_image_icon {
+  color: #ccc;
+  font-size:1.5em;
+}

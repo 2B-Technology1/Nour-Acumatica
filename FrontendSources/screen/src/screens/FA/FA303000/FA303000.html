@@ -1,0 +1,228 @@
+<template>
+	<qp-shrinking-panel id="MainForm">
+		<div id="formAsset" wg-container class="h-stack gray-pane col-sm-12 col-md-12 col-lg-12">
+			<qp-fieldset id="first" view.bind="Asset" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="AssetCD"></field>
+				<field name="Description"></field>
+			</qp-fieldset>
+			<qp-fieldset id="second" view.bind="Asset" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="ParentAssetID"></field>
+			</qp-fieldset>
+		</div>
+	</qp-shrinking-panel>
+	<qp-tabbar class="stretch" active-tab-id="tabGeneral" id="mainTab">
+		<qp-tab id="tabGeneral" caption="General" class="stretch">
+			<qp-shrinking-panel id="generalForm">
+				<div class="h-stack col-sm-12 col-md-12 col-lg-12">
+					<qp-fieldset id="firstCol" view.bind="Asset" caption="Asset Summary" class="col-sm-12 col-md-6 col-lg-4">
+						<field name="ClassID" config.bind="{allowEdit:true}"></field>
+						<field name="AssetDetails.PropertyType" config.bind="{allowNull:false}"></field>
+						<field name="AssetDetails.Status" config.bind="{allowNull:false}"></field>
+						<field name="AssetTypeID" config.bind="{allowEdit:true}"></field>
+						<field name="IsTangible"></field>
+						<field name="Qty"></field>
+						<field name="Depreciable"></field>
+						<field name="UsefulLife" config.bind="{allowEdit:true}"></field>
+						<field name="AssetDetails.ReceiptDate"></field>
+						<field name="AssetDetails.DepreciateFromDate"></field>
+						<field name="AssetDetails.AcquisitionCost"></field>
+						<field name="AssetDetails.SalvageAmount"></field>
+						<field name="AssetDetails.ReplacementCost"></field>
+						<field name="AssetDetails.BaseCuryID"></field>
+						<field name="AssetDetails.DisplayDisposalDate"></field>
+						<field name="AssetDetails.DisplayDisposalMethodID"></field>
+						<field name="AssetDetails.DisplaySaleAmount"></field>
+					</qp-fieldset>
+					<qp-fieldset id="secondCol" view.bind="AssetLocation" caption="Tracking Info" class="col-sm-12 col-md-6 col-lg-4">
+						<field name="LocationID" config.bind="{allowEdit:true}"></field>
+						<field name="BuildingID" config.bind="{allowEdit:true}"></field>
+						<field name="Floor"></field>
+						<field name="Room"></field>
+						<field name="EmployeeID" config.bind="{allowEdit:true}"></field>
+						<field name="Department" config.bind="{allowEdit:true}"></field>
+						<field name="Reason"></field>
+						<field name="AssetDetails.TagNbr"></field>
+					</qp-fieldset>
+				</div>
+			</qp-shrinking-panel>
+		</qp-tab>
+		<qp-tab id="tabGLAccounts" caption="GL Accounts" class="stretch">
+			<qp-shrinking-panel id="accountsForm">
+				<qp-fieldset id="accountsCol" view.bind="Asset" class="col-sm-12 col-md-6 col-lg-4">
+					<field name="ConstructionAccountID"></field>
+					<field name="ConstructionSubID"></field>
+					<field name="FAAccountID"></field>
+					<field name="FASubID"></field>
+					<field name="FAAccrualAcctID"></field>
+					<field name="FAAccrualSubID"></field>
+					<field name="AccumulatedDepreciationAccountID"></field>
+					<field name="AccumulatedDepreciationSubID"></field>
+					<field name="DepreciatedExpenseAccountID"></field>
+					<field name="DepreciatedExpenseSubID"></field>
+					<field name="DisposalAccountID"></field>
+					<field name="DisposalSubID"></field>
+					<field name="GainAcctID"></field>
+					<field name="GainSubID"></field>
+					<field name="LossAcctID"></field>
+					<field name="LossSubID"></field>
+					<field name="RentAccountID"></field>
+					<field name="RentSubID"></field>
+					<field name="LeaseAccountID"></field>
+					<field name="LeaseSubID"></field>
+				</qp-fieldset>
+			</qp-shrinking-panel>
+		</qp-tab>
+		<qp-tab id="tabBalance" caption="Balance" class="stretch">
+			<qp-grid view.bind="AssetBalance" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabComponents" caption="Components" class="stretch">
+			<qp-grid view.bind="AssetElements" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabOtherInfo" caption="Other Info" class="stretch">
+			<qp-shrinking-panel id="otherInfoForm">
+				<div class="h-stack col-sm-12 col-md-12 col-lg-12">
+					<qp-fieldset id="purchaseGroup" caption="Purchase Details" view.bind="AssetDetails" class="col-sm-12 col-md-6 col-lg-4">
+						<field name="ReceiptDate"></field>
+						<field name="ReceiptType"></field>
+						<field name="ReceiptNbr" config.bind="{allowEdit:true}"></field>
+						<field name="PONumber"></field>
+						<field name="BillNumber"></field>
+						<field name="Manufacturer"></field>
+						<field name="Model"></field>
+						<field name="SerialNumber"></field>
+						<field name="WarrantyExpirationDate"></field>
+					</qp-fieldset>
+					<div class="v-stack col-sm-12 col-md-6 col-lg-124">
+						<qp-fieldset id="tangibleGroup" caption="Tangible Info" view.bind="AssetDetails">
+							<field name="ReportingLineNbr"></field>
+							<field name="Condition"></field>
+							<field name="FairMarketValue"></field>
+						</qp-fieldset>
+						<qp-fieldset id="rentGroup" caption="Lease/Rent Info" view.bind="AssetDetails">
+							<field name="LessorID"></field>
+							<field name="LeaseRentTerm"></field>
+							<field name="LeaseNumber"></field>
+							<field name="RentAmount"></field>
+							<field name="RetailCost"></field>
+							<field name="ManufacturingYear"></field>
+						</qp-fieldset>
+					</div>
+				</div>
+			</qp-shrinking-panel>
+		</qp-tab>
+		<qp-tab id="tabSideBySideDepreciation" caption="Depreciation" auto-repaint="true" class="stretch"
+				if.bind="fasetup.ShowSideBySide.value == true">
+			<qp-grid view.bind="AssetHistory" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabByBookDepreciation" caption="Depreciation" auto-repaint="true" class="stretch"
+				if.bind="fasetup.ShowBookSheet.value == true">
+			<qp-shrinking-panel id="byBookFilterForm">
+				<qp-fieldset id="deprBookFilterForm" view.bind="deprbookfilter" class="col-sm-12 col-md-6 col-lg-4">
+					<field name="BookID"></field>
+				</qp-fieldset>
+			</qp-shrinking-panel>
+			<qp-grid view.bind="BookSheetHistory" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabTransactions" caption="Transactions" class="stretch">
+			<qp-shrinking-panel id="transactionsForm">
+				<qp-fieldset id="bookFilterForm" view.bind="bookfilter" class="col-sm-12 col-md-6 col-lg-4">
+					<field name="BookID"></field>
+				</qp-fieldset>
+			</qp-shrinking-panel>
+			<qp-grid view.bind="FATransactions" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabLocations" caption="Locations" class="stretch">
+			<qp-grid view.bind="LocationHistory" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabReconciliation" caption="Reconciliation" class="stretch">
+			<qp-shrinking-panel id="reconciliationForm">
+				<div id="formGLTranFilter" wg-container class="h-stack col-sm-12 col-md-12 col-lg-12">
+					<qp-fieldset id="reconcColumn1" view.bind="GLTrnFilter" class="col-sm-12 col-md-6 col-lg-4">
+						<field name="ReconType"></field>
+						<field name="AccountID"></field>
+						<field name="SubID"></field>
+						<field name="TranDate"></field>
+						<field name="PeriodID"></field>
+						<field name="ShowReconciled"></field>
+					</qp-fieldset>
+					<qp-fieldset id="reconcColumn2" view.bind="GLTrnFilter" class="col-sm-12 col-md-6 col-lg-4">
+						<field name="AcquisitionCost"></field>
+						<field name="CurrentCost"></field>
+						<field name="AccrualBalance"></field>
+						<field name="UnreconciledAmt"></field>
+					</qp-fieldset>
+					<qp-fieldset id="reconcColumn3" view.bind="GLTrnFilter" class="col-sm-12 col-md-6 col-lg-4">
+						<field name="SelectionAmt"></field>
+						<field name="ExpectedCost"></field>
+						<field name="ExpectedAccrualBal"></field>
+						<field name="btnReduceCost">
+							<div class="qp-field qp-field-wrapper">
+								<div class="label-container"></div>
+								<qp-button id="btnReduceCost" class="control-container size-default" state.bind="ReduceUnreconCost">
+								</qp-button>
+							</div>
+						</field>
+					</qp-fieldset>
+				</div>
+			</qp-shrinking-panel>
+			<qp-grid view.bind="DsplAdditions" class="stretch">
+			</qp-grid>
+		</qp-tab>
+	</qp-tabbar>
+
+	<qp-panel id="DispParams" title="Dispose Parameters" auto-repaint="true" width="40vw">
+		<qp-fieldset view.bind="DispParams" class="col-sm-12 col-md-12 col-lg-12">
+			<field name="DisposalDate"></field>
+			<field name="DisposalPeriodID"></field>
+			<field name="ActionBeforeDisposal"></field>
+			<field name="DisposalAmt"></field>
+			<field name="DisposalMethodID"></field>
+			<field name="DisposalAccountID"></field>
+			<field name="DisposalSubID"></field>
+			<field name="Reason"></field>
+		</qp-fieldset>
+		<footer>
+			<qp-button id="cbOk" state.bind="DisposalOK" config.bind="{dialogResult: 1}">
+			</qp-button>
+			<qp-button id="cbCancel" config.bind="{text: 'Cancel', dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="SuspendParams" title="Suspend Parameters" auto-repaint="true" width="40vw">
+		<qp-fieldset view.bind="SuspendParams" class="col-sm-12 col-md-12 col-lg-12">
+			<field name="CurrentPeriodID"></field>
+		</qp-fieldset>
+		<footer>
+			<qp-button id="cbsOk" config.bind="{text: 'Ok', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="cbsCancel" config.bind="{text: 'Cancel', dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="RevDispInfo" title="Reverse Disposal Info" auto-repaint="true" width="40vw">
+		<qp-fieldset view.bind="RevDispInfo" class="col-sm-12 col-md-12 col-lg-12">
+			<field name="DisposalDate"></field>
+			<field name="DisposalPeriodID"></field>
+			<field name="DisposalAmt"></field>
+			<field name="DisposalMethodID"></field>
+			<field name="DisposalAccountID"></field>
+			<field name="DisposalSubID"></field>
+			<field name="ReverseDisposalDate"></field>
+			<field name="ReverseDisposalPeriodID"></field>
+		</qp-fieldset>
+		<footer>
+			<qp-button id="cbrdOk" config.bind="{text: 'Ok', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="cbrdCancel" config.bind="{text: 'Cancel', dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

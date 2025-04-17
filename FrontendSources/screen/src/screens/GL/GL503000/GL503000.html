@@ -1,0 +1,17 @@
+<template>
+	<div class="gray-pane stretch">
+		<qp-shrinking-panel id="form" class="h-stack" wg-container="Filter_form">
+			<qp-fieldset id="filterFieldset" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="Filter.OrganizationID"></field>
+				<field name="Filter.Action"></field>
+				<field name="Filter.FromYear"></field>
+				<field name="Filter.ToYear"></field>
+			</qp-fieldset>
+			<qp-fieldset id="filterFieldsetAppendix" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="Filter.ReopenInSubledgers" control-size="l"></field>
+			</qp-fieldset>
+		</qp-shrinking-panel>
+		<qp-grid id="grid" class="stretch" view.bind="FinPeriods">
+		</qp-grid>
+	</div>
+</template>

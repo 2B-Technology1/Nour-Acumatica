@@ -1,0 +1,160 @@
+.splash {
+	text-align: center;
+	padding: 10% 0 0 0;
+	box-sizing: border-box;
+	position: fixed;
+	width: 100%;
+	background: white;
+	z-index: 1000;
+	height: 100%;
+}
+
+.splash .message {
+  font-size: 36px;
+  line-height: 36px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.splash .ac-spin {
+  text-align: center;
+  display: inline-block;
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+.wait-cursor
+{
+	position:fixed;
+	top:0;
+	height:100%;
+	width:100%;
+	cursor: wait;
+	z-index: 10000;
+	background-color: transparent;
+}
+
+.page-host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.actions-container
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5px;
+}
+
+.actions-container > *
+{
+	width: 100%;
+	padding-bottom: 5px;
+	max-width: 400px;
+}
+
+@media print {
+  .page-host {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    overflow-y: inherit;
+    overflow-x: inherit;
+  }
+}
+
+section {
+  margin: 0 20px;
+}
+
+/* animate page transitions */
+section.au-enter-active {
+  animation: fadeInRight 1s;
+}
+
+div.au-stagger {
+  /* 50ms will be applied between each successive enter operation */
+  animation-delay: 50ms;
+}
+
+/* animation definitions */
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.gray-box
+{
+	 border: solid 1px #CCC;
+	 background-color: #F9F9F9;
+	 margin: 5px;
+	 padding-top: 20px;
+	 padding-bottom: 25px;
+	 padding-left: 10px;
+	 padding-right: 20px;
+}
+
+.gray-box .img
+{
+	 float: left;
+	 margin-right: 10px;
+}
+.gray-box .err-msg
+{
+	font-size: 12pt;
+}
+
+.ou-file-name {
+	min-height: 24px;
+	line-height: 18px;
+	padding: 2px 0 4px;
+}
+
+.ou-file-header {
+	padding: 5px 0 5px 15px;
+	display: block;
+}

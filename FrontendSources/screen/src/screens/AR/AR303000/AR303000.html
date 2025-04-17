@@ -1,0 +1,372 @@
+<template>
+	<div class="h-stack" wg-container="BAccount">
+		<qp-fieldset class="col-sm-12 col-md-6 col-lg-4" view.bind="BAccount" wg-container="BAccount_BAccount">
+			<field id="edAcctCD" name="AcctCD"></field>
+			<field id="edStatus" name="Status"></field>
+			<field id="edCustomerClassID" name="CustomerClassID"></field>
+			<field id="bcCusomterKind" name="CustomerKind"></field>
+		</qp-fieldset>
+		<qp-fieldset class="col-sm-12 col-md-6 col-lg-4" view.bind="CustomerBalance" wg-container="CustomerBalance_CustomerBalance">
+			<field id="edBBalance" name="Balance"></field>
+			<field id="edConsolidatedBalance" name="ConsolidatedBalance"></field>
+			<field id="edSignedDepositsBalance" name="SignedDepositsBalance"></field>
+			<field id="edRetainageBalance" name="RetainageBalance"></field>
+		</qp-fieldset>
+	</div>
+	<qp-tabbar class="stretch" active-tab-id="tabGeneral" id="tabbarMain" wg-container="CurrentCustomer_tab">
+		<qp-tab id="tabGeneral" caption="General" class="stretch h-stack">
+			<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+				<qp-fieldset view.bind="BAccount" caption="Account Info" wg-container="tab">
+					<field id="edAcctName" name="AcctName"></field>
+				</qp-fieldset>
+				<div wg-container="DefAddress_DefAddress">
+					<qp-button id="btnAddressLookup" state.bind="AddressLookup"></qp-button>
+					<qp-button id="btnViewMainOnMap" state.bind="ViewMainOnMap"></qp-button>
+					<qp-fieldset view.bind="DefAddress" caption="Account Address">
+						<field id="edDefAddressAddressLine1" name="AddressLine1"></field>
+						<field id="edDefAddressAddressLine2" name="AddressLine2"></field>
+						<field id="edDefAddressCity" name="City"></field>
+						<field id="edDefAddressState" name="State"></field>
+						<field id="edDefAddressPostalCode" name="PostalCode"></field>
+						<field id="edDefAddressCountryID" name="CountryID"></field>
+						<field id="edDefAddressIsValidated" name="IsValidated"></field>
+					</qp-fieldset>
+				</div>
+				<qp-fieldset view.bind="DefContact" caption="Additional Account Info" wg-container="DefContact_DefContact1">
+					<field name="Phone1">
+						<div style="position:relative;display: flex;">
+							<qp-field id="edDefContactPhone1Type" no-label.bind="true" control-state.bind="DefContact.Phone1Type"></qp-field>
+							<qp-field id="edDefContactPXMaskEdit1" no-label.bind="true" control-state.bind="DefContact.Phone1"></qp-field>
+						</div>
+					</field>
+					<field name="Phone2">
+						<div style="position:relative;display: flex;">
+							<qp-field id="edDefContactPhone2Type" no-label.bind="true" control-state.bind="DefContact.Phone2Type"></qp-field>
+							<qp-field id="edDefContactPXMaskEdit2" no-label.bind="true" control-state.bind="DefContact.Phone2"></qp-field>
+						</div>
+					</field>
+					<field name="Fax">
+						<div style="position:relative;display: flex;">
+							<qp-field id="edDefContactFaxType" no-label.bind="true" control-state.bind="DefContact.FaxType"></qp-field>
+							<qp-field id="edDefContactPXMaskEdit3" no-label.bind="true" control-state.bind="DefContact.Fax"></qp-field>
+						</div>
+					</field>
+					<field id="edDefContactEMail" name="Email" control-type="qp-mail-editor"></field>
+					<field id="edDefContactWebSite" name="WebSite" control-type="qp-link-editor"></field>
+				</qp-fieldset>
+				<div wg-container="CurrentCustomer_ReferenceNbr">
+					<field id="edExtRefNbr" name="CurrentCustomer.AcctReferenceNbr"></field>
+				</div>
+				<qp-fieldset view.bind="DefContact" wg-container="DefContact_DefContact2">
+					<field id="cbPrmCntConsent" name="ConsentAgreement"></field>
+					<field id="edPrmCntConsentDate" name="ConsentDate"></field>
+					<field id="edPrmCntConsentExpDate" name="ConsentExpirationDate"></field>
+				</qp-fieldset>
+			</div>
+			<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+				<qp-fieldset view.bind="PrimaryContactCurrent" caption="Primary Contact" wg-container="BAccount_frmPrimaryContact">
+					<field name="FirstName">
+						<div style="position:relative;display: flex;">
+							<qp-field id="edPrmCntFirstName" no-label.bind="true" control-state.bind="PrimaryContactCurrent.FirstName"></qp-field>
+							<qp-field id="edPrmCntLastName" no-label.bind="true" control-state.bind="PrimaryContactCurrent.LastName"></qp-field>
+						</div>
+					</field>
+					<field name="Salutation"></field>
+					<field name="Email" control-type="qp-mail-editor"></field>
+					<field name="Phone1">
+						<div style="position:relative;display: flex;">
+							<qp-field id="ddPrmCntPhone1Type" no-label.bind="true" control-state.bind="PrimaryContactCurrent.Phone1Type"></qp-field>
+							<qp-field id="mePrmCntPhone1" no-label.bind="true" control-state.bind="PrimaryContactCurrent.Phone1"></qp-field>
+						</div>
+					</field>
+					<field name="Phone2">
+						<div style="position:relative;display: flex;">
+							<qp-field id="ddPrmCntPhone2Type" no-label.bind="true" control-state.bind="PrimaryContactCurrent.Phone2Type"></qp-field>
+							<qp-field id="mePrmCntPhone2" no-label.bind="true" control-state.bind="PrimaryContactCurrent.Phone2"></qp-field>
+						</div>
+					</field>
+					<field id="cbPrmCntConsent" name="ConsentAgreement"></field>
+					<field id="edPrmCntConsentDate" name="ConsentDate"></field>
+					<field id="edPrmCntConsentExpDate" name="ConsentExpirationDate"></field>
+				</qp-fieldset>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabFinancial" caption="Financial" class="stretch h-stack">
+			<qp-fieldset class="col-sm-12 col-md-6 col-lg-4" caption="Financial Settings" view.bind="BAccount" wg-container="tab">
+				<field id="edTermsID" name="TermsID"></field>
+				<field id="edStatementCycleId" name="StatementCycleId"></field>
+				<field id="edCOrgBAccountID" name="COrgBAccountID"></field>
+				<field id="chkAutoApplyPayments" name="AutoApplyPayments"></field>
+				<field id="chkFinChargeApply" name="FinChargeApply"></field>
+				<field id="chkSmallBalanceAllow" name="SmallBalanceAllow"></field>
+				<field id="edSmallBalanceLimit" name="SmallBalanceLimit"></field>
+				<field id="edCuryID" name="CuryID"></field>
+				<field id="chkAllowOverrideCury" name="AllowOverrideCury"></field>
+				<field id="edCuryRateTypeID" name="CuryRateTypeID"></field>
+				<field id="chkAllowOverrideRate" name="AllowOverrideRate"></field>
+				<field id="chkPaymentsByLinesAllowed" name="PaymentsByLinesAllowed"></field>
+			</qp-fieldset>
+			<div class="col-sm-12 col-md-6 col-lg-4 v-stack">
+				<qp-fieldset class="stretch" caption="Retainage Settings" view.bind="BAccount">
+					<field id="edRetainageApply" name="RetainageApply"></field>
+					<field id="edRetainagePct" name="RetainagePct"></field>
+				</qp-fieldset>
+				<qp-fieldset class="stretch" caption="Credit Verification Rules" view.bind="BAccount">
+					<field name="CreditRule"></field>
+					<field id="edCreditLimit" name="CreditLimit"></field>
+					<field id="edCreditDaysPastDue" name="CreditDaysPastDue"></field>
+					<qp-fieldset view.bind="CustomerBalance" wg-container="CustomerBalance_CustomerBalance">
+						<field id="edUnreleasedBalance" name="UnreleasedBalance"></field>
+						<field id="edOpenOrdersBalance" name="OpenOrdersBalance"></field>
+						<field id="edRemainingCreditLimit" name="RemainingCreditLimit"></field>
+						<field id="edOldInvoiceDate" name="OldInvoiceDate"></field>
+					</qp-fieldset>
+				</qp-fieldset>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabBilling" class="stretch h-stack" caption="Billing">
+			<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+				<qp-fieldset id="billingCol1Row1" caption="Bill-To Address" wg-container="tab">
+					<field name="CurrentCustomer.OverrideBillAddress"></field>
+				</qp-fieldset>
+				<qp-button id="btnBillingAddressLookup" state.bind="BillingAddressLookup"></qp-button>
+				<qp-button id="btnViewBillAddressOnMap" state.bind="ViewBillAddressOnMap"></qp-button>
+				<qp-fieldset view.bind="BillAddress" wg-container="BillAddress_BillAddress">
+					<field id="edAddressLine1" name="AddressLine1"></field>
+					<field id="edAddressLine2" name="AddressLine2"></field>
+					<field id="edCity" name="City"></field>
+					<field id="edState" name="State"></field>
+					<field id="edPostalCode" name="PostalCode"></field>
+					<field id="edCountryID" name="CountryID"></field>
+				</qp-fieldset>
+				<qp-fieldset id="billingCol1Row2" caption="Bill-To Info" wg-container="tab">
+					<field name="CurrentCustomer.OverrideBillContact"></field>
+				</qp-fieldset>
+				<qp-fieldset view.bind="BillContact" wg-container="BillContact_BillContact">
+					<field id="edFullName" name="FullName"></field>
+					<field id="edAttention" name="Attention"></field>
+					<field name="Phone1">
+						<div style="position:relative;display: flex;">
+							<qp-field id="Phone1Type" no-label.bind="true" control-state.bind="BillContact.Phone1Type"></qp-field>
+							<qp-field id="PXMaskEdit1" no-label.bind="true" control-state.bind="BillContact.Phone1"></qp-field>
+						</div>
+					</field>
+					<field name="Phone2">
+						<div style="position:relative;display: flex;">
+							<qp-field id="Phone2Type" no-label.bind="true" control-state.bind="BillContact.Phone2Type"></qp-field>
+							<qp-field id="PXMaskEdit2" no-label.bind="true" control-state.bind="BillContact.Phone2"></qp-field>
+						</div>
+					</field>
+					<field name="Fax">
+						<div style="position:relative;display: flex;">
+							<qp-field id="Phone2Type" no-label.bind="true" control-state.bind="BillContact.FaxType"></qp-field>
+							<qp-field id="PXMaskEdit2" no-label.bind="true" control-state.bind="BillContact.Fax"></qp-field>
+						</div>
+					</field>
+					<field id="edEMail" name="Email" control-type="qp-mail-editor"></field>
+					<field id="edWebSite" name="WebSite" control-type="qp-link-editor"></field>
+				</qp-fieldset>
+
+				<qp-fieldset wg-container="tab" view.bind="BAccount">
+					<field name="RequireCustomerSignature"></field>
+					<field name="BillingCycleID"></field>
+					<field name="SendInvoicesTo"></field>
+					<field name="BillShipmentSource"></field>
+					<field name="DefaultBillingCustomerSource"></field>
+					<field name="BillCustomerID"></field>
+					<field name="BillLocationID"></field>
+				</qp-fieldset>
+
+			</div>
+			<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+				<qp-fieldset caption="Parent Info" view.bind="BAccount" wg-container="tab">
+					<field id="edParentBAccountID" name="ParentBAccountID"></field>
+					<field id="edConsolidateToParent" name="ConsolidateToParent"></field>
+					<field id="edConsolidateStatements" name="ConsolidateStatements"></field>
+					<field id="edSharedCreditPolicy" name="SharedCreditPolicy"></field>
+				</qp-fieldset>
+				<qp-fieldset caption="Print and Email Settings" view.bind="BAccount" wg-container="tab">
+					<field id="chkMailInvoices" name="MailInvoices"></field>
+					<field id="chkPrintInvoices" name="PrintInvoices"></field>
+					<field id="chkMailDunningLetters" name="MailDunningLetters"></field>
+					<field id="chkPrintDunningLetters" name="PrintDunningLetters"></field>
+					<field id="chkSendStatementByEmails" name="SendStatementByEmail"></field>
+					<field id="chkPrintStatements" name="PrintStatements"></field>
+					<field id="edStatementType" name="StatementType"></field>
+					<field id="chkPrintCuryStatements" name="PrintCuryStatements"></field>
+				</qp-fieldset>
+				<!-- TODO how to create header for grid here?  -->
+				<qp-fieldset id="grpDefaultPaymentMethod" caption="Default Payment Method"
+							 wg-container="DefPaymentMethodInstance_DefPaymentMethodInstance">
+					<field id="edDefPaymentMethodID" name="CurrentCustomer.DefPaymentMethodID"></field>
+					<field id="edProcessingCenter" name="DefPaymentMethodInstance.CCProcessingCenterID"></field>
+					<field id="edCustomerCCPID" name="DefPaymentMethodInstance.CustomerCCPID"></field>
+					<field id="edCashAccountID" name="DefPaymentMethodInstance.CashAccountID"></field>
+					<field id="edDescr" name="DefPaymentMethodInstance.Descr"></field>
+				</qp-fieldset>
+				<qp-grid view.bind="DefPaymentMethodInstanceDetails"></qp-grid>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabShipping" class="stretch h-stack" caption="Shipping" wg-container="DefLocation_DefLocation">
+			<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+				<qp-button id="btnDefLocationAddressLookup" state.bind="DefLocationAddressLookup"></qp-button>
+				<qp-button id="btnViewDefLocationAddressOnMap" state.bind="ViewDefLocationAddressOnMap"></qp-button>
+				<qp-fieldset id="fsShippingAddress" caption="Ship-to Address" view.bind="DefLocationAddress">
+					<field id="chkOverrideAddress" name="DefLocation.OverrideAddress"></field>
+					<field id="edDefLocationAddressAddressLine1" name="AddressLine1"></field>
+					<field id="edDefLocationAddressAddressLine2" name="AddressLine2"></field>
+					<field id="edDefLocationAddressCity" name="City"></field>
+					<field id="edDefLocationAddressState" name="State"></field>
+					<field id="edPostalCode" name="PostalCode"></field>
+					<field id="edDefLocationAddressCountryID" name="CountryID"></field>
+					<field id="edLatitude" name="Latitude"></field>
+					<field id="edLongitude" name="Longitude"></field>
+					<field id="edDefLocationAddressIsValidated" name="IsValidated"></field>
+				</qp-fieldset>
+				<qp-fieldset caption="Ship-to Info" view.bind="DefLocationContact">
+					<field id="chkOverrideAddress" name="DefLocation.OverrideContact"></field>
+					<field id="edDefLocationContactFullName" name="FullName"></field>
+					<field id="edDefLocationContactAttention" name="Attention"></field>
+					<field name="DefLocationContact.Phone1">
+						<div style="position:relative;display: flex;">
+							<qp-field id="Phone1Type" no-label.bind="true" control-state.bind="DefLocationContact.Phone1Type"></qp-field>
+							<qp-field id="PXMaskEdit1" no-label.bind="true" control-state.bind="DefLocationContact.Phone1"></qp-field>
+						</div>
+					</field>
+					<field name="DefLocationContact.Phone2">
+						<div style="position:relative;display: flex;">
+							<qp-field id="Phone2Type" no-label.bind="true" control-state.bind="DefLocationContact.Phone2Type"></qp-field>
+							<qp-field id="PXMaskEdit2" no-label.bind="true" control-state.bind="DefLocationContact.Phone2"></qp-field>
+						</div>
+					</field>
+					<field name="DefLocationContact.Fax">
+						<div style="position:relative;display: flex;">
+							<qp-field id="Phone2Type" no-label.bind="true" control-state.bind="DefLocationContact.FaxType"></qp-field>
+							<qp-field id="PXMaskEdit2" no-label.bind="true" control-state.bind="DefLocationContact.Fax"></qp-field>
+						</div>
+					</field>
+					<field id="edDefLocationContactEMail" name="Email" control-type="qp-mail-editor"></field>
+					<field id="edDefLocationContactWebSite" name="WebSite" control-type="qp-link-editor"></field>
+				</qp-fieldset>
+				<qp-fieldset id="fsOtherShippingSettings" caption="Other Settings" view.bind="DefLocation">
+					<field id="edCBranchID" name="CBranchID"></field>
+					<field id="edCPriceClassID" name="CPriceClassID"></field>
+					<field id="edCDefProjectID" name="CDefProjectID"></field>
+					<field id="chkSuggestRelatedItems" name="CurrentCustomer.SuggestRelatedItems"></field>
+				</qp-fieldset>
+			</div>
+			<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+				<qp-fieldset id="fsTaxSettings" caption="Tax Settings" view.bind="DefLocation">
+					<field id="edTaxRegistrationID" name="TaxRegistrationID"></field>
+					<field id="edCTaxZoneID" name="CTaxZoneID"></field>
+					<field id="edCTaxCalcMode" name="CTaxCalcMode"></field>
+					<field id="edCAvalaraExemptionNumber" name="CAvalaraExemptionNumber"></field>
+					<field id="edCAvalaraCustomerUsageType" name="CAvalaraCustomerUsageType"></field>
+				</qp-fieldset>
+				<qp-fieldset id="fsShippingInstructions" view.bind="DefLocation" caption="Shipping Instructions">
+					<field id="edCSiteID" name="CSiteID"></field>
+					<field id="edCarrierID" name="CCarrierID"></field>
+					<field id="edShipTermsID" name="CShipTermsID"></field>
+					<field id="edShipZoneID" name="CShipZoneID"></field>
+					<field id="edFOBPointID" name="CFOBPointID"></field>
+					<field id="chkResedential" name="CResedential"></field>
+					<field id="chkSaturdayDelivery" name="CSaturdayDelivery"></field>
+					<field id="chkInsurance" name="CInsurance"></field>
+					<field id="edCShipComplete" name="CShipComplete"></field>
+					<field id="edCOrderPriority" name="COrderPriority"></field>
+					<field id="edLeadTime" name="CLeadTime"></field>
+					<field id="edCCalendarID" name="CCalendarID"></field>
+				</qp-fieldset>
+				<qp-grid id="PXGridAccounts" view.bind="Carriers"></qp-grid>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabBalances" class="stretch h-stack" caption="Balances">
+			<qp-grid id="gridBalances" view.bind="Balances"
+					 wg-container="Balances_PXGrid1"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabLocations" class="stretch v-stack" caption="Locations">
+			<qp-grid id="grdLocations" class="stretch" view.bind="Locations"
+					 wg-container="Locations_grdLocations"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabPaymentMethods" class="stretch v-stack" caption="Payment Methods">
+			<qp-grid id="grdPaymentMethods" class="stretch" view.bind="PaymentMethods"
+					 wg-container="PaymentMethods_grdPaymentMethods"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabContacts" class="stretch v-stack" caption="Contacts">
+			<qp-grid id="grdContacts" class="stretch" view.bind="Contacts"
+					 wg-container="Contacts_grdContacts"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabSalespersons" class="stretch v-stack" caption="Salespersons">
+			<qp-grid id="PXGrid1" class="stretch" view.bind="Salespersons"
+					 wg-container="Salespersons_PXGrid1"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabChildAccounts" class="stretch v-stack" caption="Child Accounts">
+			<qp-grid id="gridChildAccounts" class="stretch" view.bind="ChildAccounts"
+					 wg-container="ChildAccounts_gridChildAccounts"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabAttributes" class="stretch v-stack" caption="Attributes">
+			<qp-grid id="PXGridAnswers" class="stretch" view.bind="Answers"
+					 wg-container="Answers_PXGridAnswers"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabActivities" class="stretch v-stack" caption="Activities">
+			<qp-grid id="gridActivities" class="stretch" view.bind="Activities"
+					 wg-container=""></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabGlAccounts" class="stretch v-stack" caption="GL Accounts">
+			<qp-fieldset class="v-stack col-sm-12 col-md-6 col-lg-4" view.bind="DefLocation"
+						 wg-container="DefLocation_DefLocationAccount">
+				<field name="CARAccountID"></field>
+				<field name="CARSubID"></field>
+				<field name="CSalesAcctID"></field>
+				<field name="CSalesSubID"></field>
+				<field name="CDiscountAcctID"></field>
+				<field name="CDiscountSubID"></field>
+				<field name="CFreightAcctID"></field>
+				<field name="CFreightSubID"></field>
+
+				<field name="CurrentCustomer.DiscTakenAcctID"></field>
+				<field name="CurrentCustomer.DiscTakenSubID"></field>
+				<field name="CurrentCustomer.PrepaymentAcctID"></field>
+				<field name="CurrentCustomer.PrepaymentSubID"></field>
+				<field name="CurrentCustomer.COGSAcctID"></field>
+
+				<field name="CRetainageAcctID"></field>
+				<field name="CRetainageSubID"></field>
+			</qp-fieldset>
+		</qp-tab>
+		<qp-tab id="tabMailPrinting" class="stretch v-stack" caption="Mailing & Printing">
+			<qp-grid id="gridNS" class="stretch" view.bind="NotificationSources"
+					 wg-container="NotificationSources_gridNS"></qp-grid>
+			<qp-grid id="gridNR" class="stretch" view.bind="NotificationRecipients"
+					 wg-container="NotificationRecipients_gridNR"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabServiceBilling" class="stretch v-stack" caption="Service Billing">
+			<qp-grid id="gridBillingCycles" class="stretch" view.bind="CustomerBillingCycles"
+					 wg-container="CustomerBillingCycles_gridBillingCycles"></qp-grid>
+		</qp-tab>
+		<qp-tab id="tabCompliance" class="stretch v-stack" caption="Compliance"
+				wg-container="ComplianceDocuments_grdComplianceDocuments">
+			<qp-grid id="grdComplianceDocuments" view.bind="ComplianceDocuments"></qp-grid>
+		</qp-tab>
+	</qp-tabbar>
+
+	<qp-panel id="ChangeIDDialog" title="Specify New ID">
+		<qp-fieldset wg-container="ChangeIDDialog_formChangeID" view.bind="ChangeIDDialog">
+			<field name="CD"></field>
+		</qp-fieldset>
+		<footer>
+			<qp-button config.bind="{text: 'OK', dialogResult: 1}""></qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="OnDemandStatementDialog" title="Generate On-Demand Statement">
+		<qp-fieldset view.bind="OnDemandStatementDialog" wg-container="OnDemandStatementDialog_formOnDemandStatement">
+			<field name="StatementDate"></field>
+		</qp-fieldset>
+		<footer>
+			<qp-button config.bind="{text: 'OK', dialogResult: 1}"></qp-button>
+		</footer>
+	</qp-panel>
+
+</template>
+

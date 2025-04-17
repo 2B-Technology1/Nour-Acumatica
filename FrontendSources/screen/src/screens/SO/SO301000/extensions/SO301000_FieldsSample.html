@@ -1,0 +1,27 @@
+<template>
+	<!--
+	Switch this div with <div style="display: none"> one to check example
+
+	<div after="#second" style="border: 1px solid lightsalmon;padding: 16px; margin: 16px 0;">
+	-->
+	<div style="display: none">
+		<qp-field control-id="SampleSum" control-state.bind="sumState" control-size="s" label-size="xl"></qp-field>
+		<div style="margin-top: 8px; display: flex; justify-content: right;">
+			<qp-button config.bind="{text: msg.switchLocationVisibility}" click.delegate="switchReadonly()"></qp-button>
+		</div>
+		<div style="margin-top: 8px; display: flex; justify-content: right; gap: 8px">
+			<qp-text-editor config.bind="{enabled: true}" value.two-way="newDescription"> </qp-text-editor>
+			<qp-button config.bind="{text: msg.changeDescription}" click.delegate="changeDescription()"></qp-button>
+		</div>
+		<div style="margin-top: 8px; display: flex; justify-content: right;">
+			<qp-button config.bind="{text: msg.addError}" click.delegate="addError()"></qp-button>
+		</div>
+		<div style="margin-top: 8px; display: flex; justify-content: right;">
+			<qp-button config.bind="{text: msg.changeCurrentRowDescription}"
+				click.delegate="changeCurrentRowDescription()"></qp-button>
+		</div>
+		<div style="margin-top: 8px; display: flex; justify-content: right;">
+			${msg.activeRowAmount} ${activeRowAmount}
+		</div>
+	</div>
+</template>

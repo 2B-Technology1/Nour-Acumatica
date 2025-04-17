@@ -1,0 +1,18 @@
+<template>
+	<qp-shrinking-panel id="filterForm">
+		<div id="Filter_form" wg-container class="h-stack gray-pane col-sm-12 col-md-12 col-lg-12">
+			<qp-fieldset id="column1" view.bind="Filter" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="OrgBAccountID" control-type="qp-branch-selector"></field>
+				<field name="BookID"></field>
+				<field name="PeriodID"></field>
+				<field name="Action"></field>
+			</qp-fieldset>
+			<qp-fieldset id="column2" view.bind="Filter" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="ClassID"></field>
+				<field name="ParentAssetID"></field>
+			</qp-fieldset>
+		</div>
+	</qp-shrinking-panel>
+	<qp-grid id="grid" class="stretch" view.bind="Balances">
+	</qp-grid>
+</template>

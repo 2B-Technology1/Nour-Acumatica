@@ -1,0 +1,8 @@
+<template>
+	<div class="splash" if.bind="!initialized">
+		<div class="message">Loading...</div>
+		<i class="ac ac-progress ac-spin"></i>
+	</div>
+	<div class="wait-cursor" if.bind="callbackRunning"></div>
+	<slot></slot>
+</template>

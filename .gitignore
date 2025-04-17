@@ -1,0 +1,33 @@
+# Ignore build artifacts and binary files
+/bin/
+/obj/
+/App_RuntimeCode/
+/Bin/
+
+# Ignore custom/generated reports or designer files
+/CstDesigner/
+/CstPublished/
+/ReportsDefault/
+/ReportsCustomized/
+
+/# Ignore default system files
+/Api/
+/Eula/
+/ExternalResource/
+/MasterPages/
+/Pivot/
+/Pages/
+/Scripts/
+
+/# Ignore UI related resources that don't require versioning
+/fonts/
+/Icons/
+/Sounds/
+/App_Themes/
+
+/# Ignore files created in runtime (temporary or log files)
+/App_Data/
+/App_RuntimeCode/
+/*.log
+*.tmp
+*.bak

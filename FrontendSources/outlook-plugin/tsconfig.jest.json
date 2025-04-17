@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "module": "esnext",
+
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+		"esModuleInterop": true,
+    "target": "es6",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "allowJs": true
+  },
+  "include": [
+    "src",
+    "test"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+			"downlevelIteration": true,
+    }
+  }
+}

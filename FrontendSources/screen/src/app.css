@@ -1,0 +1,116 @@
+.page-container {
+	display: flex;
+	height: 100vh;
+}
+
+.page-content {
+	flex: 1 auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	overflow: hidden;
+
+	container-type: inline-size;
+  	container-name: qp-screen;
+}
+
+.page-caption {
+}
+
+.page-host {
+  overflow-x: hidden;
+  overflow-y: hidden;
+	flex-grow: 1;
+	margin: 0 7px;
+	padding: 0 17px;
+
+	position: relative;
+	scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+.page-workspace {
+	overflow: visible;
+	position: absolute;
+	width: calc( 100vw - 48px );
+	width: calc( 100cqi - 48px );
+	height: 100%;
+}
+
+.page-host:hover {
+	overflow-y: auto;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,0.15);
+	border-radius: 5px;
+}
+*::-webkit-scrollbar-track {
+	background-color: rgba(0,0,0,0.06);
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+	height: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0,0,0,0.40);
+}
+
+
+
+.pageHeader {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	margin-left: 10px;
+}
+
+
+.pageTitle {
+	padding: 4px 4px 4px 8px;
+	overflow: hidden;
+	flex-grow: 1;
+	flex-shrink: .5;
+}
+
+.toolsMenu {
+	padding: 6px 20px 4px 0px;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+
+.toolsMenu .qp-menu-button {
+	font-size: 14px;
+}
+
+.top-bar-cont {
+	display: flex;
+	padding: 0 20px;
+	margin: 6px 0 9px 0;
+}
+
+.top-bar-cont .qp-tool-bar-suffix{
+	white-space: nowrap;
+	margin-right: 5px;
+}
+
+
+/* .top-bar-cont > qp-tool-bar {
+	flex-grow: initial;
+} */
+.top-bar-cont .grid-bar-cont {
+	flex-grow: 1;
+	padding-right: 5px;
+}
+
+.top-bar-cont .filter-box {
+	margin-right: 5px;
+}
+
+#InfoBannerContainer {
+	padding: 0px 8px 0px 8px;
+}
+

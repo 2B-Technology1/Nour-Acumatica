@@ -1,0 +1,24 @@
+<template>
+	<div class="v-stack">
+		<div class="gray-pane stretch">
+			<div class="v-stack">
+				<qp-fieldset id="billingFieldset" class="col-sm-12 col-md-3 col-lg-3">
+					<field name="Billing.BillingID"></field>
+				</qp-fieldset>
+				<qp-fieldset id="billingRuleFieldset" class="col-sm-12 col-md-3 col-lg-3">
+					<!-- PMFormulaEditor -->
+					<field name="BillingRule.QtyFormula"
+						control-type="qp-formula-editor"
+						config-parameters.bind="true"
+						config-application-functions.bind="['ConvertAmountToCurrency(fromCuryID, toCuryID, rateType, effectiveDate, value)']"
+						config-application-functions-append.bind="true"
+						config-dynamic-fields.bind="['PMAccountGroup', 'PMBudget', 'PMProject', 'PMTask', 'PMTran', 'Customer', 'EPEmployee', 'InventoryItem', 'Vendor']"
+						config-dynamic-node-name.bind="'Objects'"
+						config-preload-dynamic-node.bind="true"
+					></field>
+					<!-- /PMFormulaEditor -->
+				</qp-fieldset>
+			</div>
+		</div>
+	</div>
+</template>

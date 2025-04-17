@@ -1,0 +1,35 @@
+<template>
+	<qp-panel before="#SOOrderLineSplittingExtension_lsselect" id="sitestatus" title.bind="InventoryLookupPanelHeaders.InventoryLookup" auto-repaint="true" width="80vw" height="80vh">
+		<div id="sitestatusfilter_formsitesstatus" class="h-stack" wg-container>
+			<qp-fieldset id="fs-sitestatusfilter-first" view.bind="sitestatusfilter"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="Inventory"></field>
+				<field name="BarCode"></field>
+				<field name="SiteID"></field>
+				<field name="ItemClass"></field>
+				<field name="SubItem"></field>
+			</qp-fieldset>
+			<qp-fieldset id="fs-sitestatusfilter-second" view.bind="sitestatusfilter"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="Mode" control-type="qp-radio"></field>
+				<field name="HistoryDate"></field>
+				<field name="OnlyAvailable"></field>
+				<field name="DropShipSales"></field>
+			</qp-fieldset>
+			<qp-fieldset id="fs-sitestatusfilter-third" view.bind="sitestatusfilter"
+						 label-size="sm" control-size="m" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="CustomerLocationID"></field>
+			</qp-fieldset>
+		</div>
+		<qp-grid class="stretch" id="sitestatus_gripsitestatus" view.bind="sitestatus">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnAdd" state.bind="AddInvSelBySite">
+			</qp-button>
+			<qp-button id="btnAddClose" config.bind="{text: 'Add &amp; Close', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

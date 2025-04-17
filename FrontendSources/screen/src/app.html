@@ -1,0 +1,47 @@
+<template>
+	<require from="./app.css"></require>
+
+	<div class="splash initialization" if.bind="!initialized">
+		<div class="message">Be patient...</div>
+	</div>
+	<qp-wait-cursor></qp-wait-cursor>
+
+	<qp-informer-rack></qp-informer-rack>
+	<qp-long-run config.bind="longRunConfig"></qp-long-run>
+	<qp-processing-dialog></qp-processing-dialog>
+	<qp-quick-processing config.bind="quickProcessingConfig"></qp-quick-processing>
+
+	<div class="page-container">
+		<div class="page-content">
+			<div id="page-caption" class="page-caption">
+				<qp-screen-configuration-menu if.bind="editMode"></qp-screen-configuration-menu>
+
+				<div id="pageHeader" class="pageHeader">
+					<div id="pnlTitle" class="pageTitle">
+						<qp-screen-title ref="captionElem" config.bind="caption"></qp-screen-title>
+					</div>
+					<div id="pnlTools" class="toolsMenu">
+						<qp-sys-menu ref="toolsMenuElem" config.bind="{screen: $this.viewModel, tools: toolsMenu, customization: customizationMenu, notes: notesMenu, graph: viewModel.graphInfo.graphType}"></qp-sys-menu>
+					</div>
+				</div>
+				<div id="InfoBannerContainer"></div>
+				<div class="top-bar-cont">
+					<span id="toolBarPrefix" class="qp-tool-bar-prefix"></span>
+					<qp-tool-bar ref="toolBarElem" view-model.ref="toolBarVM" config.bind="toolbar"></qp-tool-bar>
+					<span id="toolBarSuffix" class="qp-tool-bar-suffix"></span>
+				</div>
+			</div>
+
+			<div class="page-host" ref="contentElement">
+				<qp-workflow-dialog></qp-workflow-dialog>
+				<template if.bind="useStaticRendering">
+					<compose class="v-stack page-workspace" view-model.bind="screenName" model.bind="$this" ></compose>
+				</template>
+				<template else>
+					<customizable screen-name.bind="screenName"></customizable>
+				</template>
+			</div>
+		</div>
+		<qp-side-panel config.bind="sidePanelConfig" if.bind="sidePanelConfig.sideScreens.length"></qp-side-panel>
+	</div>
+</template>

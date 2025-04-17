@@ -1,0 +1,498 @@
+<template>
+	<!-- <div class="v-stack"> -->
+	<qp-shrinking-panel id="filterForm">
+		<div id="document_form" wg-container class="h-stack">
+			<div class="h-stack gray-pane col-sm-12 col-md-7 col-lg-9">
+				<qp-fieldset id="first" view.bind="Document" class="col-sm-12 col-md-12 col-lg-5">
+					<field name="OrderType"></field>
+					<field name="OrderNbr"></field>
+					<field name="Status"></field>
+					<field name="OrderDate"></field>
+					<field name="RequestDate"></field>
+					<field name="CustomerOrderNbr"></field>
+					<field name="CustomerRefNbr"></field>
+				</qp-fieldset>
+				<qp-fieldset id="second" view.bind="Document" class="col-sm-12 col-md-12 col-lg-7">
+					<field name="CustomerID" config-allow-edit.bind="true"></field>
+					<field name="CustomerLocationID" config-allow-edit.bind="true"></field>
+					<field name="ContactID" config-allow-edit.bind="true"></field>
+					<field name="CuryID" control-type="qp-currency" view.bind="CurrencyInfo"></field>
+					<field name="DestinationSiteID"></field>
+					<field name="ProjectID" config-allow-edit.bind="true"></field>
+					<field name="OrderDesc" config-type.bind="1" config-rows.bind="3"></field>
+				</qp-fieldset>
+			</div>
+			<qp-fieldset id="summary" view.bind="Document" caption="Summary"
+						 class="summary-pane col-sm-12 col-md-5 col-lg-3">
+				<field name="OrderQty"></field>
+				<field name="CuryDiscTot"></field>
+				<field name="CuryVatExemptTotal"></field>
+				<field name="CuryVatTaxableTotal"></field>
+				<field name="CuryTaxTotal"></field>
+				<field name="CuryOrderTotal"></field>
+				<field name="CuryControlTotal"></field>
+			</qp-fieldset>
+		</div>
+	</qp-shrinking-panel>
+
+	<qp-tabbar class="stretch" active-tab-id="tabDetails" id="mainTab">
+		<qp-tab id="tabDetails" caption="Details" class="stretch">
+			<qp-grid view.bind="Transactions" class="stretch" topBarConfig.bind="{disableMenu: false}">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabTaxes" caption="Taxes"
+				if.bind='Document.OrderType.value.id != "TR"'
+				load-on-demand="true">
+			<qp-grid id="grid1" view.bind="Taxes" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabCommissions" caption="Commissions"
+				if.bind='Document.OrderType.value.id != "TR"'>
+			<qp-fieldset id="CurrentDocument_Commission" view.bind="CurrentDocument"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="SalesPersonID"></field>
+			</qp-fieldset>
+			<qp-grid view.bind="SalesPerTran" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabFinancial" caption="Financial">
+			<div class="h-stack">
+				<qp-fieldset id="groupFinancial" view.bind="CurrentDocument"
+							 caption="Financial Information"
+							 class="col-sm-12 col-md-6 col-lg-4">
+					<field name="BranchID"></field>
+					<field name="BranchBaseCuryID"></field>
+					<field name="DisableAutomaticTaxCalculation"></field>
+					<field name="OverrideTaxZone"></field>
+					<field name="TaxZoneID"></field>
+					<field name="TaxCalcMode"></field>
+					<field name="ExternalTaxExemptionNumber"></field>
+					<field name="AvalaraCustomerUsageType"></field>
+					<field name="BillSeparately"></field>
+					<field name="InvoiceNbr"></field>
+					<field name="InvoiceDate"></field>
+					<field name="TermsID"></field>
+					<field name="DueDate"></field>
+					<field name="DiscDate"></field>
+					<field name="FinPeriodID"></field>
+				</qp-fieldset>
+				<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+					<qp-fieldset id="groupPayment"
+								 view.bind="CurrentDocument"
+								 caption="Payment Information">
+						<field name="OverridePrepayment"></field>
+						<field name="PrepaymentReqPct"></field>
+						<field name="CuryPrepaymentReqAmt"></field>
+						<field name="PrepaymentReqSatisfied"></field>
+						<field name="PaymentMethodID"></field>
+						<field name="PMInstanceID"></field>
+						<field name="CashAccountID"></field>
+						<field name="ExtRefNbr"></field>
+					</qp-fieldset>
+					<qp-fieldset id="groupOwnership"
+								 view.bind="CurrentDocument"
+								 caption="Ownership">
+						<field name="WorkgroupID"></field>
+						<field name="OwnerID"></field>
+					</qp-fieldset>
+					<qp-fieldset id="groupOther" view.bind="CurrentDocument"
+								 caption="Other Information">
+						<field name="OrigOrderType" config-enabled.bind="false"></field>
+						<field name="OrigOrderNbr" config-allow-edit.bind="true" config-enabled.bind="false"></field>
+						<field name="Emailed" config-enabled.bind="false"></field>
+						<field name="Printed" config-enabled.bind="false"></field>
+					</qp-fieldset>
+				</div>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabShipping" caption="Shipping"
+				if.bind="Document.ShowShipmentsTab.value == true">
+			<div class="h-stack">
+				<qp-fieldset id="currentDocument_formDeliverySettings" wg-container view.bind="CurrentDocument"
+							 caption="Delivery Settings"
+							 class="col-sm-12 col-md-6 col-lg-4">
+					<field name="ShipVia"></field>
+					<field name="btnShopRates">
+						<div class="qp-field qp-field-wrapper">
+							<div class="label-container"></div>
+							<qp-button id="btnShopRates" class="control-container size-default" state.bind="ShopRates">
+							</qp-button>
+						</div>
+					</field>
+					<field name="WillCall"></field>
+					<field name="DeliveryConfirmation"></field>
+					<field name="EndorsementService"></field>
+					<field name="FreightClass"></field>
+					<field name="FOBPoint"></field>
+					<field name="Priority"></field>
+					<field name="ShipTermsID"></field>
+					<field name="ShipZoneID"></field>
+					<field name="Resedential"></field>
+					<field name="SaturdayDelivery"></field>
+					<field name="Insurance"></field>
+					<field name="UseCustomerAccount"></field>
+					<field name="GroundCollect"></field>
+				</qp-fieldset>
+				<div class="v-stack col-sm-12 col-md-6 col-lg-4" id="currentDocument_formShippingSettings" wg-container>
+					<qp-fieldset id="groupShippingIntercompany"
+								 view.bind="CurrentDocument"
+								 caption="Intercompany Purchase">
+						<field name="IntercompanyPOType"></field>
+						<field name="IntercompanyPONbr" config-allow-edit.bind="true" config-enabled.bind="false"></field>
+						<field name="IntercompanyPOReturnNbr" config-allow-edit.bind="true" config-enabled.bind="false"></field>
+					</qp-fieldset>
+					<qp-fieldset id="groupShippingOrder"
+								 view.bind="CurrentDocument"
+								 caption="Order Shipping Settings">
+						<field name="ShipDate"></field>
+						<field name="ShipSeparately"></field>
+						<field name="ShipComplete"></field>
+						<field name="CancelDate">
+							<qp-field control-state.bind="CurrentDocument.CancelDate" view.bind="CurrentDocument">
+							</qp-field>
+							<qp-field control-state.bind="CurrentDocument.Cancelled"
+									  view.bind="CurrentDocument"
+									  config-enabled.bind="false">
+							</qp-field>
+						</field>
+						<field name="DefaultSiteID"></field>
+					</qp-fieldset>
+				</div>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabAddresses" caption="Addresses"
+				if.bind="Document.ShowShipmentsTab.value == true">
+			<div class="h-stack">
+				<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+					<qp-fieldset id="Shipping_Contact_formD"
+								 view.bind="Shipping_Contact"
+								 caption="Ship-To Contact">
+						<field name="OverrideContact"></field>
+						<field name="FullName"></field>
+						<field name="Attention"></field>
+						<field name="Phone1"></field>
+						<field name="Email"></field>
+					</qp-fieldset>
+					<qp-fieldset id="Shipping_Address_formB"
+								 view.bind="Shipping_Address"
+								 caption="Ship-To Address">
+						<field name="OverrideAddress"></field>
+						<field name="LookupBtn">
+							<div class="qp-field qp-field-wrapper">
+								<div class="label-container"></div>
+								<qp-address-lookup class="control-container size-default" view.bind="Shipping_Address">
+								</qp-address-lookup>
+							</div>
+						</field>
+						<field name="AddressLine1"></field>
+						<field name="AddressLine2"></field>
+						<field name="City"></field>
+						<field name="CountryID"></field>
+						<field name="State"></field>
+						<field name="PostalCode"></field>
+						<field name="Latitude"></field>
+						<field name="Longitude"></field>
+						<field name="IsValidated" config-enabled.bind="false"></field>
+					</qp-fieldset>
+				</div>
+
+				<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+					<qp-fieldset id="Billing_Contact_formC"
+								 view.bind="Billing_Contact"
+								 caption="Bill-To Contact">
+						<field name="OverrideContact"></field>
+						<field name="FullName"></field>
+						<field name="Attention"></field>
+						<field name="Phone1"></field>
+						<field name="Email"></field>
+					</qp-fieldset>
+					<qp-fieldset id="Billing_Address_formA"
+								 view.bind="Billing_Address"
+								 caption="Bill-To Address">
+						<field name="OverrideAddress"></field>
+						<field name="LookupBtn">
+							<div class="qp-field qp-field-wrapper">
+								<div class="label-container"></div>
+								<qp-address-lookup class="control-container size-default" view.bind="Billing_Address">
+								</qp-address-lookup>
+							</div>
+						</field>
+						<field name="AddressLine1"></field>
+						<field name="AddressLine2"></field>
+						<field name="City"></field>
+						<field name="CountryID"></field>
+						<field name="State"></field>
+						<field name="PostalCode"></field>
+						<field name="Latitude"></field>
+						<field name="Longitude"></field>
+						<field name="IsValidated" config-enabled.bind="false"></field>
+					</qp-fieldset>
+				</div>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabShipments" caption="Shipments"
+				if.bind="Document.ShowShipmentsTab.value == true">
+			<qp-grid id="ShipmentList_grid5" view.bind="shipmentlist" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabChildOrders" caption="Child Orders"
+				if.bind="Document.ShowOrdersTab.value == true">
+			<qp-grid view.bind="BlanketOrderChildrenDisplayList" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabPayments" caption="Payments">
+			<div class="h-stack stretch">
+				<qp-grid view.bind="Adjustments" id="Adjustments_detgrid"
+						 class="stretch v-stack col-sm-6 col-md-8 col-lg-9">
+				</qp-grid>
+				<qp-fieldset id="paymentsSummary" view.bind="CurrentDocument"
+							 class="stretch col-sm-6 col-md-4 col-lg-3">
+					<field name="CuryUnreleasedPaymentAmt" config-enabled.bind="false"></field>
+					<field name="CuryCCAuthorizedAmt" config-enabled.bind="false"></field>
+					<field name="CuryPaidAmt" config-enabled.bind="false"></field>
+					<field name="CuryPaymentTotal" config-enabled.bind="false"></field>
+					<field name="CuryBilledPaymentTotal" config-enabled.bind="false"></field>
+					<field name="CuryTransferredToChildrenPaymentTotal" config-enabled.bind="false"></field>
+					<field name="CuryUnpaidBalance" config-enabled.bind="false"></field>
+					<field name="CuryUnbilledOrderTotal" config-enabled.bind="false"></field>
+				</qp-fieldset>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabRelations" caption="Relations">
+			<qp-grid view.bind="Relations" class="stretch">
+			</qp-grid>
+		</qp-tab>
+
+		<qp-tab id="tabTotals" caption="Totals">
+			<div class="h-stack">
+				<qp-fieldset id="groupTotalsFreightInfo" view.bind="CurrentDocument"
+							 caption="Freight Info"
+							 class="col-sm-12 col-md-6 col-lg-4">
+					<field name="OrderWeight" config-enabled.bind="false"></field>
+					<field name="OrderVolume" config-enabled.bind="false"></field>
+					<field name="PackageWeight" config-enabled.bind="false"></field>
+					<field name="CuryFreightCost"></field>
+					<field name="btnCheckFreightRate">
+						<div class="qp-field qp-field-wrapper">
+							<div class="label-container"></div>
+							<qp-button id="btnCheckFreightRate" class="control-container size-default" state.bind="model.viewModel.CalculateFreight">
+							</qp-button>
+						</div>
+					</field>
+					<field name="FreightCostIsValid"></field>
+					<field name="OverrideFreightAmount"></field>
+					<field name="FreightAmountSource"></field>
+					<field name="CuryFreightAmt"></field>
+					<field name="CuryPremiumFreightAmt"></field>
+					<field name="FreightTaxCategoryID"></field>
+				</qp-fieldset>
+				<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+					<qp-fieldset id="groupTotalsOrderTotals"
+								 view.bind="CurrentDocument"
+								 caption="Order Totals">
+						<field name="CuryLineTotal" config-enabled.bind="false"></field>
+						<field name="CuryMiscTot" config-enabled.bind="false"></field>
+						<field name="CuryTaxTotal" config-enabled.bind="false"></field>
+					</qp-fieldset>
+					<qp-fieldset id="groupTotalsCalculatedAmounts" view.bind="CurrentDocument"
+								 caption="Calculated Amounts and Quantities">
+						<field name="BlanketOpenQty" config-enabled.bind="false"></field>
+						<field name="OpenOrderQty" config-enabled.bind="false"></field>
+						<field name="CuryOpenOrderTotal" config-enabled.bind="false"></field>
+						<field name="UnbilledOrderQty" config-enabled.bind="false"></field>
+						<field name="CuryUnbilledOrderTotal" config-enabled.bind="false"></field>
+						<field name="CuryPaymentTotal" config-enabled.bind="false"></field>
+						<field name="CuryUnpaidBalance" config-enabled.bind="false"></field>
+					</qp-fieldset>
+				</div>
+			</div>
+		</qp-tab>
+		<!--qp-tab id="tabRotRutDetails" caption="ROT/RUT Details">
+
+		</qp-tab-->
+	</qp-tabbar>
+
+	<template id="addresses">
+		<qp-fieldset view.bind="Shipping_Address" class="col-sm-12 col-md-8 col-lg-6">
+			<field name="AddressLine1"></field>
+			<field name="AddressLine2"></field>
+			<field name="AddressLine3"></field>
+			<field name="City"></field>
+			<field name="CountryID"></field>
+			<field name="State"></field>
+			<field name="PostalCode"></field>
+			<field name="Latitude"></field>
+			<field name="Longitude"></field>
+			<field name="OverrideAddress"></field>
+			<field name="LookupBtn">
+				<div class="qp-field qp-field-wrapper">
+					<div class="label-container"></div>
+					<qp-address-lookup class="control-container size-default" view.bind="Shipping_Address">
+					</qp-address-lookup>
+				</div>
+			</field>
+		</qp-fieldset>
+	</template>
+
+	<qp-panel id="SOOrderLineSplittingExtension_lsselect" wg-container title="Line Details" auto-repaint="true" width="80vw" height="40vh">
+		<div class="h-stack">
+			<qp-fieldset id="fs-LotSerOptions-first" view.bind="SOOrderLineSplittingExtension_LotSerOptions"
+						 class="col-sm-12 col-md-6 col-lg-6">
+				<field name="UnassignedQty"></field>
+				<field name="Qty"></field>
+			</qp-fieldset>
+			<qp-fieldset id="fs-LotSerOptions-second" view.bind="SOOrderLineSplittingExtension_LotSerOptions"
+						 class="col-sm-12 col-md-6 col-lg-6">
+				<field name="StartNumVal"></field>
+				<field name="btnGenerate">
+					<div class="qp-field qp-field-wrapper">
+						<div class="label-container"></div>
+						<qp-button id="btnGenerate" class="control-container size-default" state.bind="SOOrderLineSplittingExtension_GenerateNumbers">
+						</qp-button>
+					</div>
+				</field>
+			</qp-fieldset>
+		</div>
+		<qp-grid class="stretch" id="gridSplits" view.bind="splits">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnOK" config.bind="{text: SysMessages.Confirm, dialogResult: 1}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="BlanketSplits" title="Add Blanket Sales Order Line" auto-repaint="true" width="80vw" height="40vh">
+		<qp-grid class="stretch" id="gridBlanketSplits" view.bind="BlanketSplits">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnAddBlanketLine" state.bind="AddBlanketLineOK">
+			</qp-button>
+			<qp-button id="btnAddClose" config.bind="{text: 'Add &amp; Close', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="SOLineDemand" title="Purchasing Settings" auto-repaint="true" width="80vw" height="40vh">
+		<qp-fieldset id="fs-SOLineDemand" wg-container view.bind="SOLineDemand"
+					 class="col-sm-12 col-md-6 col-lg-6">
+			<field name="POSource"></field>
+			<field name="VendorID"></field>
+			<field name="POSiteID"></field>
+		</qp-fieldset>
+		<qp-grid class="stretch" id="gridSupplyPOLines" view.bind="SupplyPOLines">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnOK" config.bind="{text: SysMessages.Confirm, dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="invoicesplits" title="Add Invoice Details" wg-container auto-repaint="true" width="80vw" height="60vh">
+		<div class="h-stack">
+			<qp-fieldset id="fs-addinvoicefilter-first" view.bind="addinvoicefilter"
+						 class="col-sm-12 col-md-6 col-lg-6">
+				<field name="DocType"></field>
+				<field name="RefNbr"></field>
+			</qp-fieldset>
+			<qp-fieldset id="fs-addinvoicefilter-second" view.bind="addinvoicefilter"
+						 class="col-sm-12 col-md-6 col-lg-6">
+				<field name="Expand"></field>
+			</qp-fieldset>
+		</div>
+		<qp-grid class="stretch" id="gridInvoicesplits" view.bind="invoicesplits">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnAddInvoice" state.bind="addInvoiceOK">
+			</qp-button>
+			<qp-button id="btnAddClose" config.bind="{text: 'Add &amp; Close', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnCancel" config.bind="{text: 'Cancel', dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="soparamfilter" title="Specify Shipment Parameters" auto-repaint="true">
+		<qp-fieldset id="soparamfilter_formcreateshipment" wg-container view.bind="soparamfilter">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnCreateShipmentOk" config.bind="{text: SysMessages.Confirm, dialogResult: 1, validateInput: true}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="recalcdiscountsfilter" title="Recalculate Prices" auto-repaint="true">
+		<qp-fieldset id="formRecalcDiscounts" wg-container view.bind="recalcdiscountsfilter"
+			class="col-sm-12 col-md-12 col-lg-12">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnRecalcOk" state.bind="RecalcOk" config.bind="{ dialogResult: 1, validateInput: true}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="copyparamfilter" title="Copy To" auto-repaint="true">
+		<qp-fieldset id="copyparamfilter_formcopyto" wg-container view.bind="copyparamfilter" class="col-sm-12 col-md-12 col-lg-12">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnCheckCopyParams" state.bind="CheckCopyParams"
+					   config.bind="{ dialogResult: 1}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="QuickPayment" title="Create Payment" auto-repaint="true">
+		<qp-fieldset id="QuickPayment_CreatePaymentFormView" wg-container view.bind="QuickPayment" class="col-sm-12 col-md-12 col-lg-12">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="CreatePaymentRefundButton" state.bind="CreatePaymentRefund" config.bind="{dialogResult: 3}">
+			</qp-button>
+			<qp-button id="CreatePaymentCaptureButton" state.bind="CreatePaymentCapture" config.bind="{dialogResult: 6}">
+			</qp-button>
+			<qp-button id="CreatePaymentAuthorizeButton" state.bind="CreatePaymentAuthorize" config.bind="{dialogResult: 7}">
+			</qp-button>
+			<qp-button id="CreatePaymentOKButton" state.bind="CreatePaymentOK" config.bind="{dialogResult: 1}">
+			</qp-button>
+			<qp-button id="CreatePaymentCancelButton" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="DocumentProperties" wg-container title="Shop For Rates" auto-repaint="true" width="80vw" height="60vh">
+		<div class="h-stack">
+			<qp-fieldset id="fs-OrderWeight" view.bind="DocumentProperties"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="OrderWeight"></field>
+			</qp-fieldset>
+			<qp-fieldset id="fs-PackageWeight" view.bind="DocumentProperties"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="PackageWeight"></field>
+			</qp-fieldset>
+		</div>
+		<qp-grid class="stretch" id="gridCarrierRates" view.bind="CarrierRates">
+		</qp-grid>
+		<qp-fieldset id="fs-IsManualPackage" view.bind="DocumentProperties"
+					 class="col-sm-12 col-md-6 col-lg-4">
+			<field name="IsManualPackage"></field>
+		</qp-fieldset>
+		<qp-grid class="stretch" id="gridPackages" view.bind="Packages">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnOK" config.bind="{text: SysMessages.Confirm, dialogResult: 1}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="copyparamfilter" title="Copy To" auto-repaint="true">
+		<qp-fieldset id="formCopyTo" wg-container view.bind="copyparamfilter" class="col-sm-12 col-md-12 col-lg-12">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnCheckCopyParams" state.bind="CheckCopyParams"
+					   config.bind="{ dialogResult: 1}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

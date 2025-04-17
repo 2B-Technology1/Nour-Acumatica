@@ -1,0 +1,40 @@
+{
+	"name": "root",
+	"private": true,
+	"scripts": {
+		"build": "node build-and-clean.js",
+		"build-dev": "gulp buildDev",
+		"getmodules": "npm ci & gulp getmodules",
+		"gettools": "gulp getTools",
+		"clearmodules": "gulp clearmodules",
+		"test": "gulp test",
+		"eslint": "eslint",
+		"eslint-all": "eslint . --ext .js,.ts"
+	},
+	"lint-staged": {
+		"*": [
+			"eslint",
+			"jest  --bail --findRelatedTests"
+		]
+	},
+	"devDependencies": {
+		"@types/gulp": "^4.0.9",
+		"@types/gulp-if": "0.0.34",
+		"@types/gulp-sourcemaps": "0.0.35",
+		"@typescript-eslint/eslint-plugin": "5.38.1",
+		"@typescript-eslint/parser": "5.38.1",
+		"del": "^6.0.0",
+		"eslint": "7.32.0",
+		"eslint-plugin-import": "2.26.0",
+		"eslint-plugin-unicorn": "31.0.0",
+		"gulp": "^4.0.2",
+		"gulp-exec": "^5.0.0",
+		"gulp-if": "^3.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"ts-jest": "27.1.4",
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.2"
+	},
+	"dependencies": {}
+}

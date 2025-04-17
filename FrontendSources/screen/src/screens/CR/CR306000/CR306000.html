@@ -1,0 +1,16 @@
+<template>
+	<qp-fieldset view.bind="Case" hide-caption="false" label-size="sm" control-size="l"
+		class="col-sm-12 col-md-7 col-lg-7">
+		<field name="CaseCD" config-allow-edit.bind="true"></field>
+		<field name="CaseClassID" config-allow-edit.bind="true"></field>
+		<field name="CustomerID" config-allow-edit.bind="true"></field>
+		<field name="ContactID" config-allow-edit.bind="true"></field>
+		<field name="Subject" config-allow-edit.bind="true"></field>
+	</qp-fieldset>
+	<qp-tabbar class="stretch" active-tab-id="tabDetails" id="mainTab">
+		<qp-tab id="casecurrent_tab" wg-container class="no-padding" caption.bind="TabHeaders.Details">
+			<qp-rich-text-editor id="edDescription" class="stretch" state.bind="Case.Description" wg-field
+				value.two-way="Case.Description.value"></qp-rich-text-editor>
+		</qp-tab>
+	</qp-tabbar>
+</template>

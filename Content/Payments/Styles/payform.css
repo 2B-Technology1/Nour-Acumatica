@@ -1,0 +1,394 @@
+.payForm {
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif
+  font-size: 16px;
+  width: 20em;
+  padding: 0 0.0em 0.0em 0.0em;
+  border: 0px solid #ccc;
+  background: var(--background-color, #f5f7f8);
+}
+
+.payForm * {
+  box-sizing: border-box;
+}
+
+.payForm.ACH {
+  width: 40em;
+}
+
+#payform_col_1.ACH, #payform_col_2.ACH {
+  width: calc(50% - 0.2em);
+  display: inline-block;
+  vertical-align: top;
+}
+#payform_col_1.ACH {
+  padding-right: 0.4em;
+}
+#payform_col_2.ACH {
+  padding-left: 0.4em;
+}
+
+.payForm textarea {
+  height: 100px;
+}
+
+#payform_title {}
+
+/* amount classes */
+
+#payform_amounts {
+  margin-bottom: 10px;
+}
+
+.payform_amount_label {
+  padding: 0;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.payform_amount_value {
+  font-size: 13px;
+ }
+
+/* field classes */
+
+.payform_field {
+  margin-bottom: 5px;
+  min-height: 49px;
+}
+
+.payform_field_label,
+#payform_errors label,
+.check_errors label {
+  padding: 0;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.payform_field_required_indicator {
+  color: #d9534f;
+}
+.payform_field_select {
+display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  padding: 0.3em;
+  border-radius: 0px;
+}
+
+.payform_field_input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+.payform_field p {
+  margin-bottom:5px;
+  margin-top:5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus,
+textarea:-moz-autofill,
+textarea:-moz-autofill:hover,
+textarea:-moz-autofill:focus,
+select:-moz-autofill,
+select:-moz-autofill:hover,
+select:-moz-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -moz-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input[disabled]:-webkit-autofill,
+input[disabled]:-webkit-autofill:hover,
+input[disabled]:-webkit-autofill:focus,
+textarea[disabled]:-webkit-autofill,
+textarea[disabled]:-webkit-autofill:hover,
+textarea[disabled]:-webkit-autofill:focus,
+select[disabled]:-webkit-autofill,
+select[disabled]:-webkit-autofill:hover,
+select[disabled]:-webkit-autofill:focus,
+input[disabled]:-moz-autofill,
+input[disabled]:-moz-autofill:hover,
+input[disabled]:-moz-autofill:focus,
+textarea[disabled]:-moz-autofill,
+textarea[disabled]:-moz-autofill:hover,
+textarea[disabled]:-moz-autofill:focus,
+select[disabled]:-moz-autofill,
+select[disabled]:-moz-autofill:hover,
+select[disabled]:-moz-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ebebe4 inset;
+  -moz-box-shadow: 0 0 0px 1000px #ebebe4 inset;
+}
+
+/* button classes */
+
+#payform_buttons {
+  text-align: right;
+}
+
+.payform_button {
+  padding: .6em;
+  border-radius: 0.0em;
+  font-weight: normal;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+}
+.payform_button_sm {
+  padding: 0.4em 0.6em;
+}
+.payform_button_xs {
+  padding: 0.1em 0.4em;
+}
+
+.payform_button:disabled {
+  opacity: 0.3;
+}
+
+.payform_button:focus {
+  outline: none;
+}
+
+.payform_button_action,
+.payform_button_editfield,
+.payform_button_override,
+.payform_button_update,
+.payform_button_void {
+  color: white;
+  background: var(--primary-color, #007ACC) !important;/*#027acc;*/
+  border: 1px solid/* #027acc*/;
+  border-color: var(--primary-color, #007ACC) !important;
+}
+
+.payform_button_action:hover,
+.payform_button_editfield:hover,
+.payform_button_override:hover,
+.payform_button_update:hover,
+.payform_button_void:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+#payform_buttons_process_methods,
+#payform_buttons_process_methods_ach {
+  margin-bottom: 10px;
+}
+
+.payform_button_process_method_active {
+  color: #fff;
+  background-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+  border-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+}
+
+.payform_button_process_method_active:hover {
+  background-color: #3399cc;
+  border-color: #3399cc;
+}
+
+.payform_button_process_method_inactive {
+  color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+  background-color: #fff;
+  border-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+}
+
+.payform_button_process_method_inactive:hover {
+  color: #fff;
+  background-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+  border-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+}
+
+.payform_button_delete {
+  color: #fff;
+  background-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+  border-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+}
+.payform_button_delete:hover {
+  background-color:#3399cc;
+  border-color:#3399cc;
+}
+.payform_button_resubmit {
+  color: #fff;
+  background-color: var(--primary-color, #007ACC) /*!important;#027acc;*/
+  border-color: var(--primary-color, #007ACC) !important;/*#027acc;*/
+}
+.payform_button_resubmit:hover {
+  background-color:#3399cc;
+  border-color:#3399cc;
+}
+.payform_button_space_right {
+  margin-right: 5px;
+}
+.payform_button_editfield {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.payform_button_scan_error {
+  float: right;
+  position: relative;
+  top: -4px;
+}
+
+/* alert classes */
+
+#payform_success, #payform_errors, .check_errors, .check_info, #successful_swipe {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0px;
+  display: none;
+}
+
+#payform_errors, .check_errors {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+#payform_errors p,
+.check_errors p {
+  margin: 3px 0px;
+}
+
+#payform_success, #successful_swipe {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.check_info {
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3;
+}
+.check_info p {
+  margin: 2px 0px;
+}
+select[disabled] {
+    cursor: not-allowed;
+}
+
+.has-error {
+  border: 1px solid #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.has-error:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ce8483;
+  outline: 0;
+}
+.has-success {
+  border: 1px solid #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.has-success:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #67b168;
+  outline: 0;
+}
+.well {
+  min-height: 20px;
+  padding: 9px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+/* check scanning */
+
+.payform_scanned_check_image_container {
+  display: inline-block;
+  width:50%;
+}
+.payform_scanned_check_image {
+  max-width: 100%;
+  max-height: 100px;
+  display: block;
+}
+#scanned_check_actions_top,
+#scanned_check_actions_bottom,
+#scanned_check_collapse_container,
+.scanned_check_toggle_container {
+  text-align: right;
+}
+#scanned_check_actions_top {
+  float: right;
+}
+.scanned_check_fields_container {
+  visibility: visible;
+  margin-bottom: 0px;
+}
+.scanned_check_fields_container.collapsed {
+  visibility: hidden;
+  height:0px;
+}
+.scanned_check_header_container,
+.scanned_check_images_container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+/* miscellaneous */
+
+.spacer {
+  height:7px;
+}
+
+ /* Table Styles */
+ 	
+ .payform_table {
+  font-size: 12px;
+  width:100%;
+  border-spacing: 0px;
+}
+.payform_table th, .payform_table td {
+  padding: 8px;
+  margin:0px;
+  text-align:left;
+}
+.payform_table th {
+  border-right:1px solid #ccc;
+}
+
+.payform_table>tbody>tr:nth-child(odd)>td, .payform_table>tbody>tr:nth-child(odd)>th {
+ background-color: #f5f5f5;
+}
+
+.payform_response_data_border {
+	border: 1px solid #ccc;
+}
+
+.payform_field_account_number_input_container {
+  position: relative;
+}
+.account-number-image {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+.account-number-input {
+  padding-left:30px !important;
+}
+.account-number-input-known {
+  padding-left:40px !important;
+}
+#account_number_image_icon {
+  color: #ccc;
+  font-size:1.5em;
+}

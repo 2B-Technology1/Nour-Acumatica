@@ -1,0 +1,69 @@
+<template>
+	<div class="v-stack">
+		<div class="gray-pane stretch">
+			<div class="v-stack">
+				<qp-fieldset id="templatesFieldset" class="col-sm-12 col-md-3 col-lg-3">
+					<field name="Templates.ContractCD"></field>
+					<field name="Templates.Description"></field>
+					<!-- <field name="Templates.Status" control-type="qp-check-box" config-true-value="A" config-false-value="D"></field> -->
+					<field name="Templates.Status"></field>
+				</qp-fieldset>
+				<qp-tabbar class="stretch" active-tab-id="SummaryTab" id="mainTab">
+					<qp-tab caption="Summary" id="SummaryTab">
+						<div class="h-stack">
+							<qp-fieldset id="currentTemplateFieldset" class="col-sm-12 col-md-4 col-lg-4">
+								<field name="CurrentTemplate.Type"></field>
+								<field name="CurrentTemplate.Duration"></field>
+								<field name="CurrentTemplate.DurationType"></field>
+								<field name="CurrentTemplate.Refundable"></field>
+								<field name="CurrentTemplate.RefundPeriod"></field>
+								<field name="CurrentTemplate.Days"></field>
+								<field name="CurrentTemplate.AutoRenew"></field>
+								<field name="CurrentTemplate.AutoRenewDays"></field>
+								<field name="CurrentTemplate.DaysBeforeExpiration"></field>
+								<field name="CurrentTemplate.GracePeriod"></field>
+								<field name="CurrentTemplate.Days"></field>
+								<field name="CurrentTemplate.CuryID"></field>
+								<field name="CurrentTemplate.EffectiveFrom"></field>
+								<field name="CurrentTemplate.DescontinuedAfter"></field>
+							</qp-fieldset>
+							<qp-fieldset id="billingFieldset" class="col-sm-12 col-md-4 col-lg-4">
+								<field name="Billing.Type"></field>
+								<!-- CTFormulaInvoiceEditor -->
+								<field name="Billing.InvoiceFormula"
+									control-type="qp-formula-editor"
+									config-parameters.bind="['@ActionInvoice']"
+									config-dynamic-fields.bind="['Contract', 'ContractTemplate', 'Customer', 'Location', 'ContractBillingSchedule', 'AccessInfo']"
+									config-dynamic-node-name.bind="'Objects'"
+									config-preload-dynamic-node.bind="true"
+								></field>
+								<!-- /CTFormulaInvoiceEditor -->
+								<!-- CTFormulaTransactionEditor -->
+								<field name="Billing.TranFormula"
+									control-type="qp-formula-editor"
+									config-parameters.bind="['@Prefix', '@ActionItem']"
+									config-dynamic-fields.bind="['Contract', 'Customer', 'ContractItem', 'ContractDetail', 'InventoryItem', 'ContractBillingSchedule', 'PMTran', 'UsageData', 'AccessInfo']"
+									config-dynamic-node-name.bind="'Objects'"
+									config-preload-dynamic-node.bind="true"
+								></field>
+								<!-- /CTFormulaTransactionEditor -->
+							</qp-fieldset>
+						</div>
+					</qp-tab>
+					<qp-tab caption="Details" id="DetailsTab">
+						<div class="h-stack stretch">
+							<qp-grid view.bind="ContractDetails" class="stretch">
+							</qp-grid>
+						</div>
+					</qp-tab>
+					<qp-tab caption="Contracts" id="ContractsTab">
+						<div class="h-stack stretch">
+							<qp-grid view.bind="Contracts" class="stretch">
+							</qp-grid>
+						</div>
+					</qp-tab>
+				</qp-tabbar>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,40 @@
+<template>
+	<qp-shrinking-panel id="formFASetup" class="h-stack" wg-container="FASetupRecord_form">
+		<div class="v-stack col-sm-12 col-md-6 col-lg-4">
+			<qp-fieldset view.bind="FASetupRecord" caption="Account Settings">
+				<field name="FAAccrualAcctID"></field>
+				<field name="FAAccrualSubID"></field>
+				<field name="ProceedsAcctID"></field>
+				<field name="ProceedsSubID"></field>
+			</qp-fieldset>
+			<qp-fieldset view.bind="FASetupRecord" caption="Other">
+				<field name="DeprHistoryView"></field>
+				<field name="DepreciateInDisposalPeriod"></field>
+				<field name="AccurateDepreciation"></field>
+				<field name="ReconcileBeforeDisposal"></field>
+				<field name="AllowEditPredefinedDeprMethod"></field>
+			</qp-fieldset>
+		</div>
+		<div class="v-stack col-sm-12 col-md-6 col-lg-6">
+			<qp-fieldset view.bind="FASetupRecord" caption="Numbering Settings">
+				<field name="RegisterNumberingID" config.bind="{allowEdit: true}"></field>
+				<field name="AssetNumberingID" config-allow-edit.bind="true"></field>
+				<field name="BatchNumberingID" config.bind="{allowEdit: true}"></field>
+				<field name="TagNumberingID" config.bind="{allowEdit: true}"></field>
+				<field name="CopyTagFromAssetID"></field>
+			</qp-fieldset>
+			<qp-fieldset view.bind="FASetupRecord" caption="Posting Settings">
+				<field name="AutoReleaseAsset"></field>
+				<field name="AutoReleaseDepr"></field>
+				<field name="AutoReleaseDisp"></field>
+				<field name="AutoReleaseTransfer"></field>
+				<field name="AutoReleaseReversal"></field>
+				<field name="AutoReleaseSplit"></field>
+				<field name="UpdateGL"></field>
+				<field name="AutoPost"></field>
+				<field name="SummPost"></field>
+				<field name="SummPostDepreciation"></field>
+			</qp-fieldset>
+		</div>
+	</qp-shrinking-panel>
+</template>

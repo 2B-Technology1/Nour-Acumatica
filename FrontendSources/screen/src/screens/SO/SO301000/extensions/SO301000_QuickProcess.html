@@ -1,0 +1,64 @@
+<template>
+	<qp-panel after="#soparamfilter" id="QuickProcessParameters" title.bind="QuickProcessPanelHeaders.ProcessOrder" auto-repaint="true" width="500px">
+		<div class="v-stack"  id="quickProcessParameters_fromQuickProcess" wg-container>
+			<qp-fieldset id="formQuickProcess1" view.bind="QuickProcessParameters"
+						class="col-sm-12 col-md-12 col-lg-12">
+				<field name="SiteID"></field>
+			</qp-fieldset>
+			<qp-fieldset id="formQuickProcess1" view.bind="QuickProcessParameters" caption="Shipment Date"
+						class="col-sm-12 col-md-12 col-lg-12">
+				<field name="ShipDateMode">
+					<div class="h-stack" style="align-items: flex-end; gap: 0">
+						<div class="label-container" style="margin-right: 13px"></div>
+						<qp-field control-state.bind="QuickProcessParameters.ShipDateMode"
+							no-label.bind="true"
+							control-type="qp-radio"
+							config-class.bind="'vertical col-sm-12 col-md-6 col-lg-2'"
+							config-options.bind="[{ value: 0, text: 'Today' }, { value: 1, text: 'Tomorrow' }, { value: 2, text: 'Custom' }]"></qp-field>
+						<qp-field control-state.bind="QuickProcessParameters.ShipDate"
+							no-label.bind="true"
+							config-class.bind="'col-sm-12 col-md-6 col-lg-3'"></qp-field>
+					</div>
+				</field>
+			</qp-fieldset>
+			<qp-fieldset id="formQuickProcessDeviceHub" view.bind="QuickProcessParameters" caption="Printing settings"
+							class="col-sm-12 col-md-12 col-lg-12">
+				<field name="PrintWithDeviceHub"></field>
+				<field name="DefinePrinterManually"></field>
+				<field name="PrinterID"></field>
+				<field name="NumberOfCopies" control-type="qp-text-editor"></field>
+			</qp-fieldset>
+			<qp-fieldset id="formQuickProcess2" view.bind="QuickProcessParameters" caption="Availability"
+						class="col-sm-12 col-md-12 col-lg-12">
+				<field name="GreenStatus"></field>
+				<field name="YellowStatus"></field>
+				<field name="RedStatus"></field>
+				<field name="AvailabilityMessage" config-type.bind="1" config-rows.bind="3" no-label="true"></field>
+			</qp-fieldset>
+			<div class="h-stack">
+				<qp-fieldset id="formQuickProcess3" view.bind="QuickProcessParameters" caption="Shipping"
+							class="col-sm-12 col-md-6 col-lg-6">
+					<field name="CreateShipment"></field>
+					<field name="PrintPickList"></field>
+					<field name="ConfirmShipment"></field>
+					<field name="PrintLabels"></field>
+					<field name="PrintConfirmation"></field>
+					<field name="UpdateIN"></field>
+				</qp-fieldset>
+				<qp-fieldset id="formQuickProcess4" view.bind="QuickProcessParameters" caption="Invoicing"
+							class="col-sm-12 col-md-6 col-lg-6">
+					<field name="PrepareInvoiceFromShipment"></field>
+					<field name="PrepareInvoice"></field>
+					<field name="PrintInvoice"></field>
+					<field name="EmailInvoice"></field>
+					<field name="ReleaseInvoice"></field>
+				</qp-fieldset>
+			</div>
+		</div>
+		<footer>
+			<qp-button id="btnQuickProcessOK"
+					   config.bind="{ text: 'Ok', hidden: false, action: 'QuickProcessOk', dialogResult: 1}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

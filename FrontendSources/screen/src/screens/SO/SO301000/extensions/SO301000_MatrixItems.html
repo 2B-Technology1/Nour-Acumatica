@@ -1,0 +1,28 @@
+<template>
+	<qp-panel after="#soparamfilter" id="Matrix" title.bind="MatrixItemsTabHeaders.AddMatrixItemMatrixView" auto-repaint="true" width="80vw" height="80vh">
+		<div class="h-stack">
+			<qp-fieldset id="fs-Header" wg-container view.bind="Header"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="TemplateItemID"></field>
+				<field name="ColAttributeID"></field>
+				<field name="RowAttributeID"></field>
+				<field name="ShowAvailable"></field>
+				<field name="SiteID"></field>
+			</qp-fieldset>
+			<qp-grid class="stretch col-sm-12 col-md-6 col-lg-8"
+					 id="matrix-attributes"
+					 view.bind="AdditionalAttributes">
+			</qp-grid>
+		</div>
+		<qp-grid class="stretch" id="grid-matrix" view.bind="Matrix">
+		</qp-grid>
+		<footer>
+			<qp-button id="InventoryMatrixLookupSmartPanelButtonToEntry" config.bind="{text: 'Open Table View', dialogResult: 6}">
+			</qp-button>
+			<qp-button id="InventoryMatrixLookupSmartPanelButtonOK" config.bind="{text: 'Add and Close', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="InventoryMatrixLookupSmartPanelButtonCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

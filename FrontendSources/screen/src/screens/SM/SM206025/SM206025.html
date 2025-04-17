@@ -1,0 +1,48 @@
+<template>
+	<div class="v-stack">
+		<div class="gray-pane stretch">
+			<div class="v-stack">
+				<qp-fieldset id="Mappings" class="col-sm-12 col-md-3 col-lg-3">
+					<field name="Mappings.Name"></field>
+					<field name="Mappings.ScreenID"></field>
+					<field name="Mappings.ProviderID"></field>
+					<field name="Mappings.ProviderObject"></field>
+				</qp-fieldset>
+				<qp-tabbar class="stretch" active-tab-id="MappingTab" id="mainTab">
+					<qp-tab caption="Mapping" id="MappingTab">
+						<qp-grid view.bind="FieldMappings" class="stretch">
+							<columns>
+								<column field="IsActive"></column>
+								<column field="ObjectName"></column>
+								<column field="FieldName"></column>
+								<column field="NeedCommit"></column>
+								<!-- PXFormulaCombo (edValue_SubstitutionKeysNeeded, edValue_InternalFieldsNeeded, edValue_ExternalFieldsNeeded in aspx) -->
+								<column field="Value" editor-type="qp-formula-editor" editor-config.bind="{
+									fullState: true,
+									editorType: 'qp-formula-editor',
+									editorConfig: {
+										comboBox: true,
+										applicationFunctions: false,
+										programFunctions: [
+											'IIf( expr, truePart, falsePart )',
+											'IsNull( value, nullValue )',
+											'NullIf( value1, value2 )',
+											'SubstituteAll( sourceField, substitutionList )',
+											'SubstituteListed( sourceField, substitutionList )',
+											'Switch( expr1, value1, expr2, value2, ...)'
+										],
+										fieldsControllerRoute: 'imports/fields',
+										dynamicNodeName: 'Fields',
+										preloadDynamicNode: true,
+										substitutionKeysControllerRoute: 'imports/substitution-keys'
+									}
+								}"></column>
+								<column field="IgnoreError"></column>
+							</columns>
+						</qp-grid>
+					</qp-tab>
+				</qp-tabbar>
+			</div>
+		</div>
+	</div>
+</template>

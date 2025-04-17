@@ -1,0 +1,11 @@
+.red-cell {
+	background-color: red !important;
+}
+
+.yellow-column {
+	background-color: yellow !important;
+}
+
+.bold-row {
+	font-weight: 800 !important;
+}

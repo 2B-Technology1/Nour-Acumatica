@@ -1,0 +1,64 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "module": "esnext",
+
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "target": "es6",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "plugins": [
+       {
+				 "transform": "transformers/updateDecorators",
+				 "rootDir": "./src"
+			 },
+       { "transform": "transformers/requireExtension" },
+       {
+				"transform": "transformers/generateLocalesDictionary",
+				"localizationFolder": "../../App_Data/TSLocalizations",
+				"localizationCommonFolder":"Common",
+				"dictionaryName": "screens.json",
+				"cleanDictionary": true
+			 },
+       {
+        "transform": "transformers/generateScreenInfos",
+        "sourceDirs": ["src/screens", "src/extensions"],
+				"screenInfoPath": "../../App_Data/TSScreenInfo",
+        "cache": { "dir": "node_modules/.cache/screenInfos" }
+       }
+    ],
+		"paths": {
+		"webpack": [
+			"node_modules/webpack"
+		],
+		"webpack/*": [
+			"node_modules/webpack/*"
+		]
+	}
+  },
+  "include": [
+    "src",
+    "test"
+	],
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+			"downlevelIteration": true,
+			"sourceMap": true
+		},
+		"ignore": ["node_modules"]
+	}
+}

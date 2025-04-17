@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "allowJs": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": ["es2017", "dom"],
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false
+
+  },
+
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}

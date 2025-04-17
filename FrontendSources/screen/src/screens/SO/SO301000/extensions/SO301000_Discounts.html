@@ -1,0 +1,10 @@
+<template>
+	<qp-tab after="#tabApprovals" id="tabDiscounts" caption="Discounts" if.bind="Document.ShowDiscountsTab.value == true">
+		<qp-fieldset id="groupDisableAutomaticDiscountCalculation" view.bind="CurrentDocument"
+			class="col-sm-12 col-md-6 col-lg-4">
+			<field name="DisableAutomaticDiscountCalculation"></field>
+		</qp-fieldset>
+		<qp-grid id="formDiscountDetail" view.bind="DiscountDetails" class="stretch">
+		</qp-grid>
+	</qp-tab>
+</template>

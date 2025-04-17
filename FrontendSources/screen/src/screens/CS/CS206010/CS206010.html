@@ -1,0 +1,88 @@
+<template>
+	<div class="v-stack">
+		<div class="gray-pane stretch">
+			<div class="v-stack">
+				<qp-fieldset id="rowSetFieldset" class="col-sm-12 col-md-3 col-lg-3">
+					<field name="RowSet.RowSetCode"></field>
+					<field name="RowSet.Type"></field>
+					<field name="RowSet.Description"></field>
+				</qp-fieldset>
+				<qp-grid view.bind="Rows" class="stretch">
+					<columns>
+						<column field="RowCode"></column>
+						<column field="Description"></column>
+						<column field="RowType"></column>
+						<!-- RMFormulaEditor -->
+						<column field="Formula" editor-type="qp-formula-editor" editor-config.bind="{
+							globals: true,
+							parameters: [
+								'@AccountCode',
+								'@AccountDescr',
+								'@BaseRowCode',
+								'@BookCode',
+								'@BranchName',
+								'@ColumnCode',
+								'@ColumnIndex',
+								'@ColumnSetCode',
+								'@ColumnText',
+								'@EndAccount',
+								'@EndAccountGroup',
+								'@EndBranch',
+								'@EndPeriod',
+								'@EndProject',
+								'@EndProjectTask',
+								'@EndSub',
+								'@Organization',
+								'@OrganizationName',
+								'@StartAccount',
+								'@StartAccountGroup',
+								'@StartBranch',
+								'@StartPeriod',
+								'@StartProject',
+								'@StartProjectTask',
+								'@StartSub',
+								'@RowCode',
+								'@RowIndex',
+								'@RowSetCode',
+								'@RowText',
+								'@UnitCode',
+								'@UnitSetCode',
+								'@UnitText',
+								'@Today',
+								'@WeekStart',
+								'@WeekEnd',
+								'@MonthStart',
+								'@MonthEnd',
+								'@QuarterStart',
+								'@QuarterEnd',
+								'@PeriodStart',
+								'@PeriodEnd',
+								'@YearStart',
+								'@YearEnd'
+							],
+							viewNameForParameters: 'Rows',
+							fieldNameForParameters: 'RowCode',
+							appendParametersOnValidationOnly: true,
+							programFunctions: ['Sort( from, to, column )', 'SortD( from, to, column )',	'Value( row, column )', 'RoundingDiff( from, to )'],
+							programFunctionsAppend: true
+						}"></column>
+						<column field="Format"></column>
+						<column field="DataSourceID"></column>
+						<column field="StyleID"></column>
+						<column field="PrintControl"></column>
+						<column field="Height"></column>
+						<column field="Indent"></column>
+						<column field="LineStyle"></column>
+						<column field="SuppressEmpty"></column>
+						<column field="HideZero"></column>
+						<column field="LinkedRowCode"></column>
+						<column field="BaseRowCode"></column>
+						<column field="ColumnGroupID"></column>
+						<column field="UnitGroupID"></column>
+						<column field="RowNbr" visible="false"></column>
+					</columns>
+				</qp-grid>
+			</div>
+		</div>
+	</div>
+</template>

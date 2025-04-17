@@ -1,0 +1,9 @@
+<template>
+	<field after="[name='Status']" name="DontApprove" ></field>
+	<field before="[name='OrderDate']" name="Approved" ></field>
+
+	<qp-tab after="#tabAddresses" id="tabApprovals" caption="Approvals">
+		<qp-grid view.bind="Approval" class="stretch">
+		</qp-grid>
+	</qp-tab>
+</template>

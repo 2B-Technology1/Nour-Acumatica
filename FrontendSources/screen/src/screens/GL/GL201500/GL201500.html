@@ -1,0 +1,35 @@
+<template>
+	<qp-shrinking-panel id="Ledger" class="h-stack">
+		<qp-fieldset id="Ledger"
+					 view.bind="LedgerRecords"
+					 label-size="sm"
+					 control-size="m"
+					 class="col-sm-12 col-md-6 col-lg-4">
+			<field name="LedgerCD"></field>
+			<field name="Descr"></field>
+			<field name="BalanceType"></field>
+			<field name="BaseCuryID"></field>
+			<field name="ConsolAllowed"></field>
+		</qp-fieldset>
+	</qp-shrinking-panel>
+	<qp-tabbar class="stretch" id="mainTab">
+		<qp-tab id="CompaniesTab" caption="Companies">
+			<qp-grid id="grdOrganizaionLinks" view.bind="OrganizationLedgerLinkWithOrganizationSelect" class="stretch">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="BranchesTab" caption="Branches">
+			<qp-grid id="grdBranches" view.bind="BranchesView" class="stretch">
+			</qp-grid>
+		</qp-tab>
+	</qp-tabbar>
+	<qp-panel id="ChangeIDDialog" title="Specify New ID">
+		<qp-fieldset view.bind="ChangeIDDialog">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnOK" text="OK" config.bind="{dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnCancel" text="Cancel" config.bind="{dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

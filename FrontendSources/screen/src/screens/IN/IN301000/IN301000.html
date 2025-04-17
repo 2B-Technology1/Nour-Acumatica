@@ -1,0 +1,107 @@
+<template>
+	<qp-shrinking-panel id="filterForm">
+		<div id="Filter_form" wg-container class="h-stack">
+			<div class="h-stack gray-pane col-sm-12 col-md-7 col-lg-9">
+				<qp-fieldset id="first" view.bind="receipt" class="col-sm-12 col-md-12 col-lg-5">
+					<field name="RefNbr"></field>
+					<field name="Status"></field>
+					<!--<field name="BranchID" config.bind="{visible: false}" ></field>-->
+					<field name="TranDate"></field>
+					<field name="FinPeriodID"></field>
+				</qp-fieldset>
+				<qp-fieldset id="second" view.bind="receipt" class="col-sm-12 col-md-12 col-lg-7">
+					<field name="TransferNbr"></field>
+					<field name="ExtRefNbr"></field>
+					<field name="TranDesc" config-type.bind="1" config-rows.bind="3"></field>
+				</qp-fieldset>
+			</div>
+			<qp-fieldset id="summary" view.bind="receipt" caption="Summary"
+						 class="summary-pane col-sm-12 col-md-5 col-lg-3">
+				<field name="TotalQty"></field>
+				<field name="ControlQty"></field>
+				<field name="TotalCost"></field>
+				<field name="ControlCost"></field>
+			</qp-fieldset>
+		</div>
+	</qp-shrinking-panel>
+	<qp-tabbar class="stretch" active-tab-id="tabDetails" id="mainTab">
+		<qp-tab id="tabDetails" caption.bind="TabHeaders.Details" class="stretch">
+			<qp-grid view.bind="transactions" class="stretch" topBarConfig.bind="{disableMenu: false}">
+			</qp-grid>
+		</qp-tab>
+		<qp-tab id="tabFinancial" caption.bind="TabHeaders.Financial" class="stretch">
+			<div class="h-stack">
+				<qp-fieldset id="groupFinancial" view.bind="CurrentDocument"
+							 class="col-sm-12 col-md-6 col-lg-4">
+					<field name="BatchNbr" config.bind="{allowEdit: true}"></field>
+					<field name="BranchID"></field>
+					<field name="BranchBaseCuryID"></field>
+				</qp-fieldset>
+			</div>
+		</qp-tab>
+		<qp-tab id="tabManufacturing" caption.bind="TabHeaders.Manufacturing" class="stretch">
+			<div class="h-stack">
+				<qp-fieldset id="groupManufacturing" view.bind="CurrentDocument"
+							 class="col-sm-12 col-md-6 col-lg-4">
+					<field name="AMBatNbr"></field>
+					<field name="AMDocType"></field>
+				</qp-fieldset>
+			</div>
+		</qp-tab>
+	</qp-tabbar>
+
+	<qp-panel id="LineSplittingExtension_lsselect" title="Line Details" auto-repaint="true" width="80vw" height="80vh">
+		<div class="h-stack">
+			<qp-fieldset id="ss-first" wg-container view.bind="LineSplittingExtension_LotSerOptions"
+						 class="col-sm-12 col-md-6 col-lg-6">
+				<field name="UnassignedQty"></field>
+				<field name="Qty"></field>
+			</qp-fieldset>
+			<qp-fieldset id="ss-second" wg-container view.bind="LineSplittingExtension_LotSerOptions"
+						 class="col-sm-12 col-md-6 col-lg-6">
+				<field name="StartNumVal"></field>
+				<field name="btnGenerateNbr">
+					<div class="qp-field qp-field-wrapper">
+						<div class="label-container"></div>
+						<qp-button id="btnGenerate" class="control-container size-default" state.bind="LineSplittingExtension_GenerateNumbers">
+						</qp-button>
+					</div>
+				</field>
+			</qp-fieldset>
+		</div>
+		<qp-grid class="stretch" id="gridSplits" view.bind="splits">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnOK" config.bind="{text: SysMessages.Confirm, dialogResult: 1}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel id="sitestatus" title="Inventory Lookup" auto-repaint="true" width="80vw" height="80vh">
+		<div class="h-stack">
+			<qp-fieldset id="ss-first" wg-container view.bind="sitestatusfilter"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="Inventory"></field>
+				<field name="BarCode"></field>
+				<field name="ItemClass"></field>
+				<field name="OnlyAvailable"></field>
+			</qp-fieldset>
+			<qp-fieldset id="ss-second" wg-container view.bind="sitestatusfilter"
+						 class="col-sm-12 col-md-6 col-lg-4">
+				<field name="SubItem"></field>
+				<field name="SiteID"></field>
+				<field name="LocationID"></field>
+			</qp-fieldset>
+		</div>
+		<qp-grid class="stretch" id="gridSiteStatusSelected" view.bind="sitestatus">
+		</qp-grid>
+		<footer>
+			<qp-button id="btnAdd" state.bind="AddInvSelBySite">
+			</qp-button>
+			<qp-button id="btnAddClose" config.bind="{text: 'Add &amp; Close', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

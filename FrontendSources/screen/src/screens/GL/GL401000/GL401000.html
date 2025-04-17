@@ -1,0 +1,16 @@
+<template>
+	<qp-shrinking-panel id="formFilter" class="h-stack" wg-container="Filter_form">
+		<qp-fieldset id="col1" view.bind="Filter" label-size="sm" class="col-sm-12 col-md-6 col-lg-4">
+			<field name="OrgBAccountID" control-type="qp-branch-selector"></field>
+			<field name="LedgerID"></field>
+			<field name="FinPeriodID"></field>
+		</qp-fieldset>
+		<qp-fieldset id="col2" view.bind="Filter" label-size="sm" class="col-sm-12 col-md-6 col-lg-4">
+			<field name="AccountClassID"></field>
+			<field name="SubCD" control-type="qp-segmented-selector"></field>
+			<field name="UseMasterCalendar"></field>
+		</qp-fieldset>
+	</qp-shrinking-panel>
+	<qp-grid id="grid" view.bind="EnqResult" class="stretch">
+	</qp-grid>
+</template>

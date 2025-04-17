@@ -1,0 +1,115 @@
+<template>
+	<style type="text/css">
+		qp-fieldset
+		{
+			width: 100%;
+			max-width: 400px;
+		}
+
+		.help-button button
+		{
+			color: #007ACC;
+			font-size: 16px;
+			width: 30px;
+			min-width: 30px;
+			background-color: transparent;
+			border: none;
+			margin-left: 5px;
+		}
+
+		textarea#edFilter-ErrorMessage
+		{
+			height: 54px;
+			overflow: hidden;
+		}
+	</style>
+
+	<div class="actions-container" >
+		<qp-button text.bind="back.text ||  'Back'" hidden.bind="!back.visible || !back.text"
+			enabled.bind="!!back.enabled" config.bind='{"id": "btnBack", "action": "back"}'>
+		</qp-button>
+	</div>
+
+	<qp-fieldset id="headerContainer" view.bind="Filter" label-size="s" wg-container>
+		<field name="OutgoingEmail"></field>
+		<field name="ContactID">
+			<div style="position:relative;display: flex;">
+				<qp-field control-state.bind="Filter.ContactID" control-size="sm" ></qp-field>
+				<qp-button config.bind='{ "id": "btnHelp", "imageUrl": "fa@help" }' class="help-button" click.delegate="onHelpClick($event)"></qp-button>
+			</div>
+		</field>
+		<field name="EMail"></field>
+		<field name="ErrorMessage"></field>
+	</qp-fieldset>
+
+	<qp-fieldset id="detailsContainer" view.bind="Filter" label-size="s" group="Info" caption.bind="msg.TitleInfo" wg-container>
+		<field name="DuplicateFilesMsg"></field>
+		<field name="NewContactFirstName"></field>
+		<field name="NewContactLastName"></field>
+		<field name="NewContactEmail"></field>
+		<field name="Salutation"></field>
+		<field name="BAccountID"></field>
+		<field name="FullName"></field>
+		<field name="LeadSource"></field>
+		<field name="ContactSource"></field>
+		<field name="CountryID"></field>
+		<field name="EntityID"></field>
+	</qp-fieldset>
+
+	<qp-longrun-indicator config.bind='longRunConfig'></qp-longrun-indicator>
+
+	<div if.bind="APBillAttachments && (Filter.Operation.value == 'CreateAPDocument' || Filter.Operation.value == 'ViewAPDocument')">
+		<span class="ou-file-header" id="edPanelCaption">${chooseDocumentLabel}</span>
+		<template repeat.for="attachment of APBillAttachments">
+			<div style="position:relative;display: flex;">
+				<qp-field control-id="${attachment.Id.value}_Selected" control-state.bind="attachment.Selected" control-size="xxs" ></qp-field>
+				<div id="${attachment.Id.value}_Name" class="ou-file-name">${attachment.Name.value}</div>
+			</div>
+		</template>
+	</div>
+
+	<qp-fieldset view.bind="NewCase" label-size="s" caption.bind="msg.TitleNewCase" wg-container>
+	</qp-fieldset>
+
+	<qp-fieldset view.bind="NewOpportunity" label-size="s" caption.bind="msg.TitleNewOpportunity" wg-container>
+   </qp-fieldset>
+
+	<qp-fieldset view.bind="NewActivity" label-size="s" caption.bind="msg.TitleNewActivity" wg-container>
+	</qp-fieldset>
+
+	<qp-fieldset view.bind="SourceMessage" label-size="s" caption.bind="msg.TitleSourceMessage" wg-container>
+	</qp-fieldset>
+
+	<div class="actions-container" if.bind="actionNames.length > 0">
+		<template repeat.for="an of actionNames">
+			<template if.bind="an=='Back' || an=='back' || an=='LogOut' || an=='logOut'">
+			</template>
+			<template else>
+				<let action.bind="actions.get(an)"></let>
+				<qp-button text.bind="action.text || an" hidden.bind="!action.visible || !action.text"
+					enabled.bind="action.enabled" config.bind='{"id": "btn" + an, "action": an}'>
+				</qp-button>
+			</template>
+		</template>
+	</div>
+
+	<div class="gray-box" if.bind="accessDenied">
+		<div class="img">
+			<img src="../../../../static/warn.png" ></img>
+		</div>
+		<div class="err-msg">
+			${msg.AccessDenied}
+		</div>
+	</div>
+
+	<div class="actions-container">
+		<qp-button if.bind="logOut"
+			text.bind="logOut.text || 'Sign Out'" hidden.bind="!logOut.visible || !logOut.text"
+			enabled.bind="!!logOut.enabled" config.bind='{"id": "btnLogOut", "action": "logOut"}'>
+		</qp-button>
+
+		<qp-button if.bind="accessDenied"
+			click.delegate="logOutAction()" text.bind="msg.SignOut" config.bind='{"id": "btnLogOut"}'>
+		</qp-button>
+	</div>
+</template>

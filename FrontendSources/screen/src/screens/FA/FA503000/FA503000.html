@@ -1,0 +1,9 @@
+<template>
+	<qp-shrinking-panel>
+		<qp-fieldset id="form" class="col-sm-12 col-md-6 col-lg-4" view.bind="Filter">
+			<field name="Origin"></field>
+		</qp-fieldset>
+	</qp-shrinking-panel>
+	<qp-grid id="grid" class="stretch" view.bind="FADocumentList">
+	</qp-grid>
+</template>

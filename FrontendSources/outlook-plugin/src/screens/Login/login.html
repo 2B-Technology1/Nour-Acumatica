@@ -1,0 +1,23 @@
+<template>
+	<require from="./login.css"></require>
+	<form class='login-form'>
+		<select value.bind="selectedLocale" id="cmbLang" if.bind="locales && locales.length > 1">
+			<option repeat.for="locale of locales" model.bind="locale.Name">
+				${locale.DisplayName}
+			</option>
+		</select>
+		<br/><br/>
+
+		<input type="text" name="username" value.bind="username" id="txtUser" required placeholder="My Username">
+		<input type="password" value.bind="password" id="txtPass" required placeholder="My Password">
+
+		<select value.bind="selectedCompany" id="cmbCompany" if.bind="companies && companies.length > 1">
+			<option repeat.for="company of companies" value.bind="company">
+				${company}
+			</option>
+		</select>
+		<button click.delegate="logIn()" disabled.bind="!username || !password" id="btnLogin" type="submit">
+			${msg.SignIn}
+		</button>
+	</form>
+</template>

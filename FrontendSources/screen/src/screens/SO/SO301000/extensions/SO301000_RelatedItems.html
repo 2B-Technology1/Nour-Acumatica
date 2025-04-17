@@ -1,0 +1,67 @@
+<template>
+	<qp-panel after="#copyparamfilter" id="RelatedItemsFilter" title.bind="RelatedItemsPanelHeaders.AddRelatedItems" auto-repaint="true" width="80vw" height="80vh">
+		<div class="h-stack">
+			<qp-fieldset id="ss-first" wg-container view.bind="RelatedItemsFilter"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="InventoryID"></field>
+			</qp-fieldset>
+			<qp-fieldset id="ss-second" wg-container view.bind="RelatedItemsFilter"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="AvailableQty"></field>
+			</qp-fieldset>
+			<qp-fieldset id="mx-third" wg-container view.bind="RelatedItemsFilter"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="UOM"></field>
+			</qp-fieldset>
+		</div>
+		<div class="h-stack">
+			<qp-fieldset id="mx-fourth" wg-container view.bind="RelatedItemsFilter"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="CuryUnitPrice"></field>
+				<field name="Qty"></field>
+				<field name="CuryExtPrice"></field>
+			</qp-fieldset>
+			<qp-fieldset id="mx-fifth" wg-container view.bind="RelatedItemsFilter"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="CuryID"></field>
+				<field name="UOM"></field>
+				<field name="CuryID"></field>
+			</qp-fieldset>
+			<qp-fieldset id="mx-sixth" wg-container view.bind="RelatedItemsFilter"
+						 hide-caption="true" class="col-sm-12 col-md-6 col-lg-4">
+				<field name="SiteID"></field>
+				<field name="KeepOriginalPrice"></field>
+				<field name="OnlyAvailableItems"></field>
+				<field name="ShowForAllWarehouses"></field>
+			</qp-fieldset>
+		</div>
+		<qp-tabbar class="stretch" active-tab-id="tabAllRelatedItems" id="tabAllRelatedItems">
+			<qp-tab id="tabAllRelatedItems" caption="All Related Items" class="stretch">
+				<qp-grid view.bind="AllRelatedItems" class="stretch">
+				</qp-grid>
+			</qp-tab>
+			<qp-tab id="tabSubstituteItems" caption="Substitute Items" class="stretch">
+				<qp-grid view.bind="SubstituteItems" class="stretch" topBarConfig.bind="{disableMenu: false}">
+				</qp-grid>
+			</qp-tab>
+			<qp-tab id="tabUpSellItems" caption="Up-Sell Items" class="stretch">
+				<qp-grid view.bind="UpSellItems" class="stretch" topBarConfig.bind="{disableMenu: false}">
+				</qp-grid>
+			</qp-tab>
+			<qp-tab id="tabCrossSellItems" caption="Cross-Sell Items" class="stretch">
+				<qp-grid view.bind="CrossSellItems" class="stretch" topBarConfig.bind="{disableMenu: false}">
+				</qp-grid>
+			</qp-tab>
+			<qp-tab id="tabOtherRelatedItems" caption="Other Related Items" class="stretch">
+				<qp-grid view.bind="OtherRelatedItems" class="stretch" topBarConfig.bind="{disableMenu: false}">
+				</qp-grid>
+			</qp-tab>
+		</qp-tabbar>
+		<footer>
+			<qp-button id="RelatedItemsPanelButtonOK" config.bind="{text: 'Add and Close', dialogResult: 1}">
+			</qp-button>
+			<qp-button id="RelatedItemsPanelButtonCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

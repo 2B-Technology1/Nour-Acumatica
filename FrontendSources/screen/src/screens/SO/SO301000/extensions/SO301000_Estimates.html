@@ -1,0 +1,31 @@
+<template>
+	<qp-tab after="#tabDetails" id="tabEstimates" caption="Estimates">
+		<qp-grid id="gridEstimates" view.bind="OrderEstimateRecords" class="stretch" topBarConfig.bind="{disableMenu: false}">
+		</qp-grid>
+	</qp-tab>
+
+	<field before="[name='CuryLineTotal']" name="AMCuryEstimateTotal" config-enabled.bind="false"></field>
+	<field before="[name='BlanketOpenQty']" name="AMEstimateQty" config-enabled.bind="false"></field>
+
+	<qp-panel after="#copyparamfilter" id="OrderEstimateItemFilter" title="Add Estimate" auto-repaint="true" >
+		<qp-fieldset id="formAddOrderEstimateItem" wg-container view.bind="OrderEstimateItemFilter" class="col-sm-12 col-md-12 col-lg-12">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnAddEstButtonOk" config.bind="{text: SysMessages.Confirm, dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnAddEstButtonCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 2}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+
+	<qp-panel after="#copyparamfilter" id="SelectedEstimateRecord" title="Quick Estimate" auto-repaint="true">
+		<qp-fieldset id="formQuickEstimateItem" wg-container view.bind="SelectedEstimateRecord" class="col-sm-12 col-md-12 col-lg-12">
+		</qp-fieldset>
+		<footer>
+			<qp-button id="btnQuickEstButtonOk" config.bind="{text: SysMessages.Confirm, dialogResult: 1}">
+			</qp-button>
+			<qp-button id="btnQuickEstButtonCancel" config.bind="{text: SysMessages.Cancel, dialogResult: 3}">
+			</qp-button>
+		</footer>
+	</qp-panel>
+</template>

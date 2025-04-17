@@ -1,0 +1,148 @@
+<template>
+	<div class="v-stack">
+		<div class="gray-pane stretch">
+			<div class="v-stack">
+				<qp-fieldset id="designsFieldset" class="col-sm-12 col-md-3 col-lg-3">
+					<field name="Designs.Name"></field>
+				</qp-fieldset>
+				<qp-tabbar class="stretch" active-tab-id="ResultsGridTab" id="mainTab">
+					<qp-tab caption="Tables" id="TablesTab">
+						<qp-grid view.bind="Tables" class="stretch" style="flex: 1">
+						</qp-grid>
+					</qp-tab>
+					<qp-tab caption="Relations" id="RelationsTab">
+						<qp-grid view.bind="Relations" class="stretch" style="flex: 1">
+						</qp-grid>
+						<qp-grid view.bind="JoinConditions" class="stretch" style="flex: 1">
+							<columns>
+								<column field="OpenBrackets" full-state="true"></column>
+								<!-- PXFormulaCombo (edOns_RootFieldsNeeded in aspx) -->
+								<column field="ParentField" full-state="true" editor-type="qp-formula-editor" editor-config.bind="{
+									comboBox: true,
+									applicationFunctions: false,
+									programFunctions: [
+										'IIf( expr, truePart, falsePart )',
+										'IsNull( value, nullValue )',
+										'NullIf( value1, value2 )',
+										'SubstituteAll( sourceField, substitutionList )',
+										'SubstituteListed( sourceField, substitutionList )',
+										'Switch( expr1, value1, expr2, value2, ...)'
+									],
+									fieldsControllerRoute: 'inquiry/designer/fields-in-relation',
+									dynamicNodeName: 'Fields'
+								}"></column>
+								<column field="Condition" full-state="true"></column>
+								<!-- PXFormulaCombo (edOns_RootFieldsNeeded in aspx) -->
+								<column field="ChildField" full-state="true" editor-type="qp-formula-editor" editor-config.bind="{
+									comboBox: true,
+									applicationFunctions: false,
+									programFunctions: [
+										'IIf( expr, truePart, falsePart )',
+										'IsNull( value, nullValue )',
+										'NullIf( value1, value2 )',
+										'SubstituteAll( sourceField, substitutionList )',
+										'SubstituteListed( sourceField, substitutionList )',
+										'Switch( expr1, value1, expr2, value2, ...)'
+									],
+									fieldsControllerRoute: 'inquiry/designer/fields-in-relation',
+									dynamicNodeName: 'Fields'
+								}"></column>
+								<column field="CloseBrackets" full-state="true"></column>
+								<column field="Operation" full-state="true"></column>
+							</columns>
+						</qp-grid>
+					</qp-tab>
+					<qp-tab caption="Results Grid" id="ResultsGridTab">
+						<div class="v-stack">
+							<qp-fieldset id="currentDesignFieldset" class="col-sm-12 col-md-4 col-lg-4">
+								<!-- PXFormulaCombo without dropdown (edValue_RootFieldsNeeded in aspx) -->
+								<field name="CurrentDesign.RowStyleFormula" control-type="qp-link-editor"></field>
+								<field name="CurrentDesign.RowStyleFormula"
+									control-type="qp-formula-editor"
+									config-application-functions.bind="false"
+									config-program-functions.bind="['IIf( expr, truePart, falsePart )', 'IsNull( value, nullValue )', 'NullIf( value1, value2 )', 'SubstituteAll( sourceField, substitutionList )', 'SubstituteListed( sourceField, substitutionList )', 'Switch( expr1, value1, expr2, value2, ...)']"
+									config-fields-controller-route.bind="'inquiry/fields'"
+									config-dynamic-node-name.bind="'Fields'"
+									config-condition-styles.bind="['default', 'bad', 'good', 'neutral', 'bold', 'italic', 'red', 'red60', 'red40', 'red20', 'red0', 'orange', 'orange60', 'orange40', 'orange20', 'orange0', 'green', 'green60', 'green40', 'green20', 'green0', 'blue', 'blue60', 'blue40', 'blue20', 'blue0', 'yellow', 'yellow60', 'yellow40', 'yellow20', 'yellow0', 'purple', 'purple60', 'purple40', 'purple20', 'purple0']"
+								></field>
+								<!-- /PXFormulaCombo without dropdown -->
+							</qp-fieldset>
+							<qp-grid view.bind="Results" class="stretch">
+								<columns>
+									<column field="IsActive"></column>
+									<column field="ObjectName" full-state="true"></column>
+									<!-- PXFormulaCombo (edValue_RootFieldsNeeded in aspx) -->
+									<column field="Field" full-state="true" editor-type="qp-formula-editor" editor-config.bind="{
+										comboBox: true,
+										applicationFunctions: false,
+										programFunctions: [
+											'IIf( expr, truePart, falsePart )',
+											'IsNull( value, nullValue )',
+											'NullIf( value1, value2 )',
+											'SubstituteAll( sourceField, substitutionList )',
+											'SubstituteListed( sourceField, substitutionList )',
+											'Switch( expr1, value1, expr2, value2, ...)'
+										],
+										fieldsControllerRoute: 'inquiry/designer/fields',
+										dynamicNodeName: 'Fields'
+									}"></column>
+									<column field="SchemaField" full-state="true"></column>
+									<column field="Width"></column>
+									<!-- PXFormulaCombo (edValue_RootFieldsNeeded in aspx) -->
+									<column field="StyleFormula" full-state="true" editor-type="qp-formula-editor" editor-config.bind="{
+										comboBox: true,
+										applicationFunctions: false,
+										programFunctions: [
+											'IIf( expr, truePart, falsePart )',
+											'IsNull( value, nullValue )',
+											'NullIf( value1, value2 )',
+											'SubstituteAll( sourceField, substitutionList )',
+											'SubstituteListed( sourceField, substitutionList )',
+											'Switch( expr1, value1, expr2, value2, ...)'
+										],
+										fieldsControllerRoute: 'inquiry/designer/fields',
+										dynamicNodeName: 'Fields',
+										conditionStyles: ['default', 'bad', 'good', 'neutral', 'bold', 'italic', 'red', 'red60', 'red40', 'red20', 'red0', 'orange', 'orange60', 'orange40', 'orange20', 'orange0', 'green', 'green60', 'green40', 'green20', 'green0', 'blue', 'blue60', 'blue40', 'blue20', 'blue0', 'yellow', 'yellow60', 'yellow40', 'yellow20', 'yellow0', 'purple', 'purple60', 'purple40', 'purple20', 'purple0']
+									}"></column>
+									<column field="IsVisible"></column>
+									<column field="DefaultNav"></column>
+									<column field="NavigationNbr" full-state="true"></column>
+								</columns>
+							</qp-grid>
+						</div>
+					</qp-tab>
+					<qp-tab caption="Navigation" id="NavigationTab">
+						<div class="h-stack stretch">
+							<qp-grid view.bind="NavigationScreens" class="stretch" style="flex: 0.25; min-width: 0;">
+							</qp-grid>
+							<qp-grid view.bind="NavigationParameters" class="stretch" style="flex: 1; min-width: 0;">
+								<columns>
+									<column field="FieldName" full-state="true"></column>
+									<!-- PXFormulaCombo (edNavParam_RootFieldsNeeded in aspx) -->
+									<column field="ParameterName" full-state="true" editor-type="qp-formula-editor" editor-config.bind="{
+										comboBox: true,
+										applicationFunctions: false,
+										programFunctions: [
+											'IIf( expr, truePart, falsePart )',
+											'IsNull( value, nullValue )',
+											'NullIf( value1, value2 )',
+											'SubstituteAll( sourceField, substitutionList )',
+											'SubstituteListed( sourceField, substitutionList )',
+											'Switch( expr1, value1, expr2, value2, ...)'
+										],
+										fieldsControllerRoute: 'inquiry/designer/navigation-fields',
+										dynamicNodeName: 'Fields & Parameters'
+									}"></column>
+									<column field="IsExpression"></column>
+									<column field="DesignID" visible="false"></column>
+									<column field="LineNbr" visible="false"></column>
+									<column field="NavigationScreenLineNbr" visible="false"></column>
+								</columns>
+							</qp-grid>
+						</div>
+					</qp-tab>
+				</qp-tabbar>
+			</div>
+		</div>
+	</div>
+</template>

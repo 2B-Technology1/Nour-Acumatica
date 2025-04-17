@@ -1,0 +1,143 @@
+
+.splash {
+	text-align: center;
+	box-sizing: border-box;
+	background: transparent;
+	z-index: 10000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: wait;
+}
+.splash.initialization {
+	background: white;
+}
+
+.splash .message {
+	margin-top: 10vh;
+	font-size: 36px;
+	line-height: 36px;
+	text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: black;
+	animation: message 30s linear;
+
+	display: inline-block;
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes message {
+  0% { color: white; text-shadow: none; }
+  66% { color: white; text-shadow: none;}
+  100% { color: black; text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;}
+}
+
+
+.splash.initialization::before {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-top-color: rgba(0, 0, 0, 0.6);
+	animation: spinner .6s linear infinite;
+	-webkit-animation: spinner .6s linear infinite;
+	top: 50%;
+	left: 50%;
+	width: 28px;
+	height: 28px;
+	margin-top: -16px;
+	margin-left: -16px;
+}
+
+.actions-container
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5px;
+}
+
+.actions-container > *
+{
+	width: 100%;
+	padding-bottom: 5px;
+	max-width: 400px;
+}
+
+@media print {
+  .page-host {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    overflow-y: inherit;
+    overflow-x: inherit;
+  }
+}
+
+section {
+  margin: 0 20px;
+}
+
+/* animate page transitions */
+section.au-enter-active {
+  animation: fadeInRight 1s;
+}
+
+div.au-stagger {
+  /* 50ms will be applied between each successive enter operation */
+  animation-delay: 50ms;
+}
+
+/* animation definitions */
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: none
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

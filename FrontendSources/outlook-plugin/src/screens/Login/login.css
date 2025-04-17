@@ -1,0 +1,62 @@
+.login-form 
+{ 
+	padding: 12px; 
+	max-width: 500px;
+}
+ 
+.login-form input,
+.login-form button,
+.login-form select 
+{
+	box-sizing: border-box;
+
+	width: 100%;
+	margin: 6px 0;
+	color: rgba(0, 0, 0, 0.64);
+	font-size: 19px;
+	font-weight: 500;
+
+	padding: 6px 8px;
+	border: solid 1px RGBA(0, 0, 0, 0.12);
+	border-radius: 3px;
+}
+
+.login-form #cmbLang
+{
+	margin-bottom: 32px;
+}
+.login-form #cmbCompany
+{
+	margin-top: 32px;
+}
+ 
+.login-form input::placeholder {	font-style: normal; }
+ 
+.login-form button 
+{
+	color: #444;
+	cursor: pointer;
+	padding: 5px;
+	background-color: #fff;
+
+	border: solid 1px #027ACC;
+	border-radius: 5px;
+	transition: all .1s ease-in-out;
+	-webkit-appearance: none;
+}
+
+.login-form button:focus,
+.login-form button:hover 
+{
+	color: white;
+	background-color: #027ACC;
+	border: solid 1px #027ACC;
+}
+
+.login-form button:disabled 
+{
+	color: #444;
+	cursor: default;
+	background-color: #eee;
+	border: solid 1px #ccc;
+}
