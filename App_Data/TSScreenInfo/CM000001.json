@@ -1,0 +1,275 @@
+{
+	"name": "CM000001",
+	"graphName": "Customization.CustomizationGraph",
+	"primaryView": "FirstSelect",
+	"featureInstalled": [],
+	"actions": [
+		{
+			"name": "actionSelectWorkingProject",
+			"decorators": []
+		}
+	],
+	"views": [
+		{
+			"name": "FirstSelect",
+			"dacClassName": {
+				"name": "FirstSelect"
+			},
+			"displayName": "FirstSelect",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Key",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "FilterWorkingProject",
+			"dacClassName": {
+				"name": "FilterWorkingProject"
+			},
+			"displayName": "FilterWorkingProject",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Name",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "NewProject",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "NeedUnpublish",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "ViewElemInfo",
+			"dacClassName": {
+				"name": "ViewElemInfo"
+			},
+			"displayName": "ViewElemInfo",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AspxControl",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [],
+					"stateType": null,
+					"name": "CacheType",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [],
+					"stateType": null,
+					"name": "FieldName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [],
+					"stateType": null,
+					"name": "ViewName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [],
+					"stateType": null,
+					"name": "GraphName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [],
+					"stateType": null,
+					"name": "ActionName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "DacFullName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "Customization.CustomizationGraph",
+					"primaryView": "FirstSelect"
+				}
+			]
+		},
+		{
+			"name": {
+				"name": "customElement"
+			},
+			"arguments": [
+				"qp-customization-menu"
+			]
+		}
+	]
+}

@@ -1,0 +1,1334 @@
+{
+	"name": "SO301000_Estimates",
+	"graphName": null,
+	"featureInstalled": [],
+	"actions": [],
+	"views": [
+		{
+			"name": "OrderEstimateRecords",
+			"dacClassName": {
+				"name": "AMEstimateItem"
+			},
+			"displayName": "Estimates",
+			"isCollection": true,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__BranchID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__InventoryCD",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__ItemDesc",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__SubItemID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__SiteID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__UOM",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "OrderQty",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "CuryUnitPrice",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "CuryExtPrice",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "EstimateID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": "ViewEstimate",
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "linkCommand"
+							},
+							"arguments": [
+								"ViewEstimate"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "RevisionID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "TaxCategoryID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__OwnerID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__EngineerID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__RequestDate",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__PromiseDate",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AMEstimateItem__EstimateClassID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"hideViewLink": true
+								}
+							]
+						}
+					]
+				}
+			],
+			"extensions": [],
+			"decorators": [
+				{
+					"name": {
+						"name": "viewInfo"
+					},
+					"arguments": [
+						{
+							"containerName": "Estimates"
+						}
+					]
+				}
+			],
+			"actions": [
+				{
+					"name": "AddEstimate",
+					"decorators": []
+				},
+				{
+					"name": "QuickEstimate",
+					"decorators": []
+				},
+				{
+					"name": "RemoveEstimate",
+					"decorators": []
+				}
+			]
+		},
+		{
+			"name": "OrderEstimateItemFilter",
+			"dacClassName": {
+				"name": "OrderEstimateItemFilter"
+			},
+			"displayName": "OrderEstimateItemFilter",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "EstimateID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "AddExisting",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "RevisionID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "InventoryCD",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "IsNonInventory",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "SubItemID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "SiteID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "ItemDesc",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "EstimateClassID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "ItemClassID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "UOM",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "BranchID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "SelectedEstimateRecord",
+			"dacClassName": {
+				"name": "SelectedEstimateRecord"
+			},
+			"displayName": "SelectedEstimateRecord",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "EstimateID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "RevisionID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "InventoryCD",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "IsNonInventory",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "SubItemID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "SiteID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "ItemDesc",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "EstimateClassID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "FixedLaborCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "FixedLaborOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "VariableLaborCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "VariableLaborOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "MachineCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "MachineOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "MaterialCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "MaterialOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "ToolCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "ToolOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "FixedOverheadCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "FixedOverheadOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "VariableOverheadCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "VariableOverheadOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "SubcontractCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "SubcontractOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "ExtCostDisplay",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "ReferenceMaterialCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "OrderQty",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "UOM",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "CuryUnitCost",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "MarkupPct",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "CuryUnitPrice",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "PriceOverride",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "CuryExtPrice",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [],
+	"decorators": []
+}

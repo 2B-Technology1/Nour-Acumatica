@@ -1,0 +1,14 @@
+{
+   "SignIn": "Sign In",
+   "SignOut": "Sign Out",
+   "AccessDenied": "Access to the Acumatica add-in has been denied. You may not have sufficient access rights to view the Outlook Add-In (OU201000) form. Contact your system administrator.",
+   "DocRecognitionProgress": "Document recognition is in progress...",
+   "TitleInfo": "Info",
+   "TitleNewCase": "New Case Details",
+   "TitleNewOpportunity": "New Opportunity Details",
+   "TitleNewActivity": "Log Activity",
+   "TitleSourceMessage": "Message",
+   "TitleRequestForInformation": "New Request For Information",
+   "TitleProjectIssue": "New Project Issue",
+   "TitleSelectADocument": "Select a document:"
+}

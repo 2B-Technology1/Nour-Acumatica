@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099212086|638375612020000000",
+    "Types": [
+      "Customization.CstAUCondition, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Customization.CstAUScreenActionState, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Customization.CstAUScreenField, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Customization.CstAUScreenNavigationActionState, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.SM.CstWorkflowActions+DBCleaunup, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.SM.CstWorkflowEventHandlers+DBCleaunup, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.SM.CstWorkflowFields+DBCleaunup, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Customization.CstWorkflowContainer+CstWorkflowContainerDBCleaunup, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "Customization.CstWorkflowForms+DBCleaunup, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

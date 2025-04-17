@@ -1,0 +1,1 @@
+{"view":"FA503000","elements":[{"type":"QP-FIELDSET","id":"form","view":"Filter","elements":[{"type":"FIELD","id":"","name":"Origin"}]},{"type":"QP-GRID","id":"grid","view":"FADocumentList","elements":[]}]}

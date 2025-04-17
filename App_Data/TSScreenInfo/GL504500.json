@@ -1,0 +1,313 @@
+{
+	"name": "GL504500",
+	"graphName": "PX.Objects.GL.AllocationProcess",
+	"primaryView": "Filter",
+	"featureInstalled": [],
+	"actions": [
+		{
+			"name": "viewBatch",
+			"decorators": []
+		}
+	],
+	"views": [
+		{
+			"name": "Filter",
+			"dacClassName": {
+				"name": "Filter"
+			},
+			"displayName": "Filter",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "DateEntered",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "FinPeriodID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "Allocations",
+			"dacClassName": {
+				"name": "Allocations"
+			},
+			"displayName": "Allocations",
+			"isCollection": true,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Selected",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"allowCheckAll": true,
+									"allowSort": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "BranchID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "GLAllocationID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": "EditDetail",
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "linkCommand"
+							},
+							"arguments": [
+								"EditDetail"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Descr",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AllocMethod",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AllocLedgerID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "SortOrder",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "BatchNbr",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": "viewBatch",
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "linkCommand"
+							},
+							"arguments": [
+								"viewBatch"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "BatchPeriod",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "ControlTotal",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Status",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "PX.Objects.GL.AllocationProcess",
+					"primaryView": "Filter"
+				}
+			]
+		}
+	]
+}

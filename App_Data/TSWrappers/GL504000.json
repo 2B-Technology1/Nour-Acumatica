@@ -1,0 +1,1 @@
+{"view":"GL504000","elements":[{"type":"QP-FIELDSET","id":"form","view":"Filter","elements":[{"type":"FIELD","id":"","name":"ExecutionDate"},{"type":"FIELD","id":"","name":"LimitTypeSel"},{"type":"FIELD","id":"","name":"RunLimit"}]},{"type":"QP-GRID","id":"grid","view":"Schedule_List","elements":[]}]}

@@ -1,0 +1,801 @@
+{
+	"name": "GL401000",
+	"graphName": "PX.Objects.GL.AccountHistoryEnq",
+	"primaryView": "Filter",
+	"featureInstalled": [],
+	"actions": [
+		{
+			"name": "ViewDetails",
+			"decorators": []
+		}
+	],
+	"views": [
+		{
+			"name": "Filter",
+			"dacClassName": {
+				"name": "GLHistoryEnqFilter"
+			},
+			"displayName": "Filter",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "OrgBAccountID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "column1",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"column1"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "LedgerID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "column1",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"column1"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "FinPeriodID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "column1",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"column1"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "AccountClassID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "column2",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"column2"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "SubCD",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "column2",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"column2"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						16
+					],
+					"stateType": "default",
+					"name": "UseMasterCalendar",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "column2",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"column2"
+							]
+						}
+					]
+				}
+			],
+			"extensions": [
+				{
+					"name": null,
+					"dacClassName": null,
+					"displayName": null,
+					"isCollection": false,
+					"isFullCollection": false,
+					"featureInstalled": [
+						"PX.Objects.CS.FeaturesSet+Multicurrency"
+					],
+					"fields": [
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "ShowCuryDetail",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": "column3",
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SubCD",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SubCD"
+									]
+								},
+								{
+									"name": {
+										"name": "group"
+									},
+									"arguments": [
+										"column3"
+									]
+								},
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						}
+					],
+					"extensions": [],
+					"decorators": [
+						{
+							"name": {
+								"name": "featureInstalled"
+							},
+							"arguments": [
+								"PX.Objects.CS.FeaturesSet+Multicurrency"
+							]
+						}
+					],
+					"actions": []
+				}
+			],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "EnqResult",
+			"dacClassName": {
+				"name": "GLHistoryEnquiryResult"
+			},
+			"displayName": "EnqResult",
+			"isCollection": true,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "BranchID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AccountCD",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "LedgerID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "SubCD",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Type",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Description",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "LastActivityPeriod",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "SignBegBalance",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "PtdDebitTotal",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "PtdCreditTotal",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "SignEndBalance",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "PtdSaldo",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "ConsolAccountCD",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "AccountClassID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [
+				{
+					"name": null,
+					"dacClassName": null,
+					"displayName": null,
+					"isCollection": false,
+					"isFullCollection": false,
+					"featureInstalled": [
+						"PX.Objects.CS.FeaturesSet+Multicurrency"
+					],
+					"fields": [
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "CuryID",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SignEndBalance",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SignEndBalance"
+									]
+								},
+								{
+									"name": {
+										"name": "columnSettings"
+									},
+									"arguments": [
+										{
+											"allowShowHide": "Server"
+										}
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "SignCuryBegBalance",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SignEndBalance",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SignEndBalance"
+									]
+								},
+								{
+									"name": {
+										"name": "columnSettings"
+									},
+									"arguments": [
+										{
+											"allowShowHide": "Server"
+										}
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "CuryPtdDebitTotal",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SignEndBalance",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SignEndBalance"
+									]
+								},
+								{
+									"name": {
+										"name": "columnSettings"
+									},
+									"arguments": [
+										{
+											"allowShowHide": "Server"
+										}
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "CuryPtdCreditTotal",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SignEndBalance",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SignEndBalance"
+									]
+								},
+								{
+									"name": {
+										"name": "columnSettings"
+									},
+									"arguments": [
+										{
+											"allowShowHide": "Server"
+										}
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "SignCuryEndBalance",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SignEndBalance",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SignEndBalance"
+									]
+								},
+								{
+									"name": {
+										"name": "columnSettings"
+									},
+									"arguments": [
+										{
+											"allowShowHide": "Server"
+										}
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "CuryPtdSaldo",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": "SignEndBalance",
+							"decorators": [
+								{
+									"name": {
+										"name": "placeAfterProperty"
+									},
+									"arguments": [
+										"SignEndBalance"
+									]
+								},
+								{
+									"name": {
+										"name": "columnSettings"
+									},
+									"arguments": [
+										{
+											"allowShowHide": "Server"
+										}
+									]
+								}
+							]
+						}
+					],
+					"extensions": [],
+					"decorators": [
+						{
+							"name": {
+								"name": "featureInstalled"
+							},
+							"arguments": [
+								"PX.Objects.CS.FeaturesSet+Multicurrency"
+							]
+						}
+					],
+					"actions": []
+				}
+			],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [
+		{
+			"name": "GL401000_MultiCurrency",
+			"graphName": null,
+			"featureInstalled": [
+				"PX.Objects.CS.FeaturesSet+Multicurrency"
+			],
+			"actions": [],
+			"views": [],
+			"extensions": [],
+			"decorators": [
+				{
+					"name": {
+						"name": "featureInstalled"
+					},
+					"arguments": [
+						"PX.Objects.CS.FeaturesSet+Multicurrency"
+					]
+				}
+			]
+		}
+	],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "PX.Objects.GL.AccountHistoryEnq",
+					"primaryView": "Filter"
+				}
+			]
+		},
+		{
+			"name": {
+				"name": "autoinject"
+			},
+			"arguments": []
+		}
+	]
+}

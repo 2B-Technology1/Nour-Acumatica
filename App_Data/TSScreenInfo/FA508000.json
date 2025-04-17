@@ -1,0 +1,202 @@
+{
+	"name": "FA508000",
+	"graphName": "PX.Objects.FA.DeleteDocsProcess",
+	"primaryView": "Docs",
+	"featureInstalled": [],
+	"actions": [],
+	"views": [
+		{
+			"name": "Docs",
+			"dacClassName": {
+				"name": "FARegister"
+			},
+			"displayName": "Docs",
+			"isCollection": true,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Selected",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"allowCheckAll": true,
+									"allowNull": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "RefNbr",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "DocDate",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Origin",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"allowNull": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "DocDesc",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Hold",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"allowNull": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "IsEmpty",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "columnSettings"
+							},
+							"arguments": [
+								{
+									"allowNull": false
+								}
+							]
+						}
+					]
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "PX.Objects.FA.DeleteDocsProcess",
+					"primaryView": "Docs"
+				}
+			]
+		}
+	]
+}

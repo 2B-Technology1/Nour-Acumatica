@@ -1,0 +1,9 @@
+[
+  {
+    "Name": "PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095960763|638375610380000000",
+    "Types": [
+      "PX.Api.ContractBased.SystemContracts.V4.SystemContract, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

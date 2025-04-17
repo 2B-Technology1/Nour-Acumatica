@@ -1,0 +1,69 @@
+{
+	"name": "QP402060",
+	"graphName": "PX.BusinessProcess.UI.NotificationInquiry",
+	"primaryView": "Notifications",
+	"featureInstalled": [],
+	"actions": [],
+	"views": [
+		{
+			"name": "Filter",
+			"dacClassName": {
+				"name": "Filter"
+			},
+			"displayName": "Filter",
+			"isCollection": true,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "CurrentScreenID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "PX.BusinessProcess.UI.NotificationInquiry",
+					"primaryView": "Notifications"
+				}
+			]
+		},
+		{
+			"name": {
+				"name": "autoinject"
+			},
+			"arguments": []
+		},
+		{
+			"name": {
+				"name": "customElement"
+			},
+			"arguments": [
+				"qp-notifications"
+			]
+		}
+	]
+}

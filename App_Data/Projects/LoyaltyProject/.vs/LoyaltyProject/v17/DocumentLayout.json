@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\LoyaltyProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|LoyaltyProject\\LoyaltyProject.csproj|c:\\program files\\acumatica erp\\nour\\app_data\\projects\\loyaltyproject\\loyaltyproject\\examples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|LoyaltyProject\\LoyaltyProject.csproj|solutionrelative:loyaltyproject\\examples.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Examples.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\LoyaltyProject\\LoyaltyProject\\Examples.cs",
+              "RelativeDocumentMoniker": "LoyaltyProject\\Examples.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\LoyaltyProject\\LoyaltyProject\\Examples.cs",
+              "RelativeToolTip": "LoyaltyProject\\Examples.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwCQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T09:03:00.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

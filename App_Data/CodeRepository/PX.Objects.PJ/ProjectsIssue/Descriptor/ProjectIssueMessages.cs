@@ -1,0 +1,53 @@
+/* ---------------------------------------------------------------------*
+*                             Acumatica Inc.                            *
+
+*              Copyright (c) 2005-2023 All rights reserved.             *
+
+*                                                                       *
+
+*                                                                       *
+
+* This file and its contents are protected by United States and         *
+
+* International copyright laws.  Unauthorized reproduction and/or       *
+
+* distribution of all or any portion of the code contained herein       *
+
+* is strictly prohibited and will result in severe civil and criminal   *
+
+* penalties.  Any violations of this copyright will be prosecuted       *
+
+* to the fullest extent possible under law.                             *
+
+*                                                                       *
+
+* UNDER NO CIRCUMSTANCES MAY THE SOURCE CODE BE USED IN WHOLE OR IN     *
+
+* PART, AS THE BASIS FOR CREATING A PRODUCT THAT PROVIDES THE SAME, OR  *
+
+* SUBSTANTIALLY THE SAME, FUNCTIONALITY AS ANY ACUMATICA PRODUCT.       *
+
+*                                                                       *
+
+* THIS COPYRIGHT NOTICE MAY NOT BE REMOVED FROM THIS FILE.              *
+
+* --------------------------------------------------------------------- */
+
+using PX.Common;
+
+namespace PX.Objects.PJ.ProjectsIssue.Descriptor
+{
+    [PXLocalizable]
+    public static class ProjectIssueMessages
+    {
+        public const string WarningRemovingProjectIssueAttributes =
+            "Changing the Project Issue class will remove all attribute values associated with the current " +
+            "class and replace them with the attribute values of the new class. Continue?";
+
+        public const string UnlinkDrawingLogsOnProjectChange =
+            "Changing the Project unlinks the Drawing Log Documents associated with Project Issue where " +
+            "Project no longer matches. Continue?";
+
+        public const string LinkToProjectIssue = "Link to Issue";
+    }
+}

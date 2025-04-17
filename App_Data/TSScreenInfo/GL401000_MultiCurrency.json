@@ -1,0 +1,20 @@
+{
+	"name": "GL401000_MultiCurrency",
+	"graphName": null,
+	"featureInstalled": [
+		"PX.Objects.CS.FeaturesSet+Multicurrency"
+	],
+	"actions": [],
+	"views": [],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "featureInstalled"
+			},
+			"arguments": [
+				"PX.Objects.CS.FeaturesSet+Multicurrency"
+			]
+		}
+	]
+}

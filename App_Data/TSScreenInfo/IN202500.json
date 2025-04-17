@@ -1,0 +1,71 @@
+{
+	"name": "IN202500",
+	"graphName": "PX.Objects.IN.InventoryItemMaint",
+	"primaryView": "Item",
+	"featureInstalled": [],
+	"actions": [
+		{
+			"name": "backAction",
+			"decorators": []
+		}
+	],
+	"views": [
+		{
+			"name": "Item",
+			"dacClassName": {
+				"name": "InventoryItem"
+			},
+			"displayName": "Inventory Item",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Descr",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [
+				{
+					"name": {
+						"name": "viewInfo"
+					},
+					"arguments": [
+						{
+							"displayName": "Inventory Item"
+						}
+					]
+				}
+			],
+			"actions": []
+		}
+	],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "PX.Objects.IN.InventoryItemMaint",
+					"primaryView": "Item"
+				}
+			]
+		}
+	]
+}

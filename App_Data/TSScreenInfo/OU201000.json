@@ -1,0 +1,1961 @@
+{
+	"name": "OU201000",
+	"graphName": "PX.Objects.CR.OUSearchMaint",
+	"primaryView": "Filter",
+	"featureInstalled": [
+		"PX.Objects.CS.FeaturesSet+outlookIntegration"
+	],
+	"actions": [
+		{
+			"name": "back",
+			"decorators": []
+		},
+		{
+			"name": "logOut",
+			"decorators": []
+		}
+	],
+	"views": [
+		{
+			"name": "Filter",
+			"dacClassName": {
+				"name": "OUSearchEntity"
+			},
+			"displayName": "Filter",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						0,
+						"email"
+					],
+					"stateType": "default",
+					"name": "OutgoingEmail",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Title",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Title"
+							]
+						},
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": [
+						0,
+						"Person"
+					],
+					"stateType": "simple-selector",
+					"name": "ContactID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Title",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Title"
+							]
+						},
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": [
+						5
+					],
+					"stateType": "default",
+					"name": "EMail",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Title",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Title"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						12
+					],
+					"stateType": "default",
+					"name": "ErrorMessage",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Title",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Title"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "DisplayName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "NewContactFirstName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "NewContactLastName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "NewContactEmail",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Salutation",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "BAccountID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						},
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "FullName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						0,
+						"Lead source"
+					],
+					"stateType": "default",
+					"name": "LeadSource",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						0,
+						"Contact source"
+					],
+					"stateType": "default",
+					"name": "ContactSource",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "CountryID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "EntityID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": "Info",
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "group"
+							},
+							"arguments": [
+								"Info"
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "EntityName",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "AttachmentNames",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "AttachmentsCount",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "IsRecognitionInProgress",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "NumOfRecognizedDocuments",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "Operation",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						8
+					],
+					"stateType": "default",
+					"name": "DuplicateFilesMsg",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "NewCase",
+			"dacClassName": {
+				"name": "OUCase"
+			},
+			"displayName": "NewCase",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "CaseClassID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "ContractID",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Severity",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Subject",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "NewOpportunity",
+			"dacClassName": {
+				"name": "OUOpportunity"
+			},
+			"displayName": "NewOpportunity",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "ClassID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Subject",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "StageID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "CloseDate",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						"CurrencyID"
+					],
+					"stateType": "pair",
+					"name": "ManualAmount",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "simple-selector",
+					"name": "CurrencyID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "BranchID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "NewActivity",
+			"dacClassName": {
+				"name": "OUActivity"
+			},
+			"displayName": "NewActivity",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Subject",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "CaseCD",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "simple-selector",
+					"name": "OpportunityID",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "IsLinkContact",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "IsLinkCase",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "IsLinkOpportunity",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				}
+			],
+			"extensions": [
+				{
+					"name": null,
+					"dacClassName": null,
+					"displayName": null,
+					"isCollection": false,
+					"isFullCollection": false,
+					"featureInstalled": [
+						"PX.Objects.CS.FeaturesSet+ConstructionProjectManagement"
+					],
+					"fields": [
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "ProjectId",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": "caseCD",
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "placeBeforeProperty"
+									},
+									"arguments": [
+										"caseCD"
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "RequestForInformationId",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": "caseCD",
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "placeBeforeProperty"
+									},
+									"arguments": [
+										"caseCD"
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "ProjectIssueId",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": "caseCD",
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "placeBeforeProperty"
+									},
+									"arguments": [
+										"caseCD"
+									]
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "IsLinkProject",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "IsLinkRequestForInformation",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "IsLinkProjectIssue",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						}
+					],
+					"extensions": [],
+					"decorators": [
+						{
+							"name": {
+								"name": "featureInstalled"
+							},
+							"arguments": [
+								"PX.Objects.CS.FeaturesSet+ConstructionProjectManagement"
+							]
+						}
+					],
+					"actions": []
+				}
+			],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "SourceMessage",
+			"dacClassName": {
+				"name": "OUMessage"
+			},
+			"displayName": "SourceMessage",
+			"isCollection": false,
+			"isFullCollection": false,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "MessageId",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "To",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "CC",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "Subject",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "ItemId",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "IsIncome",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "EwsUrl",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "Token",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						}
+					]
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		},
+		{
+			"name": "APBillAttachments",
+			"dacClassName": {
+				"name": "OUAPBillAttachment"
+			},
+			"displayName": "APBillAttachments",
+			"isCollection": true,
+			"isFullCollection": true,
+			"featureInstalled": [],
+			"fields": [
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "ItemId",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "Id",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": [
+						4
+					],
+					"stateType": "default",
+					"name": "Name",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				},
+				{
+					"args": null,
+					"stateType": "default",
+					"name": "Selected",
+					"bound": true,
+					"commitChanges": true,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": "",
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": [
+						{
+							"name": {
+								"name": "commitChanges"
+							},
+							"arguments": []
+						},
+						{
+							"name": {
+								"name": "text"
+							},
+							"arguments": [
+								""
+							]
+						}
+					]
+				},
+				{
+					"args": [
+						2
+					],
+					"stateType": "default",
+					"name": "RecognitionStatus",
+					"bound": true,
+					"commitChanges": false,
+					"suppressLabel": false,
+					"readonly": false,
+					"disabled": false,
+					"calculated": false,
+					"linkCommand": null,
+					"text": null,
+					"group": null,
+					"placeBeforeProperty": null,
+					"placeAfterProperty": null,
+					"decorators": []
+				}
+			],
+			"extensions": [],
+			"decorators": [],
+			"actions": []
+		}
+	],
+	"extensions": [
+		{
+			"name": "OU201000_extension",
+			"graphName": null,
+			"featureInstalled": [
+				"PX.Objects.CS.FeaturesSet+ConstructionProjectManagement"
+			],
+			"actions": [
+				{
+					"name": "createRequestForInformation",
+					"decorators": []
+				},
+				{
+					"name": "createProjectIssue",
+					"decorators": []
+				},
+				{
+					"name": "redirectToCreateRequestForInformation",
+					"decorators": []
+				},
+				{
+					"name": "redirectToCreateProjectIssue",
+					"decorators": []
+				}
+			],
+			"views": [
+				{
+					"name": "RequestForInformationOutlook",
+					"dacClassName": {
+						"name": "RequestForInformationOutlook"
+					},
+					"displayName": "RequestForInformationOutlook",
+					"isCollection": false,
+					"isFullCollection": false,
+					"featureInstalled": [],
+					"fields": [
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "Summary",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "ProjectId",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "contactId",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "Incoming",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "Status",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "ClassId",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "PriorityId",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "OwnerId",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "DueResponseDate",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "IsScheduleImpact",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "ScheduleImpact",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "IsCostImpact",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "CostImpact",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "DesignChange",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						}
+					],
+					"extensions": [],
+					"decorators": [],
+					"actions": []
+				},
+				{
+					"name": "ProjectIssueOutlook",
+					"dacClassName": {
+						"name": "ProjectIssueOutlook"
+					},
+					"displayName": "ProjectIssueOutlook",
+					"isCollection": false,
+					"isFullCollection": false,
+					"featureInstalled": [],
+					"fields": [
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "Summary",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "ProjectId",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "ClassId",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "PriorityId",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						},
+						{
+							"args": null,
+							"stateType": "simple-selector",
+							"name": "OwnerID",
+							"bound": true,
+							"commitChanges": false,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": []
+						},
+						{
+							"args": null,
+							"stateType": "default",
+							"name": "DueDate",
+							"bound": true,
+							"commitChanges": true,
+							"suppressLabel": false,
+							"readonly": false,
+							"disabled": false,
+							"calculated": false,
+							"linkCommand": null,
+							"text": null,
+							"group": null,
+							"placeBeforeProperty": null,
+							"placeAfterProperty": null,
+							"decorators": [
+								{
+									"name": {
+										"name": "commitChanges"
+									},
+									"arguments": []
+								}
+							]
+						}
+					],
+					"extensions": [],
+					"decorators": [],
+					"actions": []
+				}
+			],
+			"extensions": [],
+			"decorators": [
+				{
+					"name": {
+						"name": "featureInstalled"
+					},
+					"arguments": [
+						"PX.Objects.CS.FeaturesSet+ConstructionProjectManagement"
+					]
+				}
+			]
+		}
+	],
+	"decorators": [
+		{
+			"name": {
+				"name": "graphInfo"
+			},
+			"arguments": [
+				{
+					"graphType": "PX.Objects.CR.OUSearchMaint",
+					"primaryView": "Filter"
+				}
+			]
+		},
+		{
+			"name": {
+				"name": "featureInstalled"
+			},
+			"arguments": [
+				"PX.Objects.CS.FeaturesSet+outlookIntegration"
+			]
+		}
+	]
+}

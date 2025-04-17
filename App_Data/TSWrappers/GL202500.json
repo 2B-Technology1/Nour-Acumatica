@@ -1,0 +1,1 @@
+{"view":"GL202500","elements":[{"type":"QP-GRID","id":"grid","view":"AccountRecords","elements":[]},{"type":"QP-PANEL","id":"AccountTypeChangePrepare","group":"Update Account Type","elements":[{"type":"QP-BUTTON","id":"AccountTypeChangeUpdate","dialogResult":1},{"type":"QP-BUTTON","id":"AccountTypeChangeCancel","action":"Save","dialogResult":7}],"wgContainer":false}]}

@@ -1,0 +1,18 @@
+{
+	"name": "QpFilesDialogCustomElement",
+	"graphName": null,
+	"featureInstalled": [],
+	"actions": [],
+	"views": [],
+	"extensions": [],
+	"decorators": [
+		{
+			"name": {
+				"name": "customElement"
+			},
+			"arguments": [
+				"qp-files-dialog"
+			]
+		}
+	]
+}

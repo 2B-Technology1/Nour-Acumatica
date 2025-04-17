@@ -1,0 +1,354 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|c:\\program files\\acumatica erp\\nour\\app_data\\projects\\nour2024\\nour2024\\graphext\\soinvoiceentry_extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\graphext\\soinvoiceentry_extension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\tt\\dacext\\arregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\tt\\dacext\\arregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\tt\\graphext\\arinvoiceentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\tt\\graphext\\arinvoiceentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\loyalty\\graph\\loyaltytiersentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\loyalty\\graph\\loyaltytiersentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed Essam\\AppData\\Local\\Temp\\.vsdbgsrc\\a4a62f7c5a3011d4b332cb10cf707ea0ee4341b945848ecbff34d4108903e2f2\\PXCache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\loyalty\\dac\\loyaltytierrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\loyalty\\dac\\loyaltytierrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\loyalty\\graph\\loyaltyrulesentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\loyalty\\graph\\loyaltyrulesentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\loyalty\\dac\\loyaltyrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\loyalty\\dac\\loyaltyrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\loyalty\\dac\\loyaltyrewards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\loyalty\\dac\\loyaltyrewards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\loyalty\\dac\\loyaltytiers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\loyalty\\dac\\loyaltytiers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\lm\\mm\\jobordermaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\lm\\mm\\jobordermaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\lm\\mm\\dac\\joborder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\lm\\mm\\dac\\joborder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|c:\\program files\\acumatica erp\\nour\\app_data\\coderepository\\px.objects.am\\am\\attributes\\activebomrestrictorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\lm\\mm\\reserveformmaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\lm\\mm\\reserveformmaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\lm\\licencingentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\lm\\licencingentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\lm\\mm\\dac\\reserveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\lm\\mm\\dac\\reserveform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\reserveformextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\reserveformextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\reserveformentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\reserveformentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\nour2024\\reserveformmaint1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2024\\Nour2024.csproj|solutionrelative:nour2024\\reserveformmaint1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|c:\\program files\\acumatica erp\\nour\\app_data\\coderepository\\px.objects.am\\cacheextensions\\inventoryitemext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|c:\\program files\\acumatica erp\\nour\\app_data\\coderepository\\px.commerce.objects\\bc\\dacext\\inventoryitemext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PXCache.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed Essam\\AppData\\Local\\Temp\\.vsdbgsrc\\a4a62f7c5a3011d4b332cb10cf707ea0ee4341b945848ecbff34d4108903e2f2\\PXCache.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\Mohamed Essam\\AppData\\Local\\Temp\\.vsdbgsrc\\a4a62f7c5a3011d4b332cb10cf707ea0ee4341b945848ecbff34d4108903e2f2\\PXCache.cs",
+              "ToolTip": "C:\\Users\\Mohamed Essam\\AppData\\Local\\Temp\\.vsdbgsrc\\a4a62f7c5a3011d4b332cb10cf707ea0ee4341b945848ecbff34d4108903e2f2\\PXCache.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Users\\Mohamed Essam\\AppData\\Local\\Temp\\.vsdbgsrc\\a4a62f7c5a3011d4b332cb10cf707ea0ee4341b945848ecbff34d4108903e2f2\\PXCache.cs [Read Only]",
+              "ViewState": "AgIAAAgwAAAAAAAAAAAjwBUwAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:21:08.635Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoyaltyRulesEntry.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Graph\\LoyaltyRulesEntry.cs",
+              "RelativeDocumentMoniker": "Nour2024\\Loyalty\\Graph\\LoyaltyRulesEntry.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Graph\\LoyaltyRulesEntry.cs",
+              "RelativeToolTip": "Nour2024\\Loyalty\\Graph\\LoyaltyRulesEntry.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T08:14:51.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoyaltyTierRule.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyTierRule.cs",
+              "RelativeDocumentMoniker": "Nour2024\\Loyalty\\Dac\\LoyaltyTierRule.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyTierRule.cs",
+              "RelativeToolTip": "Nour2024\\Loyalty\\Dac\\LoyaltyTierRule.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T07:42:28.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoyaltyRules.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyRules.cs",
+              "RelativeDocumentMoniker": "Nour2024\\Loyalty\\Dac\\LoyaltyRules.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyRules.cs",
+              "RelativeToolTip": "Nour2024\\Loyalty\\Dac\\LoyaltyRules.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwCMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T14:44:47.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoyaltyTiersEntry.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "RelativeDocumentMoniker": "Nour2024\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "RelativeToolTip": "Nour2024\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T14:58:06.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoyaltyRewards.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyRewards.cs",
+              "RelativeDocumentMoniker": "Nour2024\\Loyalty\\Dac\\LoyaltyRewards.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyRewards.cs",
+              "RelativeToolTip": "Nour2024\\Loyalty\\Dac\\LoyaltyRewards.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T15:11:50.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoyaltyTiers.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyTiers.cs",
+              "RelativeDocumentMoniker": "Nour2024\\Loyalty\\Dac\\LoyaltyTiers.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Loyalty\\Dac\\LoyaltyTiers.cs",
+              "RelativeToolTip": "Nour2024\\Loyalty\\Dac\\LoyaltyTiers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T12:42:46.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ARInvoiceEntry.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\TT\\GraphExt\\ARInvoiceEntry.cs",
+              "RelativeDocumentMoniker": "Nour2024\\TT\\GraphExt\\ARInvoiceEntry.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\TT\\GraphExt\\ARInvoiceEntry.cs",
+              "RelativeToolTip": "Nour2024\\TT\\GraphExt\\ARInvoiceEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:00:12.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SOInvoiceEntry_Extension.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\GraphExt\\SOInvoiceEntry_Extension.cs",
+              "RelativeDocumentMoniker": "Nour2024\\GraphExt\\SOInvoiceEntry_Extension.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\GraphExt\\SOInvoiceEntry_Extension.cs",
+              "RelativeToolTip": "Nour2024\\GraphExt\\SOInvoiceEntry_Extension.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwEUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T10:59:24.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ARRegister.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\TT\\DACExt\\ARRegister.cs",
+              "RelativeDocumentMoniker": "Nour2024\\TT\\DACExt\\ARRegister.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\TT\\DACExt\\ARRegister.cs",
+              "RelativeToolTip": "Nour2024\\TT\\DACExt\\ARRegister.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAAADYBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T11:55:35.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ActiveBOMRestrictorAttribute.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Objects.AM\\AM\\Attributes\\ActiveBOMRestrictorAttribute.cs",
+              "RelativeDocumentMoniker": "..\\..\\CodeRepository\\PX.Objects.AM\\AM\\Attributes\\ActiveBOMRestrictorAttribute.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Objects.AM\\AM\\Attributes\\ActiveBOMRestrictorAttribute.cs",
+              "RelativeToolTip": "..\\..\\CodeRepository\\PX.Objects.AM\\AM\\Attributes\\ActiveBOMRestrictorAttribute.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAMBgwD0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:20:40.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LicencingEntry.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\LicencingEntry.cs",
+              "RelativeDocumentMoniker": "Nour2024\\LM\\LicencingEntry.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\LicencingEntry.cs",
+              "RelativeToolTip": "Nour2024\\LM\\LicencingEntry.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAMBUwAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:20:21.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JobOrderMaint.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\JobOrderMaint.cs",
+              "RelativeDocumentMoniker": "Nour2024\\LM\\MM\\JobOrderMaint.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\JobOrderMaint.cs",
+              "RelativeToolTip": "Nour2024\\LM\\MM\\JobOrderMaint.cs",
+              "ViewState": "AgIAAAMEAAAAAAAAAEBVwAcEAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T10:04:11.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReserveFormEntry.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\ReserveFormEntry.cs",
+              "RelativeDocumentMoniker": "Nour2024\\ReserveFormEntry.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\ReserveFormEntry.cs",
+              "RelativeToolTip": "Nour2024\\ReserveFormEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T05:44:38.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReserveFormExtensions.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\ReserveFormExtensions.cs",
+              "RelativeDocumentMoniker": "Nour2024\\ReserveFormExtensions.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\ReserveFormExtensions.cs",
+              "RelativeToolTip": "Nour2024\\ReserveFormExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T06:41:10.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JobOrder.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\DAC\\JobOrder.cs",
+              "RelativeDocumentMoniker": "Nour2024\\LM\\MM\\DAC\\JobOrder.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\DAC\\JobOrder.cs",
+              "RelativeToolTip": "Nour2024\\LM\\MM\\DAC\\JobOrder.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAMBUwDoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T05:30:56.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReserveForm.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\DAC\\ReserveForm.cs",
+              "RelativeDocumentMoniker": "Nour2024\\LM\\MM\\DAC\\ReserveForm.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\DAC\\ReserveForm.cs",
+              "RelativeToolTip": "Nour2024\\LM\\MM\\DAC\\ReserveForm.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAABRwBsBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T11:43:43.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReserveFormMaint.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\ReserveFormMaint.cs",
+              "RelativeDocumentMoniker": "Nour2024\\LM\\MM\\ReserveFormMaint.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\LM\\MM\\ReserveFormMaint.cs",
+              "RelativeToolTip": "Nour2024\\LM\\MM\\ReserveFormMaint.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAEBdwEgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:08:02.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InventoryItemExt.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Objects.AM\\CacheExtensions\\InventoryItemExt.cs",
+              "RelativeDocumentMoniker": "..\\..\\CodeRepository\\PX.Objects.AM\\CacheExtensions\\InventoryItemExt.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Objects.AM\\CacheExtensions\\InventoryItemExt.cs",
+              "RelativeToolTip": "..\\..\\CodeRepository\\PX.Objects.AM\\CacheExtensions\\InventoryItemExt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:07:01.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InventoryItemExt.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Commerce.Objects\\BC\\DACExt\\InventoryItemExt.cs",
+              "RelativeDocumentMoniker": "..\\..\\CodeRepository\\PX.Commerce.Objects\\BC\\DACExt\\InventoryItemExt.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Commerce.Objects\\BC\\DACExt\\InventoryItemExt.cs",
+              "RelativeToolTip": "..\\..\\CodeRepository\\PX.Commerce.Objects\\BC\\DACExt\\InventoryItemExt.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAEBVwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:06:54.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReserveFormMaint1.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\ReserveFormMaint1.cs",
+              "RelativeDocumentMoniker": "Nour2024\\ReserveFormMaint1.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\ReserveFormMaint1.cs",
+              "RelativeToolTip": "Nour2024\\ReserveFormMaint1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:06:03.737Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

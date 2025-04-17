@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>8</LangVersion>
+    <FileVersion>23.204.0031</FileVersion>
+    <InformationalVersion>23.204.0031</InformationalVersion>
+    <Copyright>Copyright © 2005-2023 Acumatica, Inc. All rights reserved.</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.0.0" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="CommonServiceLocator" Version="2.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PX.Api.ContractBasedL">
+      <HintPath>..\Site\Bin\PX.Api.ContractBased.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Common.Std">
+      <HintPath>..\Site\Bin\PX.Common.Std.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.CommonL">
+      <HintPath>..\Site\Bin\PX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.DataL">
+      <HintPath>..\Site\Bin\PX.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data.BQL.DynamicL">
+      <HintPath>..\Site\Bin\PX.Data.BQL.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data.BQL.FluentL">
+      <HintPath>..\Site\Bin\PX.Data.BQL.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+</Project>

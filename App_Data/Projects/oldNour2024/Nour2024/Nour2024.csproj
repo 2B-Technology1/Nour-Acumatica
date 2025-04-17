@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nour2024</RootNamespace>
+    <AssemblyName>Nour2024</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <WarningLevel>3</WarningLevel>
+    <FileVersion>23.204.0031</FileVersion>
+    <InformationalVersion>23.204.0031</InformationalVersion>
+    <Copyright>Copyright © 2005-2023 Acumatica, Inc. All rights reserved.</Copyright>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="PX.Common">
+      <HintPath>..\..\..\..\Bin\PX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Common.Std">
+      <HintPath>..\..\..\..\Bin\PX.Common.Std.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.CS.Contracts">
+      <HintPath>..\..\..\..\Bin\PX.CS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data">
+      <HintPath>..\..\..\..\Bin\PX.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data.BQL.Fluent">
+      <HintPath>..\..\..\..\Bin\PX.Data.BQL.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Objects">
+      <HintPath>..\..\..\..\Bin\PX.Objects.DLL</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\..\Bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessAccountMaint.cs" />
+    <Compile Include="CD\CDSetUpMaint.cs" />
+    <Compile Include="CD\CertificateDocumentEntry.cs" />
+    <Compile Include="CD\DAC\CDSetUp.cs" />
+    <Compile Include="CD\DAC\CertificateDocument.cs" />
+    <Compile Include="CD\DAC\CertificateStatus.cs" />
+    <Compile Include="CD\descriptor\CDAutoNumberingAttribute.cs" />
+    <Compile Include="CD\Extensions\POReceiptLineSplitExtensions.cs" />
+    <Compile Include="CD\Extensions\PX_Objects_IN_InventoryItem_extensions.cs" />
+    <Compile Include="CO\CentersEntry.cs" />
+    <Compile Include="CO\CompensationDocEntry.cs" />
+    <Compile Include="CO\COSetUpMaint.cs" />
+    <Compile Include="CO\DAC\CompensationCenters.cs" />
+    <Compile Include="CO\DAC\CompensationDocument.cs" />
+    <Compile Include="CO\DAC\COSetUp.cs" />
+    <Compile Include="CO\descriptor\CDAutoNumberingAttribute.cs" />
+    <Compile Include="CO\descriptor\CompensationStatus.cs" />
+    <Compile Include="CRCaseMaint.cs" />
+    <Compile Include="CustomerMaint.cs" />
+    <Compile Include="DACExt\SOShipLineSplitExt.cs" />
+    <Compile Include="DAC\Email.cs" />
+    <Compile Include="DAC\Governrate.cs" />
+    <Compile Include="DAC\Licencing.cs" />
+    <Compile Include="DAC\LMOSetup.cs" />
+    <Compile Include="DAC\LMTSetup.cs" />
+    <Compile Include="DAC\Status.cs" />
+    <Compile Include="DAC\TrafficUnits.cs" />
+    <Compile Include="DAC\VendorReceivedDocumentsD.cs" />
+    <Compile Include="DAC\VendorReceivedDocumentsH.cs" />
+    <Compile Include="EXTEN\RequestForm.cs" />
+    <Compile Include="EXTEN\RequestFormDetail.cs" />
+    <Compile Include="EXTEN\RequestFormMaint3.cs" />
+    <Compile Include="EXTEN\SOShipmentEntry_Extension.cs" />
+    <Compile Include="General\NumberstoAlpha.cs" />
+    <Compile Include="GraphExt\ARReleaseProcess_Extension.cs" />
+    <Compile Include="GraphExt\SOInvoiceEntry_Extension.cs" />
+    <Compile Include="Helpers\SmsSender.cs" />
+    <Compile Include="InspectionFormNew\Dac\InspectionCarOutside.cs" />
+    <Compile Include="InspectionFormNew\Dac\InspectionFormMaster.cs" />
+    <Compile Include="InspectionFormNew\Dac\InspectionMalfunctionCheck.cs" />
+    <Compile Include="InspectionFormNew\Dac\InspectionMotor.cs" />
+    <Compile Include="InspectionFormNew\Dac\InspectionRoadTest.cs" />
+    <Compile Include="InspectionFormNew\Dac\InspectionSuspensionSystem.cs" />
+    <Compile Include="InspectionFormNew\Graph\InspectionFormEntryN.cs" />
+    <Compile Include="InspectionFormNew\Graph\InspectionFormEntryNew.cs" />
+    <Compile Include="InspectionForm\DAC\InspectionFormInq.cs" />
+    <Compile Include="InspectionForm\DAC\SetupForm.cs" />
+    <Compile Include="InspectionForm\Graph\InspectionFormEntry.cs" />
+    <Compile Include="InspectionForm\Graph\SetupFormMaint.cs" />
+    <Compile Include="InspectionForm\helpers\Constants.cs" />
+    <Compile Include="InspectionForm\WorkFlow\InspectionFormWorkFlow.cs" />
+    <Compile Include="LeadMaint.cs" />
+    <Compile Include="LeadsJobOrders.cs" />
+    <Compile Include="LM\descriptor\LMOAutoNumberingAttribute.cs" />
+    <Compile Include="LM\descriptor\LMTAutoNumberingAttribute.cs" />
+    <Compile Include="LM\Extensions\PX_Objects_SO_SOOrder_extensions.cs" />
+    <Compile Include="LM\Extensions\SOLineSplitExtensions.cs" />
+    <Compile Include="LM\GOVTrafficUnitsEntry.cs" />
+    <Compile Include="LM\LicencingEntry.cs" />
+    <Compile Include="LM\LMOSetUpMaint.cs" />
+    <Compile Include="LM\LMTSetUpMaint.cs" />
+    <Compile Include="LM\MM\BrandEntry.cs" />
+    <Compile Include="LM\MM\CarEnrty.cs" />
+    <Compile Include="LM\MM\CarEntry.cs" />
+    <Compile Include="LM\MM\ClasEntry.cs" />
+    <Compile Include="LM\MM\ColorsEntry.cs" />
+    <Compile Include="LM\MM\DAC\ARInvoice.cs" />
+    <Compile Include="LM\MM\DAC\AutoSequence.cs" />
+    <Compile Include="LM\MM\DAC\Balance.cs" />
+    <Compile Include="LM\MM\DAC\Brand.cs" />
+    <Compile Include="LM\MM\DAC\Cls.cs" />
+    <Compile Include="LM\MM\DAC\Colors.cs" />
+    <Compile Include="LM\MM\DAC\ItemCustomers.cs" />
+    <Compile Include="LM\MM\DAC\ItemCustomers2.cs" />
+    <Compile Include="LM\MM\DAC\Items.cs" />
+    <Compile Include="LM\MM\DAC\Items2.cs" />
+    <Compile Include="LM\MM\DAC\JobFeadBack.cs" />
+    <Compile Include="LM\MM\DAC\JobOrder.cs" />
+    <Compile Include="LM\MM\DAC\JobOrderAudit.cs" />
+    <Compile Include="LM\MM\DAC\JobOrderNonStockItems.cs" />
+    <Compile Include="LM\MM\DAC\JobOrderStockItems.cs" />
+    <Compile Include="LM\MM\DAC\JobTime.cs" />
+    <Compile Include="LM\MM\DAC\JobTimeAttachedNonStocks.cs" />
+    <Compile Include="LM\MM\DAC\Model.cs" />
+    <Compile Include="LM\MM\DAC\MoelOperation.cs" />
+    <Compile Include="LM\MM\DAC\NonStockItem.cs" />
+    <Compile Include="LM\MM\DAC\OPenTime.cs" />
+    <Compile Include="LM\MM\DAC\Operation.cs" />
+    <Compile Include="LM\MM\DAC\OperationJOB.cs" />
+    <Compile Include="LM\MM\DAC\RelatedCase.cs" />
+    <Compile Include="LM\MM\DAC\ReserveForm.cs" />
+    <Compile Include="LM\MM\DAC\ReserveFormTime.cs" />
+    <Compile Include="LM\MM\DAC\SetUp.cs" />
+    <Compile Include="LM\MM\DAC\StockItems.cs" />
+    <Compile Include="LM\MM\DAC\WorkerOpenTime.cs" />
+    <Compile Include="LM\MM\DAC\Workers.cs" />
+    <Compile Include="LM\MM\DAC\YearIndex.cs" />
+    <Compile Include="LM\MM\descriptor\Attribute.cs" />
+    <Compile Include="LM\MM\descriptor\JOAutoNumberingAttribute.cs" />
+    <Compile Include="LM\MM\descriptor\JobOrderAttribute.cs" />
+    <Compile Include="LM\MM\descriptor\JobOrderStatus.cs" />
+    <Compile Include="LM\MM\descriptor\Status.cs" />
+    <Compile Include="LM\MM\Graph ext\INTransferEntry_Extension.cs" />
+    <Compile Include="LM\MM\INDocumentRelease.cs" />
+    <Compile Include="LM\MM\INIssueEntry.cs" />
+    <Compile Include="LM\MM\ItemsEntry.cs" />
+    <Compile Include="LM\MM\JobOrderMaint.cs" />
+    <Compile Include="LM\MM\JobTimeEntry.cs" />
+    <Compile Include="LM\MM\JobTimeMaint2.cs" />
+    <Compile Include="LM\MM\MaintGenerator.cs" />
+    <Compile Include="LM\MM\OpenTimeMaint.cs" />
+    <Compile Include="LM\MM\OPerationMaint.cs" />
+    <Compile Include="LM\MM\ReserveFormMaint.cs" />
+    <Compile Include="LM\MM\SetUpMaint.cs" />
+    <Compile Include="LM\VendorRecievedDocumentsEntry.cs" />
+    <Compile Include="Loyalty\Dac\LoyaltyTierRule.cs" />
+    <Compile Include="Models\salssmsrequest.cs" />
+    <Compile Include="Models\salssmsrespons.cs" />
+    <Compile Include="ReserveFormExtensions.cs" />
+    <Compile Include="ReserveFormEntry.cs" />
+    <Compile Include="Loyalty\Graph\RewardsGraph.cs" />
+    <Compile Include="Loyalty\Dac\Rewards.cs" />
+    <Compile Include="Loyalty\Dac\LoyaltyTiers.cs" />
+    <Compile Include="Loyalty\Dac\LoyaltyRewards.cs" />
+    <Compile Include="Loyalty\Graph\LoyaltyTiersEntry.cs" />
+    <Compile Include="PointsForCustomerGraph.cs" />
+    <Compile Include="PointsForCustomerEntry.cs" />
+    <Compile Include="Loyalty\Dac\LoyaltyRules.cs" />
+    <Compile Include="Loyalty\Graph\LoyaltyRulesEntry.cs" />
+    <Compile Include="CustomerLoyaltyhistoryGraph.cs" />
+<Compile Include="CustomerLoyalty.cs" />
+<Compile Include="LoyaltyActivity.cs" />
+<Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReserveFormMaint1.cs" />
+    <Compile Include="SN\AccountSubSerialEntry.cs" />
+    <Compile Include="SN\DAC\AccountSubSerials.cs" />
+    <Compile Include="SN\DAC\ASSTTypes.cs" />
+    <Compile Include="SN\DAC\InventoryWarehouseSerials.cs" />
+    <Compile Include="SN\DAC\WSTTypes.cs" />
+    <Compile Include="SN\WarehouseSerialEntry.cs" />
+    <Compile Include="SOLineInventoryAtt.cs" />
+    <Compile Include="TT\AccountClass2Maint.cs" />
+    <Compile Include="TT\AutoSequenceMaint.cs" />
+    <Compile Include="TT\BankMaint.cs" />
+    <Compile Include="TT\BankProcess.cs" />
+    <Compile Include="TT\BRBankMaint.cs" />
+    <Compile Include="TT\CashAccountAccessEntry.cs" />
+    <Compile Include="TT\CheckDispersantProcess.cs" />
+    <Compile Include="TT\CheckNoEntry.cs" />
+    <Compile Include="TT\CUCProcess.cs" />
+    <Compile Include="TT\CustomerActivityMaint.cs" />
+    <Compile Include="TT\CustomerBankDisbursement.cs" />
+    <Compile Include="TT\DACExt\APRegisterExtensions.cs" />
+    <Compile Include="TT\DACExt\ARAdjust.cs" />
+    <Compile Include="TT\DACExt\ARPaymentExt.cs" />
+    <Compile Include="TT\DACExt\ARRegister.cs" />
+    <Compile Include="TT\DACExt\BAccountExt.cs" />
+    <Compile Include="TT\DACExt\CAAdj.cs" />
+    <Compile Include="TT\DACExt\CashAccount.cs" />
+    <Compile Include="TT\DACExt\CASplit.cs" />
+    <Compile Include="TT\DACExt\CATransfer.cs" />
+    <Compile Include="TT\DACExt\GLTranDocExtensions.cs" />
+    <Compile Include="TT\DACExt\GLTranExtensions.cs" />
+    <Compile Include="TT\DACExt\INItemClassExt.cs" />
+    <Compile Include="TT\DACExt\INReceiptEntry.cs" />
+    <Compile Include="TT\DACExt\INRegisterExtensions.cs" />
+    <Compile Include="TT\DACExt\INTranExtensions.cs" />
+    <Compile Include="TT\DACExt\JobOrderAudit.cs" />
+    <Compile Include="TT\DACExt\JournalWithSubEntry.cs" />
+    <Compile Include="TT\DACExt\POLineExtensions.cs" />
+    <Compile Include="TT\DACExt\POReceipt.cs" />
+    <Compile Include="TT\DACExt\POReceiptLineExtensions.cs" />
+    <Compile Include="TT\DACExt\VendorClass.cs" />
+    <Compile Include="TT\DAC\AccountClass2.cs" />
+    <Compile Include="TT\DAC\BankBranch.cs" />
+    <Compile Include="TT\DAC\BankCheck.cs" />
+    <Compile Include="TT\DAC\BankCUC.cs" />
+    <Compile Include="TT\DAC\Banks.cs" />
+    <Compile Include="TT\DAC\BRBank.cs" />
+    <Compile Include="TT\DAC\CashAccountAccess.cs" />
+    <Compile Include="TT\DAC\CheckNo.cs" />
+    <Compile Include="TT\DAC\CustomerActivity.cs" />
+    <Compile Include="TT\DAC\Examples.cs" />
+    <Compile Include="TT\DAC\InventoryReceiptSequence.cs" />
+    <Compile Include="TT\DAC\LCDates.cs" />
+    <Compile Include="TT\DAC\LCOrder.cs" />
+    <Compile Include="TT\DAC\LegalForm.cs" />
+    <Compile Include="TT\DAC\POReceiptSequence.cs" />
+    <Compile Include="TT\DAC\POTerms.cs" />
+    <Compile Include="TT\DAC\ProductionNumber.cs" />
+    <Compile Include="TT\DAC\PXGraph1.cs" />
+    <Compile Include="TT\DAC\ShipmentSequence.cs" />
+    <Compile Include="TT\DAC\Taxes.cs" />
+    <Compile Include="TT\DAC\TransferSequence.cs" />
+    <Compile Include="TT\DAC\UserCurrent.cs" />
+    <Compile Include="TT\DAC\VendorClass2.cs" />
+    <Compile Include="TT\GenerateChecks.cs" />
+    <Compile Include="TT\GraphExt\AccountHistoryBySubEnq.cs" />
+    <Compile Include="TT\GraphExt\APInvoiceEntry.cs" />
+    <Compile Include="TT\GraphExt\APPaymentEntryExt.cs" />
+    <Compile Include="TT\GraphExt\APTranExtensions.cs" />
+    <Compile Include="TT\GraphExt\ARInvoiceEntry.cs" />
+    <Compile Include="TT\GraphExt\ARPaymentEntry.cs" />
+    <Compile Include="TT\GraphExt\CashAccountMaint_Extension.cs" />
+    <Compile Include="TT\GraphExt\CATranEntryExt.cs" />
+    <Compile Include="TT\GraphExt\GLHistoryEnquiryResultExtensions.cs" />
+    <Compile Include="TT\GraphExt\INIssueEntry.cs" />
+    <Compile Include="TT\GraphExt\JournalEntry.cs" />
+    <Compile Include="TT\GraphExt\POLineExt.cs" />
+    <Compile Include="TT\GraphExt\POOrderEntry.cs" />
+    <Compile Include="TT\GraphExt\POReceiptEntry.cs" />
+    <Compile Include="TT\GraphExt\PXGraph1.cs" />
+    <Compile Include="TT\GraphExt\SOOrderEntry.cs" />
+    <Compile Include="TT\InventoryReceiptSequenceMaint.cs" />
+    <Compile Include="TT\LCOrderMaint.cs" />
+    <Compile Include="TT\LegalFormMaint.cs" />
+    <Compile Include="TT\NRProcess.cs" />
+    <Compile Include="TT\POReceiptSequenceMaint.cs" />
+    <Compile Include="TT\POTermsMaint.cs" />
+    <Compile Include="TT\ProductionNumberMaint.cs" />
+    <Compile Include="TT\PXGraph1.cs" />
+    <Compile Include="TT\ShipmentSequenceMaint.cs" />
+    <Compile Include="TT\TaxesMaint.cs" />
+    <Compile Include="TT\TranBankProcess.cs" />
+    <Compile Include="TT\TranCheckDispersantProcess.cs" />
+    <Compile Include="TT\TranCUCProcess.cs" />
+    <Compile Include="TT\TransferSequenceMaint.cs" />
+    <Compile Include="TT\UserCurrentEntry.cs" />
+    <Compile Include="TT\VendorClass2Maint.cs" />
+    <Compile Include="TT\VoidBankProcess.cs" />
+    <Compile Include="TT\VoidCheckBeforeProcess.cs" />
+    <Compile Include="TT\VoidCheckBeforeTranProcess.cs" />
+    <Compile Include="TT\VoidCheckCustomer.cs" />
+    <Compile Include="TT\VoidCheckProcess.cs" />
+    <Compile Include="TT\VoidCUCProcess.cs" />
+    <Compile Include="TT\VoidNRProcess.cs" />
+    <Compile Include="TT\VoidTranBankProcess.cs" />
+    <Compile Include="TT\VoidTranCheckDispersantProcess.cs" />
+    <Compile Include="TT\VoidTranCUCProcess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>6.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InspectionForm\DAC\DAC.rar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

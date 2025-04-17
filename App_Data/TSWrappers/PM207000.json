@@ -1,0 +1,1 @@
+{"view":"PM207000","elements":[{"type":"QP-FIELDSET","id":"billingFieldset","elements":[{"type":"FIELD","id":"","name":"Billing.BillingID"}]},{"type":"QP-FIELDSET","id":"billingRuleFieldset","elements":[{"type":"FIELD","id":"","name":"BillingRule.QtyFormula","controlType":"qp-formula-editor"}]}]}

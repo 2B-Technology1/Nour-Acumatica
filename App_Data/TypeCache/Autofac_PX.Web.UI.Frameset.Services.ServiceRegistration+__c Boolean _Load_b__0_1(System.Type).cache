@@ -1,0 +1,21 @@
+[
+  {
+    "Name": "PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099461423|638375611980000000",
+    "Types": [
+      "PX.Web.UI.Frameset.Model.Graph.AreaEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.DashboardEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.FavoriteScreenEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.FavoriteTileEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.FavoriteWorkspaceEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.PinnedScreenEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.ScreenEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.SiteMapEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.SubcategoryEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.TileEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.UserScreenRelevanceEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.WikiDescriptorEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Graph.WorkspaceEntitySet, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

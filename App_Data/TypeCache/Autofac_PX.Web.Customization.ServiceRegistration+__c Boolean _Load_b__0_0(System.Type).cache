@@ -1,0 +1,31 @@
+[
+  {
+    "Name": "PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099212086|638375612020000000",
+    "Types": [
+      "PX.Web.Customization.Validation.Rules.Isv3RdPartyToolValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Sql.IsvSqlCorrespondenceValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Sql.IsvSqlSchemeChangesValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.SiteMap.IsvInitialsSiteMapScreenValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Screen.IsvInitialsScreenValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Report.IsvInitialsReportScreenValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Push.IsvInitialsPushNotificationValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.GI.IsvInitialsGIDesignValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Endpoint.IsvInitialsEntityEndpointValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.DbTable.IsvDbTableValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Dashboard.IsvInitialsDashboardValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.Dac.LegacyDacValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.IsvFileValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Graph.IsvInitialsGraphExtensionValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Graph.IsvInitialsGraphValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Graph.LegacyGraphValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Graph.SealedGraphExtensionRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Class.IsvInitialsClassValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Cache.IsvInitialsCacheExtensionValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Cache.IsvInitialsCacheValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Cache.PxCacheExtensionValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Cache.PxMappedCacheExtensionValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.Customization.Validation.Rules.BinFile.Attribute.IsvInitialsAttributeValidationRule, PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

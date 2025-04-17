@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095960763|638375610380000000",
+    "Types": [
+      "PX.Api.ContractBased.Models.CustomStringFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomDecimalFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomDateTimeFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomBooleanFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomIntFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomLongFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomShortFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomByteFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomDoubleFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Api.ContractBased.Models.CustomGuidFieldConverter, PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

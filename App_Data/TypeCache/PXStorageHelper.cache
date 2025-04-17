@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096708763|638375610000000000",
+    "Types": [
+      "PX.Data.Update.Storage.AmazonS3Storage, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Data.Update.Storage.AzureStorage, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Data.Update.Storage.LocalStorage, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

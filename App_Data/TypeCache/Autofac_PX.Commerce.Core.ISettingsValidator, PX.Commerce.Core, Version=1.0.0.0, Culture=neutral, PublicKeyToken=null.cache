@@ -1,0 +1,2342 @@
+[
+  {
+    "Name": "PX.Commerce.BigCommerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096369668|638375618180000000",
+    "Types": [
+      "PX.Commerce.BigCommerce.CustomerValidator, PX.Commerce.BigCommerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Commerce.BigCommerce.GeneralValidator, PX.Commerce.BigCommerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Commerce.BigCommerce.OrderValidator, PX.Commerce.BigCommerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Commerce.BigCommerce.ProductValidator, PX.Commerce.BigCommerce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  },
+  {
+    "Name": "PX.Commerce.Shopify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096469405|638375618200000000",
+    "Types": [
+      "PX.Commerce.Shopify.CustomerValidator, PX.Commerce.Shopify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Commerce.Shopify.GeneralValidator, PX.Commerce.Shopify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Commerce.Shopify.OrderValidator, PX.Commerce.Shopify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Commerce.Shopify.ProductValidator, PX.Commerce.Shopify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  },
+  {
+    "Name": "Microsoft.AspNetCore.SignalR.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094245336|636776379420000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CCProcessingBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096309827|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.UserSecrets, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094903580|636774892280000000",
+    "Types": null
+  },
+  {
+    "Name": "SharpCompress, Version=0.23.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96",
+    "Hash": "638730635099620992|636868655860000000",
+    "Types": null
+  },
+  {
+    "Name": "Accord, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7",
+    "Hash": "638730635093018614|636439679460000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100289333|637387260340000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.BarcodeProcessing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096220068|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Webhooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096120339|638375614120000000",
+    "Types": null
+  },
+  {
+    "Name": "System.IdentityModel.Tokens.ValidatingIssuerNameRegistry, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635099930168|635004535160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094514618|636717570500000000",
+    "Types": null
+  },
+  {
+    "Name": "Vereyon.Web.HtmlSanitizer, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635100538544|636420613840000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.Collections.Deque, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095841084|636405368400000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.TaxProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099052508|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Graph, Version=3.35.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095043210|637593894120000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AutocompleteGenerator.ModelSelection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096200121|638375610180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AspNetCore.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096150251|638375609160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authorization.Policy, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093876315|636776375720000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AspNetCore3.Backport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096180174|638375610200000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Webhooks.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096110356|638375615080000000",
+    "Types": null
+  },
+  {
+    "Name": "RabbitMQ.Client, Version=6.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce",
+    "Hash": "638730635099511288|637600570460000000",
+    "Types": null
+  },
+  {
+    "Name": "Swashbuckle.AspNetCore.Swagger, Version=6.5.0.0, Culture=neutral, PublicKeyToken=62657d7474907593",
+    "Hash": "638730635099740673|638090128980000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Cors, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093886289|636776375380000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Mobile.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096020603|638375608800000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Razor, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094135631|636776369660000000",
+    "Types": null
+  },
+  {
+    "Name": "IdentityServer4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f294d0afe402bb2b",
+    "Hash": "638730635093706771|637481057160000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Http.Owin, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100438813|636790033080000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.CodeAnalysis, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094444801|636606989420000000",
+    "Types": null
+  },
+  {
+    "Name": "SendGrid, Version=9.23.0.0, Culture=neutral, PublicKeyToken=4f047e93159395ca",
+    "Hash": "638730635099591077|637546251040000000",
+    "Types": null
+  },
+  {
+    "Name": "Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10",
+    "Hash": "638730635099591077|637065937620000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094025922|636776376120000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.CommandLine, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094883636|636774892220000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Cryptography.OpenSsl, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100209422|636139150260000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms, Version=2.29.0.1078, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095352383|636390090780000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AutocompleteGenerator.Scoring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096200121|638375610180000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Logging.EventSource, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095003324|636774892420000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Options, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095023258|637731433140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Customization.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099212086|638375614840000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096519280|638375608660000000",
+    "Types": null
+  },
+  {
+    "Name": "Azure.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8",
+    "Hash": "638730635093387621|637395142360000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.Tokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095392277|637381420880000000",
+    "Types": null
+  },
+  {
+    "Name": "GraphQL.Client.Serializer.Newtonsoft, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093587091|637752775400000000",
+    "Types": null
+  },
+  {
+    "Name": "Pomelo.Extensions.Caching.MySql, Version=2.0.4.0, Culture=neutral, PublicKeyToken=2cc498582444921b",
+    "Hash": "638730635095910900|637763187440000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Owin.Security.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095541881|637091775440000000",
+    "Types": null
+  },
+  {
+    "Name": "Autofac.Extensions.DependencyInjection, Version=7.2.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da",
+    "Hash": "638730635093198137|637720429440000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Common.Parser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096559162|638375608000000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.TokenLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099082429|638375613920000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Cors, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094045866|636776376160000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Webhooks.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096100384|638375614100000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Owin.Host.SystemWeb, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095521936|637091776740000000",
+    "Types": null
+  },
+  {
+    "Name": "Azure.Identity, Version=1.3.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8",
+    "Hash": "638730635093397596|637408387140000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.RazorPages, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094095735|636776376320000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.ResponseCaching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094165550|636776374700000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.ViewFeatures, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094105709|636776376260000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Text.Encoding.CodePages, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100259300|636139150400000000",
+    "Types": null
+  },
+  {
+    "Name": "System.IdentityModel.Tokens.Jwt, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635099930168|637381416120000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.UpsCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099092402|638375619460000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CR.OutlookAddIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096599059|638375617800000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DataSync.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097027912|638375610300000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.MessageBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097327113|638375613500000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095382305|637381423020000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Data.OData, Version=5.8.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094554507|636697957420000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.PM.ChangeRequest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098653573|638375631100000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Http, Version=2.2.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093976051|636839651340000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.SignalR.Protocols.Json, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094275262|636776379440000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100319131|637176999180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AspNetCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096160225|638375610200000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Telemetry, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099062482|638375613420000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Cryptography.Cng, Version=4.3.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100209422|637039356960000000",
+    "Types": null
+  },
+  {
+    "Name": "Serilog.Formatting.Compact, Version=1.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10",
+    "Hash": "638730635099611018|637068827240000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Logging.Debug, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094993343|636774892380000000",
+    "Types": null
+  },
+  {
+    "Name": "Serilog.Extensions.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10",
+    "Hash": "638730635099601046|637020221560000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.WindowsAzure.Storage, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095631640|635791399240000000",
+    "Types": null
+  },
+  {
+    "Name": "Autofac.Integration.WebApi.Owin, Version=6.1.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da",
+    "Hash": "638730635093228049|637950728800000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Site, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099301844|638375613520000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.PJ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098613680|638375631140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Archiver, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096130311|638375608000000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.StampsCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099022588|638375619460000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Commerce.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096439481|638375618160000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.FedExCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097157568|638375619480000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Caching.SqlServer, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094863684|637731433080000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100289333|637387261320000000",
+    "Types": null
+  },
+  {
+    "Name": "Accord.Text, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7",
+    "Hash": "638730635093148263|636439679500000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.DataProtection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093906238|636776371740000000",
+    "Types": null
+  },
+  {
+    "Name": "Accord.Math.Core, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7",
+    "Hash": "638730635093028581|636439679400000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication.OAuth, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093856378|636620950760000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Data.Schema.ScriptDom, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635094594404|638375602180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Outlook, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096050526|638375614960000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095571795|637370998760000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Localization, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094005977|636776375600000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.WebConfig, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099501315|638375612060000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635094315155|637039349320000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Routing, Version=2.2.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094175519|636839651660000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Logging.Console, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094993343|636774892400000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Localization.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094973393|636776375560000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.BusinessProcess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096249987|638375610520000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Diagnostics.HealthChecks, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093926189|636776375120000000",
+    "Types": null
+  },
+  {
+    "Name": "Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106",
+    "Hash": "638730635099561154|637894218600000000",
+    "Types": null
+  },
+  {
+    "Name": "AutoMapper, Version=9.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005",
+    "Hash": "638730635093238021|637012069240000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098474052|638375631120000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.AsyncEx.Tasks, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095831111|636897648660000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Primitives, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095023258|637731433260000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Owin, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094125655|636776369500000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100398917|636790032860000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100408893|636790032600000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AutocompleteGenerator.Dataset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096190149|638375610180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.LocalFileStorage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097307167|638375614700000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.EasyPostCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097117673|638375619480000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.OData.Edm, Version=7.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095482034|637054698040000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ACHPlugInBase, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095930844|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b",
+    "Hash": "638730635099551182|636535491000000000",
+    "Types": null
+  },
+  {
+    "Name": "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed",
+    "Hash": "638730635095791217|637516010160000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DataSync.SendGrid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097077778|638375618020000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098823121|638375611340000000",
+    "Types": null
+  },
+  {
+    "Name": "IdentityServer4.Storage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93d4430489de4ef4",
+    "Hash": "638730635093726721|637481050900000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AddressValidator.AvalaraRest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095930844|638375618140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ApacheKafkaClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095950792|638375614740000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094305175|635737677980000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.SmsProvider.AWS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098982695|638375613840000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635099900248|637224977600000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CS.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096609032|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Site.Pure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099311817|638375617980000000",
+    "Types": null
+  },
+  {
+    "Name": "Rebus.SqlServer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099541207|637705879620000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093936161|636776370220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.TSBasedScreen, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096070467|638375613360000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Identity.Client.Extensions.Msal, Version=2.16.5.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae",
+    "Hash": "638730635095332433|637395792300000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Net.WebSockets.Client.Managed, Version=1.0.22.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635100039873|636743002160000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Cryptography.ProtectedData, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100229369|636619841840000000",
+    "Types": null
+  },
+  {
+    "Name": "GraphQL.Client.Abstractions.Websocket, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093577118|637752775400000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.DataProtection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093896265|636776371700000000",
+    "Types": null
+  },
+  {
+    "Name": "JetBrains.Annotations, Version=4242.42.42.42, Culture=neutral, PublicKeyToken=1010a0d8d6380325",
+    "Hash": "638730635093726721|638034430460000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100239344|637387267260000000",
+    "Types": null
+  },
+  {
+    "Name": "AWSSDK.S3, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604",
+    "Hash": "638730635093357701|638102993320000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Data.AspNetCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096678843|638375614540000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100049849|636619841840000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.Cancellation, Version=1.0.5.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095841084|636405370740000000",
+    "Types": null
+  },
+  {
+    "Name": "IdentityModel, Version=4.3.0.0, Culture=neutral, PublicKeyToken=e7877f4675df049f",
+    "Hash": "638730635093597065|637253815700000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100488677|636790034640000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Data.BQL.Fluent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096698789|638375610220000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.OData.Core, Version=7.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095422199|637054697900000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ResourceGovernor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098912881|638375613960000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Http.Connections, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093966079|636776379440000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Drawing.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635099910222|638017040800000000",
+    "Types": null
+  },
+  {
+    "Name": "Elasticsearch.Net, Version=7.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d",
+    "Hash": "638730635093517281|637407762180000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.WebSockets, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094295200|636776375560000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.ContractBased, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095960763|638375610380000000",
+    "Types": null
+  },
+  {
+    "Name": "EasyPost.ApiClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093507302|638375619420000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.TableStorage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099032561|638375614780000000",
+    "Types": null
+  },
+  {
+    "Name": "WebDAVClient, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635100548518|636062429700000000",
+    "Types": null
+  },
+  {
+    "Name": "Castle.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc",
+    "Hash": "638730635093407572|638079850020000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094893609|637731433160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Web.RedisSessionStateProvider, Version=4.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095601721|636795917000000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DacSchemaBrowser.Views, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096628978|638375613280000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Diagnostics.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093906238|636776374960000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094015946|636776376100000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.Disposables, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095851060|636634953240000000",
+    "Types": null
+  },
+  {
+    "Name": "Antlr4.Runtime, Version=4.5.3.0, Culture=neutral, PublicKeyToken=e78b2c5abd1fcb3f",
+    "Hash": "638730635093168211|638375602160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Caching.Memory, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094853712|637731433040000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.HostFiltering, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093936161|636776371680000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.OData.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096040546|638375614300000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100388942|636790034640000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Commerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096399588|638375618160000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100019928|635599698460000000",
+    "Types": null
+  },
+  {
+    "Name": "NodaTime, Version=2.4.6.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1",
+    "Hash": "638730635095851060|636976418660000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095591753|634788101360000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099291869|638375617780000000",
+    "Types": null
+  },
+  {
+    "Name": "MongoDB.Driver.Core, Version=2.13.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095681509|637690731160000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100039873|635599698460000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.StaticFiles, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094285227|636776374720000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.SignalR, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094265288|636776379480000000",
+    "Types": null
+  },
+  {
+    "Name": "MySqlConnector, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92",
+    "Hash": "638730635095751322|637703261080000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Spatial, Version=7.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095581768|637054698140000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.Clients.ActiveDirectory, Version=2.29.0.1078, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095342409|636390090780000000",
+    "Types": null
+  },
+  {
+    "Name": "Autofac.Integration.Owin, Version=7.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da",
+    "Hash": "638730635093218077|637949707020000000",
+    "Types": null
+  },
+  {
+    "Name": "MongoDB.Bson, Version=2.13.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095671541|637690731060000000",
+    "Types": null
+  },
+  {
+    "Name": "Rebus.ServiceProvider, Version=8.3.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099531241|637977063660000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Salesforce, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098932828|638375617960000000",
+    "Types": null
+  },
+  {
+    "Name": "CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379",
+    "Hash": "638730635093417542|637883682960000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.PushNotifications, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098853040|638375610460000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Graph.Core, Version=1.25.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095033233|637523075020000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.UI.Frameset.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099481368|638375614220000000",
+    "Types": null
+  },
+  {
+    "Name": "Confluent.Kafka, Version=1.8.2.0, Culture=neutral, PublicKeyToken=12c514ca49093d1e",
+    "Hash": "638730635093437490|637702496180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096569135|638375607940000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.LicensePolicy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097297193|638375610420000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AssemblyPatcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096180174|638375611900000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.UI.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099321790|638375611780000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Razor.Runtime, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094155574|636776369720000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNet.OData.Extendable, Version=7.2.4.0, Culture=neutral, PublicKeyToken=f32211b7b6bfc897",
+    "Hash": "638730635093796533|637828575760000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.TaxProvider.AvalaraSoap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099042534|638375617960000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.WebEncoders, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095033233|636776369200000000",
+    "Types": null
+  },
+  {
+    "Name": "TimeZoneConverter, Version=3.5.0.0, Culture=neutral, PublicKeyToken=e20ab7d0d9479841",
+    "Hash": "638730635100538544|637534924520000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.OidcClient.Views, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098803175|638375612740000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096708763|638375610000000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CCProcessing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096289882|638375617280000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Dashboards.Widgets, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096658901|638375611940000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.MongoClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097357032|638375614660000000",
+    "Types": null
+  },
+  {
+    "Name": "Accord.Statistics, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7",
+    "Hash": "638730635093118338|636439679480000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Mobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095990682|638375612780000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Data.Schema.ScriptDom.Sql, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635094604378|638375602180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AutocompleteGenerator.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096210097|638375610280000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100159555|637705392180000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.SignalR.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094255314|636776379440000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CloudServices.DocumentRecognition, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096349726|638375612280000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Razor.Extensions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094085764|636776369720000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Cryptography.Xml, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100229369|636619841840000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Net.Http.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100029901|637387261800000000",
+    "Types": null
+  },
+  {
+    "Name": "AutofacSerilogIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d672c67444a98ac9",
+    "Hash": "638730635093228049|637408377380000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094235361|636776370540000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.SmsProvider.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099012615|638375610480000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Net.Http.Headers, Version=2.2.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095412221|637062321380000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CarrierService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096289882|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ShipEngineCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098962747|638375619460000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ExternalCarriersHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097147590|638375619500000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Owin.Security, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095531905|637091775420000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Net.WebSockets.WebSocketProtocol, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100049849|636638849440000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.Kestrel.Https, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094225388|636776370580000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.DataAnnotations, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094055838|636776376140000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.Kestrel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094225388|636776370640000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.IIS, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094185492|636776374500000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Scenarios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098952774|638375618000000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ACHPlugIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095920868|638375618320000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.FileProviders.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094943472|637731433380000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Localization, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094973393|636776375600000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Razor, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094075786|636776376280000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Oidc.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098783227|638375611320000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Options.ConfigurationExtensions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095013285|637731434220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Mail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097317139|638375614480000000",
+    "Types": null
+  },
+  {
+    "Name": "Nour2024, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638758969476809896|638804889092657378",
+    "Types": null
+  },
+  {
+    "Name": "PX.ML.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097347059|638375613800000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Formatters.Json, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094065812|636776376140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Logging.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097317139|638375609460000000",
+    "Types": null
+  },
+  {
+    "Name": "DotNetOpenAuth.OpenId.RelyingParty, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246",
+    "Hash": "638730635093507302|635209687500000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.AsyncEx.Coordination, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095821138|636897648680000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.Localizations.CA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098593732|638375624140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Telemetry.SerilogSink, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099082429|638375614060000000",
+    "Types": null
+  },
+  {
+    "Name": "MathNet.Numerics, Version=4.15.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093736691|637456284080000000",
+    "Types": null
+  },
+  {
+    "Name": "DotNetOpenAuth.OpenId, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246",
+    "Hash": "638730635093487362|635209687460000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Threading.Channels, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100309158|637387263840000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DataSync.HubSpot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097057832|638375618020000000",
+    "Types": null
+  },
+  {
+    "Name": "MongoDB.Libmongocrypt, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095751322|637623274920000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.DependencyInjection, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094913557|637731433020000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DataSync.PaymentProcessing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097077778|638375618360000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.FedExRestCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097187488|638375619480000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.SmsProvider.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098992668|638375610480000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Http.OData, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100418864|635757095040000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.JsonWebTokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095362357|637381416940000000",
+    "Types": null
+  },
+  {
+    "Name": "CommonServiceLocator, Version=2.0.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0",
+    "Hash": "638730635093427516|638126232660000000",
+    "Types": null
+  },
+  {
+    "Name": "MongoDB.Driver, Version=2.13.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095711426|637690731400000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.Json, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094903580|636774892260000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.ResponseCompression, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094165550|636776371660000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100448785|636790031860000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.AsyncEx.Context, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095811157|636897648660000000",
+    "Types": null
+  },
+  {
+    "Name": "DnsClient, Version=1.4.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424",
+    "Hash": "638730635093457439|637489128000000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication.OpenIdConnect, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093866346|636620950920000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099331763|638375611420000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Logging.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094983365|637731433460000000",
+    "Types": null
+  },
+  {
+    "Name": "Monads, Version=1.1.5.0, Culture=neutral, PublicKeyToken=c45ad03d718dd7fa",
+    "Hash": "638730635095661555|634592110260000000",
+    "Types": null
+  },
+  {
+    "Name": "IdentityServer3, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093607039|636200905220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Owin.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098833094|638375609480000000",
+    "Types": null
+  },
+  {
+    "Name": "Avalara.AvaTax.RestClient, Version=23.3.1.0, Culture=neutral, PublicKeyToken=be94eb8ba37fd33c",
+    "Hash": "638730635093267946|638157248680000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100009954|637176999180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.MSGraph, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097367005|638375618300000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.PM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098663547|638375631080000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.TaxProvider.AvalaraRest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099042534|638375618140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DacSchemaBrowser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096619011|638375612840000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.OidcClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098803175|638375612300000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635099850379|637176999180000000",
+    "Types": null
+  },
+  {
+    "Name": "StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2e6337a5d77bfbc",
+    "Hash": "638730635099700779|637533350240000000",
+    "Types": null
+  },
+  {
+    "Name": "App_Code, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638796172451834445|638796172453075373",
+    "Types": null
+  },
+  {
+    "Name": "Autofac.Extras.CommonServiceLocator, Version=6.0.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da",
+    "Hash": "638730635093208109|637374003580000000",
+    "Types": null
+  },
+  {
+    "Name": "GraphQL.Client, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093577118|637752775400000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DbServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097087756|638375608340000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Runtime.Loader, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100169528|636139150200000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635094315155|637387260360000000",
+    "Types": null
+  },
+  {
+    "Name": "Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10",
+    "Hash": "638730635099611018|637068831340000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Diagnostics.HealthChecks, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094933505|637731433880000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100478705|636790034640000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AddressValidator.VertexSoap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095950792|638375618240000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication.Cookies, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093846401|636620950800000000",
+    "Types": null
+  },
+  {
+    "Name": "MongoDB.Driver.GridFS, Version=2.13.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095741343|637690731420000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.PowerBI.Core, Version=1.1.11.17109, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095571795|636281826800000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.SignalR.StackExchangeRedis, Version=1.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094275262|636913097060000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094873661|637731433160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.FileProviders.Embedded, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094943472|637731433700000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Antiforgery, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093836428|636776371980000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.BulkInsert, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096230040|638375609080000000",
+    "Types": null
+  },
+  {
+    "Name": "PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb",
+    "Hash": "638730635095880973|636848797120000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Cryptography.Internal, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093896265|636776371700000000",
+    "Types": null
+  },
+  {
+    "Name": "Stripe.net, Version=39.40.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099710756|637520255580000000",
+    "Types": null
+  },
+  {
+    "Name": "Serilog.Sinks.PeriodicBatching, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10",
+    "Hash": "638730635099620992|637184420260000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.AsyncEx.Interop.WaitHandles, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095821138|636897648680000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.CodeAnalysis.Razor, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094504641|636776369700000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Razor.Language, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094135631|636776369680000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ML, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097337085|638375610240000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095621662|635623780680000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093946133|636776370200000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.JsonPatch, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093995998|636776369140000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Linq.Async, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263",
+    "Hash": "638730635099950115|637406168120000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.PR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098683493|638375618140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099132296|638375617640000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.BootLoader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096230040|638375613720000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.FedExCarrier.XmlSerializers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097177513|638375619480000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authorization, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093876315|636776375680000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093856378|636776375680000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093846401|636776369500000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100249325|637387263880000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.UspsCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099112347|638375619460000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Reflection.TypeExtensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100149582|636139150080000000",
+    "Types": null
+  },
+  {
+    "Name": "Nito.AsyncEx.Oop, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095831111|636897648700000000",
+    "Types": null
+  },
+  {
+    "Name": "Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed",
+    "Hash": "638730635095781243|636257736800000000",
+    "Types": null
+  },
+  {
+    "Name": "MessagePack, Version=1.9.0.0, Culture=neutral, PublicKeyToken=b4a0369545f0a1be",
+    "Hash": "638730635093786560|637169365240000000",
+    "Types": null
+  },
+  {
+    "Name": "AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604",
+    "Hash": "638730635093307835|638102993220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AddressValidator.AvalaraSoap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095940817|638375617960000000",
+    "Types": null
+  },
+  {
+    "Name": "RestSharp, Version=108.0.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75",
+    "Hash": "638730635099581100|637902024660000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Hosting.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094963419|637731433900000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093926189|636776375600000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Spatial, Version=5.8.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100249325|636697957580000000",
+    "Types": null
+  },
+  {
+    "Name": "Otp.NET, Version=1.2.1.0, Culture=neutral, PublicKeyToken=38a48df817e173a6",
+    "Hash": "638730635095870997|636765860320000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.FileProviders.Physical, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094953443|637731433160000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CloudServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096339751|638375610600000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Data.Services.Client, Version=5.8.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094664219|636697957780000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Reports.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098882960|638375611860000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.DataSync, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097037887|638375617800000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.FileProviders.Composite, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094943472|636774892200000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.RabbitMQClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098872987|638375614680000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.ApiExplorer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094015946|636776376140000000",
+    "Types": null
+  },
+  {
+    "Name": "Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2",
+    "Hash": "638730635095900919|638188041980000000",
+    "Types": null
+  },
+  {
+    "Name": "GraphQL.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093587091|637752775380000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.Localization, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094075786|636776376280000000",
+    "Types": null
+  },
+  {
+    "Name": "Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f",
+    "Hash": "638730635093158233|634971158200000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Reflection.Metadata, Version=1.4.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100129635|637094002560000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Payroll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e",
+    "Hash": "638730635098843067|638094869300000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635099860354|637224971660000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.OAuthClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097386957|638375612140000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635099900248|637387265260000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.Kestrel.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094205443|636776370560000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.FileSystemGlobbing, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094953443|637731434040000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Http.Connections.Common, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093966079|636776379420000000",
+    "Types": null
+  },
+  {
+    "Name": "Avalara.AvaTax.Adapter, Version=16.8.0.0, Culture=neutral, PublicKeyToken=34e4ef76d6267205",
+    "Hash": "638730635093247994|636168886400000000",
+    "Types": null
+  },
+  {
+    "Name": "WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100548518|635260786540000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.GLAnomalyDetection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097217406|638375618260000000",
+    "Types": null
+  },
+  {
+    "Name": "ShipEngine.ApiClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099640939|638375619440000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.Protocols, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095372333|637381418780000000",
+    "Types": null
+  },
+  {
+    "Name": "Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5",
+    "Hash": "638730635095870997|634884023740000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Win32.Registry, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635095621662|636619841760000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.EnvironmentVariables, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094893609|637731433100000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.OpenApi, Version=1.2.3.0, Culture=neutral, PublicKeyToken=3f5743946376f042",
+    "Hash": "638730635095501982|637343252520000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.IdentityModel.Logging, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095372333|637381418140000000",
+    "Types": null
+  },
+  {
+    "Name": "Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc",
+    "Hash": "638730635099750648|636136310760000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Owin, Version=4.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095511966|637878186800000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Payroll.WebServiceClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098843067|638375618080000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Customization.MSILEdit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099271923|638375611900000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AutocompleteGenerator.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096190149|638375610180000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Html.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093956108|636776369220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.OData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096030575|638375612040000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094235361|636776370580000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099461423|638375611980000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100339075|636790031240000000",
+    "Types": null
+  },
+  {
+    "Name": "System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635100339075|636619841920000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Hosting, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093946133|636776370220000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Logging, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095003324|637731433620000000",
+    "Types": null
+  },
+  {
+    "Name": "HtmlAgilityPack, Version=1.11.46.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a",
+    "Hash": "638730635093597065|637987549580000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.ObjectPool, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635095013285|636774892080000000",
+    "Types": null
+  },
+  {
+    "Name": "SerilogTimings, Version=2.3.0.0, Culture=neutral, PublicKeyToken=ea6fc7d88906f03a",
+    "Hash": "638730635099620992|637123853640000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.IdentityServer.UI.Views, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097287220|638375611320000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.CodeAnalysis.CSharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094325123|636606989420000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.SmsProvider.Twilio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099002642|638375613880000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.WebApiCompatShim, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094115679|636776376160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.TagHelpers, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094105709|636776376300000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093956108|636776369400000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Customization.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099202108|638375611360000000",
+    "Types": null
+  },
+  {
+    "Name": "Accord.Math, Version=3.8.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7",
+    "Hash": "638730635093058498|636439679400000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Exchange.WebServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094813821|635546053540000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.Binder, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094883636|637731433260000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094933505|637731433800000000",
+    "Types": null
+  },
+  {
+    "Name": "DotNetOpenAuth.OAuth.Consumer, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246",
+    "Hash": "638730635093477386|635209687420000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100438813|636790033760000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Data.SqlClient, Version=4.1.0.0, Culture=neutral, PublicKeyToken=23ec7fc2d6eaa4a5",
+    "Hash": "638730635094684161|637987033480000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100478705|636790034640000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Olap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098813149|638375610840000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096060492|638375610160000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100029901|636790032360000000",
+    "Types": null
+  },
+  {
+    "Name": "DotNetOpenAuth.OAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246",
+    "Hash": "638730635093487362|635209687420000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Logging.Configuration, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094983365|636774892380000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.WebUtilities, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094295200|636776369400000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.Cryptography.Pkcs, Version=4.0.3.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100219397|636790991560000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Routing.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094175519|636776374960000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Export, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097127644|638375609380000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.BankFeed, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096210097|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Interactive.Async, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263",
+    "Hash": "638730635099940143|637406168120000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.TaxProvider.VertexSoap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099052508|638375618240000000",
+    "Types": null
+  },
+  {
+    "Name": "DotNetOpenAuth.AspNet, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246",
+    "Hash": "638730635093467407|635209687380000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Data.BQL.Dynamic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096688818|638375612180000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Caching, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096279912|638375614180000000",
+    "Types": null
+  },
+  {
+    "Name": "System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635099880300|636619841760000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Http, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094963419|637731434520000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.GIROPaymentsExport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097207435|638375618340000000",
+    "Types": null
+  },
+  {
+    "Name": "App_global.asax, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638796172461259978|638796172461259978",
+    "Types": null
+  },
+  {
+    "Name": "DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246",
+    "Hash": "638730635093467407|635209687380000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ML.GI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097347059|638375610620000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.AM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097406900|638375617440000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094913557|637731433220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097536554|638375631080000000",
+    "Types": null
+  },
+  {
+    "Name": "Swashbuckle.AspNetCore.Newtonsoft, Version=6.5.0.0, Culture=neutral, PublicKeyToken=0a8275552fcd3ab4",
+    "Hash": "638730635099740673|638090129280000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635100468731|636790032120000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.PowerBI.Api, Version=2.0.12.18114, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095541881|636601739400000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Caching.StackExchangeRedis, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094873661|637731433060000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AspNetCore.Mvc.WebApiCompatShim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096170202|638375613480000000",
+    "Types": null
+  },
+  {
+    "Name": "System.IO.Pipelines, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+    "Hash": "638730635099950115|637419492220000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Private.DataContractSerialization, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100069795|636139149960000000",
+    "Types": null
+  },
+  {
+    "Name": "GraphQL.Client.Abstractions, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093567145|637752775380000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.IdentityServer.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097247325|638375610900000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.DotNet.PlatformAbstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094803844|636620112940000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.UpsRestCarrier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099102375|638375619440000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094055838|636776376340000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Server.IISIntegration, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094195469|636776374480000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.VertexService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099122324|638375618220000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.UI.Workflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099491341|638375614360000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Http.Extensions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093986024|636776369460000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Reports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098892934|638375609740000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Hosting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097237352|638375609160000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.MySql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097386957|638375610420000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Hosting.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097237352|638375609460000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.ExternalCarriersCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097137618|638375619440000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+    "Hash": "638730635100199451|637387262780000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.DependencyModel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094923530|636620113140000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.Localizations.GB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098613680|638375618280000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CloudServices.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096339751|638375610580000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093836428|636776369460000000",
+    "Types": null
+  },
+  {
+    "Name": "CsvHelper, Version=30.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823",
+    "Hash": "638730635093447464|638037893840000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Identity.Client, Version=4.36.2.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae",
+    "Hash": "638730635095292542|637683628240000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Diagnostics, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093916212|636776374980000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Data.Edm, Version=5.8.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094534562|636697957300000000",
+    "Types": null
+  },
+  {
+    "Name": "PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb",
+    "Hash": "638730635095890945|636848797120000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNet.SessionState.SessionStateModule, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635093826453|636293350840000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Telemetry.Adapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099052508|638375613400000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Objects.PM.MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098673520|638375618260000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Dashboards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096638949|638375610540000000",
+    "Types": null
+  },
+  {
+    "Name": "AuthorizeNet, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635093178179|636748506540000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.AddressValidator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095940817|638375630780000000",
+    "Types": null
+  },
+  {
+    "Name": "System.Reactive, Version=4.3.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263",
+    "Hash": "638730635100089746|637127476760000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.MSTeams, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097367005|638375624140000000",
+    "Types": null
+  },
+  {
+    "Name": "Rebus, Version=6.6.5.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099521262|637873435600000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Web.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099212086|638375612020000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.SiteMap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098972724|638375613320000000",
+    "Types": null
+  },
+  {
+    "Name": "StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46",
+    "Hash": "638730635099670858|638222635040000000",
+    "Types": null
+  },
+  {
+    "Name": "Autofac, Version=6.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da",
+    "Hash": "638730635093188157|638042197600000000",
+    "Types": null
+  },
+  {
+    "Name": "Namotion.Reflection, Version=2.0.10.0, Culture=neutral, PublicKeyToken=c2f9c3bdfae56102",
+    "Hash": "638730635095771265|637788825500000000",
+    "Types": null
+  },
+  {
+    "Name": "AWSSDK.SimpleNotificationService, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604",
+    "Hash": "638730635093377648|638102993160000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Connections.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093886289|636776370500000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Caching.Abstractions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094853712|637731432920000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.ContractBased.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635095960763|638375608820000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Http.Features, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093986024|636776369380000000",
+    "Types": null
+  },
+  {
+    "Name": "Autofac.Integration.WebApi, Version=6.1.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da",
+    "Hash": "638730635093218077|637950607960000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.CCProcessingService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096319810|638375618000000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Exchange.WebServices.Auth, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635094813821|635546053540000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.AspNetCore.HttpOverrides, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635093995998|636776371640000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Web.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "Hash": "638730635095601721|636349354520000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Api.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096090410|638375613440000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Dashboards.Caching, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096628978|638375611920000000",
+    "Types": null
+  },
+  {
+    "Name": "Microsoft.Extensions.Configuration.FileExtensions, Version=3.1.22.0, Culture=neutral, PublicKeyToken=adb9793829ddae60",
+    "Hash": "638730635094903580|637731433400000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Common.Mail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635096539220|638375607980000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.Reports.ARm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098872987|638375609780000000",
+    "Types": null
+  },
+  {
+    "Name": "PX.MessageBus.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635097327113|638375613380000000",
+    "Types": null
+  },
+  {
+    "Name": "Swashbuckle.AspNetCore.SwaggerGen, Version=6.5.0.0, Culture=neutral, PublicKeyToken=d84d99fb0135530a",
+    "Hash": "638730635099750648|638090129020000000",
+    "Types": null
+  }
+]

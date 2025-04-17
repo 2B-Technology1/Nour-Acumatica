@@ -1,0 +1,1 @@
+{"view":"CR503430","elements":[{"type":"QP-FIELDSET","id":"filterFieldset","elements":[{"type":"FIELD","id":"","name":"Filter.ValidationType"}]},{"type":"QP-GRID","id":"","view":"Contacts","elements":[]}]}

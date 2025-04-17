@@ -1,0 +1,13 @@
+{
+   "TestHeader": "Test",
+   "Details": "Details",
+   "Financial": "Financial",
+   "Manufacturing": "Manufacturing",
+   "ScreenID": "Screen ID",
+   "Note": "Note",
+   "Discounts": "Discounts",
+   "InventoryLookup": "Inventory Lookup",
+   "AddRelatedItems": "Add Related Items",
+   "AddMatrixItemMatrixView": "Add Matrix Item: Matrix View",
+   "ProcessOrder": "Process Order"
+}

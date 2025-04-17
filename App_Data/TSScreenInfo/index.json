@@ -1,0 +1,126 @@
+[
+	{
+		"name": "AR303000",
+		"graphName": "PX.Objects.AR.CustomerMaint"
+	},
+	{
+		"name": "CM000001",
+		"graphName": "Customization.CustomizationGraph"
+	},
+	{
+		"name": "CR102000",
+		"graphName": "PX.Objects.CR.CRActivitySetupMaint"
+	},
+	{
+		"name": "CR306000",
+		"graphName": "PX.Objects.CR.CRCaseMaint"
+	},
+	{
+		"name": "CR503430",
+		"graphName": "PX.Objects.CR.CRValidationProcess"
+	},
+	{
+		"name": "CS206010",
+		"graphName": "PX.CS.RMRowSetMaint"
+	},
+	{
+		"name": "CT202000",
+		"graphName": "PX.Objects.CT.TemplateMaint"
+	},
+	{
+		"name": "FA101000",
+		"graphName": "PX.Objects.FA.SetupMaint"
+	},
+	{
+		"name": "FA201010",
+		"graphName": "PX.Objects.FA.AssetTypeMaint"
+	},
+	{
+		"name": "FA205000",
+		"graphName": "PX.Objects.FA.BookMaint"
+	},
+	{
+		"name": "FA303000",
+		"graphName": "PX.Objects.FA.AssetMaint"
+	},
+	{
+		"name": "FA502000",
+		"graphName": "PX.Objects.FA.CalcDeprProcess"
+	},
+	{
+		"name": "FA503000",
+		"graphName": "PX.Objects.FA.AssetTranRelease"
+	},
+	{
+		"name": "FA508000",
+		"graphName": "PX.Objects.FA.DeleteDocsProcess"
+	},
+	{
+		"name": "GL201500",
+		"graphName": "PX.Objects.GL.GeneralLedgerMaint"
+	},
+	{
+		"name": "GL202500",
+		"graphName": "PX.Objects.GL.AccountMaint"
+	},
+	{
+		"name": "GL401000",
+		"graphName": "PX.Objects.GL.AccountHistoryEnq"
+	},
+	{
+		"name": "GL503000",
+		"graphName": "PX.Objects.GL.FinPeriodStatusProcess"
+	},
+	{
+		"name": "GL504000",
+		"graphName": "PX.Objects.GL.ScheduleRun"
+	},
+	{
+		"name": "GL504500",
+		"graphName": "PX.Objects.GL.AllocationProcess"
+	},
+	{
+		"name": "GL509900",
+		"graphName": "PX.Objects.GL.GLHistoryValidate"
+	},
+	{
+		"name": "IN202500",
+		"graphName": "PX.Objects.IN.InventoryItemMaint"
+	},
+	{
+		"name": "IN301000",
+		"graphName": "PX.Objects.IN.INReceiptEntry"
+	},
+	{
+		"name": "OU201000",
+		"graphName": "PX.Objects.CR.OUSearchMaint"
+	},
+	{
+		"name": "PM207000",
+		"graphName": "PX.Objects.PM.BillingMaint"
+	},
+	{
+		"name": "QP402050",
+		"graphName": "PX.BusinessProcess.UI.BusinessProcessEventInq"
+	},
+	{
+		"name": "QP402060",
+		"graphName": "PX.BusinessProcess.UI.NotificationInquiry"
+	},
+	{
+		"name": "SC000001",
+		"graphName": "PX.Web.UI.SharedColumnSettings"
+	},
+	{
+		"name": "SM206025",
+		"graphName": "PX.Api.SYImportMaint"
+	},
+	{
+		"name": "SM208000",
+		"graphName": "PX.Data.Maintenance.GI.GenericInquiryDesigner"
+	},
+	{
+		"name": "SO301000",
+		"graphName": "PX.Objects.SO.SOOrderEntry"
+	}
+]

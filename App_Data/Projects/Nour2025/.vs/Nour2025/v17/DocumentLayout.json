@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\loyalty\\graph\\loyaltytiergraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|solutionrelative:nour2025\\loyalty\\graph\\loyaltytiergraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\loyalty\\graph\\loyaltytiersentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|solutionrelative:nour2025\\loyalty\\graph\\loyaltytiersentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\customerloyaltyhistorygraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|solutionrelative:nour2025\\customerloyaltyhistorygraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\loyaltyactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|solutionrelative:nour2025\\loyaltyactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\crcasemaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|solutionrelative:nour2025\\crcasemaint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\loyalty\\helpers\\loyaltyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|solutionrelative:nour2025\\loyalty\\helpers\\loyaltyhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\loyalty\\dac\\loyaltytiercalculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|solutionrelative:nour2025\\loyalty\\dac\\loyaltytiercalculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\nour2025\\customerloyalty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BC6D61A-5D4B-4D57-BC6B-5E3F9D04377E}|Nour2025\\Nour2025.csproj|solutionrelative:nour2025\\customerloyalty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{407B75C1-DF84-479F-BD54-F5A5D7012034}|C:\\Program Files\\Acumatica ERP\\Nour|c:\\program files\\acumatica erp\\nour\\app_data\\coderepository\\px.objects.pj\\requestsforinformation\\cr\\cacheextensions\\baccountext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoyaltyTierGraph.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Graph\\LoyaltyTierGraph.cs",
+              "RelativeDocumentMoniker": "Nour2025\\Loyalty\\Graph\\LoyaltyTierGraph.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Graph\\LoyaltyTierGraph.cs",
+              "RelativeToolTip": "Nour2025\\Loyalty\\Graph\\LoyaltyTierGraph.cs",
+              "ViewState": "AgIAAAEAAACcmJmZmVkqwAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:03:20.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoyaltyActivity.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\LoyaltyActivity.cs",
+              "RelativeDocumentMoniker": "Nour2025\\LoyaltyActivity.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\LoyaltyActivity.cs",
+              "RelativeToolTip": "Nour2025\\LoyaltyActivity.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAgwGcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T10:00:16.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerLoyaltyhistoryGraph.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\CustomerLoyaltyhistoryGraph.cs",
+              "RelativeDocumentMoniker": "Nour2025\\CustomerLoyaltyhistoryGraph.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\CustomerLoyaltyhistoryGraph.cs",
+              "RelativeToolTip": "Nour2025\\CustomerLoyaltyhistoryGraph.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T09:17:33.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoyaltyTierCalculation.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Dac\\LoyaltyTierCalculation.cs",
+              "RelativeDocumentMoniker": "Nour2025\\Loyalty\\Dac\\LoyaltyTierCalculation.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Dac\\LoyaltyTierCalculation.cs",
+              "RelativeToolTip": "Nour2025\\Loyalty\\Dac\\LoyaltyTierCalculation.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:53:16.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoyaltyTiersEntry.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "RelativeDocumentMoniker": "Nour2025\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "RelativeToolTip": "Nour2025\\Loyalty\\Graph\\LoyaltyTiersEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T11:35:30.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoyaltyHelper.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Helpers\\LoyaltyHelper.cs",
+              "RelativeDocumentMoniker": "Nour2025\\Loyalty\\Helpers\\LoyaltyHelper.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\Loyalty\\Helpers\\LoyaltyHelper.cs",
+              "RelativeToolTip": "Nour2025\\Loyalty\\Helpers\\LoyaltyHelper.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwJ0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T10:55:05.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CRCaseMaint.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\CRCaseMaint.cs",
+              "RelativeDocumentMoniker": "Nour2025\\CRCaseMaint.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\CRCaseMaint.cs",
+              "RelativeToolTip": "Nour2025\\CRCaseMaint.cs",
+              "ViewState": "AgIAAB4AAABgMjMzMzMrwC4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T10:09:07.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerLoyalty.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\CustomerLoyalty.cs",
+              "RelativeDocumentMoniker": "Nour2025\\CustomerLoyalty.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2025\\Nour2025\\CustomerLoyalty.cs",
+              "RelativeToolTip": "Nour2025\\CustomerLoyalty.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA2wEYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T09:33:47.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BAccountExt.cs",
+              "DocumentMoniker": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Objects.PJ\\RequestsForInformation\\CR\\CacheExtensions\\BAccountExt.cs",
+              "RelativeDocumentMoniker": "..\\..\\CodeRepository\\PX.Objects.PJ\\RequestsForInformation\\CR\\CacheExtensions\\BAccountExt.cs",
+              "ToolTip": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\CodeRepository\\PX.Objects.PJ\\RequestsForInformation\\CR\\CacheExtensions\\BAccountExt.cs",
+              "RelativeToolTip": "..\\..\\CodeRepository\\PX.Objects.PJ\\RequestsForInformation\\CR\\CacheExtensions\\BAccountExt.cs",
+              "ViewState": "AgIAACEAAACAZmZmZmYgwCkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T08:57:53.393Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

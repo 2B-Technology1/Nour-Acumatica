@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635099461423|638375611980000000",
+    "Types": [
+      "PX.Web.UI.Frameset.Model.Mappings.DACMapProfile, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Web.UI.Frameset.Model.Mappings.SearchMapProfile, PX.Web.UI.Frameset, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]

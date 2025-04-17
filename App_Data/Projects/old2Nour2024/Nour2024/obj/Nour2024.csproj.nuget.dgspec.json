@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Nour2024.csproj": {}
+  },
+  "projects": {
+    "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Nour2024.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Nour2024.csproj",
+        "projectName": "Nour2024",
+        "projectPath": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\Nour2024.csproj",
+        "packagesPath": "C:\\Users\\Mohamed.Essam\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Acumatica ERP\\Nour\\App_Data\\Projects\\Nour2024\\Nour2024\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Mohamed.Essam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "PX.Olap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Hash": "638730635098813149|638375610840000000",
+    "Types": [
+      "PX.Olap.Base.Transformations.Serializers.DatePartTransformationSerializer, PX.Olap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Olap.Base.Transformations.Serializers.DateRoundingTransformationSerializer, PX.Olap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "PX.Olap.Base.Transformations.Serializers.SegmentTransformationSerializer, PX.Olap, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    ]
+  }
+]
